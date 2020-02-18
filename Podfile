@@ -111,6 +111,10 @@ target 'Ghostery' do
   main_app
 end
 
+target 'Gexsi' do
+  main_app
+end
+
 target 'Storage' do
   snapkit
   sdwebimage
