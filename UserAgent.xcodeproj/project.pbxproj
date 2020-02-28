@@ -531,7 +531,6 @@
 		464DB7FC23FC083200AD694A /* adult-domains.bin in Resources */ = {isa = PBXBuildFile; fileRef = 2BFB7C3E239001CB00CE2E69 /* adult-domains.bin */; };
 		464DB7FD23FC083200AD694A /* UserAgent.strings in Resources */ = {isa = PBXBuildFile; fileRef = 46828D912341F23300E7D8A3 /* UserAgent.strings */; };
 		464DB7FE23FC083200AD694A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B2142FC1E5E055000CDD3FC /* InfoPlist.strings */; };
-		464DB7FF23FC083200AD694A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4D6BEB81A0930EC00F538BD /* LaunchScreen.xib */; };
 		464DB80023FC083200AD694A /* AllFramesAtDocumentStart.js in Resources */ = {isa = PBXBuildFile; fileRef = D03F8F22200EAC1E003C2224 /* AllFramesAtDocumentStart.js */; };
 		464DB80123FC083200AD694A /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46CA610123180E1A0010CE6B /* Icons.xcassets */; };
 		464DB80223FC083200AD694A /* PrivacyIndicatorColors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACD654782360927F002D2EE0 /* PrivacyIndicatorColors.xcassets */; };
@@ -606,6 +605,7 @@
 		46569CDC23CD100E00224DC2 /* ContentBlocker+Popups+Whitelist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46569CDA23CD100E00224DC2 /* ContentBlocker+Popups+Whitelist.swift */; };
 		465E2AF823D1C66800ECEFA3 /* Authenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465E2AF723D1C66800ECEFA3 /* Authenticator.swift */; };
 		465E2AF923D1C66800ECEFA3 /* Authenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465E2AF723D1C66800ECEFA3 /* Authenticator.swift */; };
+		465FE93C24090CBE00FB454F /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 465FE93B24090CBE00FB454F /* Launch Screen.storyboard */; };
 		46828D7E233CF75000E7D8A3 /* BrowserViewController+InterceptorUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46828D7D233CF75000E7D8A3 /* BrowserViewController+InterceptorUI.swift */; };
 		46828D7F233CF75000E7D8A3 /* BrowserViewController+InterceptorUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46828D7D233CF75000E7D8A3 /* BrowserViewController+InterceptorUI.swift */; };
 		46828D81233D0A4900E7D8A3 /* MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46828D80233D0A4900E7D8A3 /* MD5.swift */; };
@@ -1775,6 +1775,7 @@
 		46569CD723CD0F0500224DC2 /* safari-popups-cosmetic.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "safari-popups-cosmetic.json"; sourceTree = "<group>"; };
 		46569CDA23CD100E00224DC2 /* ContentBlocker+Popups+Whitelist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentBlocker+Popups+Whitelist.swift"; sourceTree = "<group>"; };
 		465E2AF723D1C66800ECEFA3 /* Authenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authenticator.swift; sourceTree = "<group>"; };
+		465FE93B24090CBE00FB454F /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		467805F323154A160031E226 /* libSentry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSentry.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		46828D7D233CF75000E7D8A3 /* BrowserViewController+InterceptorUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BrowserViewController+InterceptorUI.swift"; sourceTree = "<group>"; };
 		46828D80233D0A4900E7D8A3 /* MD5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MD5.swift; sourceTree = "<group>"; };
@@ -2893,6 +2894,7 @@
 				464DB83C23FC08EB00AD694A /* Colors.swift */,
 				464DB83A23FC08EB00AD694A /* colors.xcassets */,
 				464DB83D23FC08EB00AD694A /* Info.plist */,
+				465FE93B24090CBE00FB454F /* Launch Screen.storyboard */,
 			);
 			name = Gexsi;
 			sourceTree = "<group>";
@@ -4612,10 +4614,10 @@
 				464DB7F923FC083200AD694A /* FxASignIn.js in Resources */,
 				464DB7FA23FC083200AD694A /* SpotlightHelper.js in Resources */,
 				464DB7FB23FC083200AD694A /* MainFrameAtDocumentEnd.js in Resources */,
+				465FE93C24090CBE00FB454F /* Launch Screen.storyboard in Resources */,
 				464DB7FC23FC083200AD694A /* adult-domains.bin in Resources */,
 				464DB7FD23FC083200AD694A /* UserAgent.strings in Resources */,
 				464DB7FE23FC083200AD694A /* InfoPlist.strings in Resources */,
-				464DB7FF23FC083200AD694A /* LaunchScreen.xib in Resources */,
 				464DB80023FC083200AD694A /* AllFramesAtDocumentStart.js in Resources */,
 				464DB80123FC083200AD694A /* Icons.xcassets in Resources */,
 				464DB80223FC083200AD694A /* PrivacyIndicatorColors.xcassets in Resources */,
