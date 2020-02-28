@@ -53,7 +53,7 @@ extension PhotonActionSheetProtocol {
                 privacyStats,
             ], [
                 self.openWhatsNewItem(vcDelegate: vcDelegate),
-                self.openPrivacyStatementItem(vcDelegate: vcDelegate),
+                // self.openPrivacyStatementItem(vcDelegate: vcDelegate),
             ], [
                 self.burnItem(vcDelegate: vcDelegate),
             ], [
