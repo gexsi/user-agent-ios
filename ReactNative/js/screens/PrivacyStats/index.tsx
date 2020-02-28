@@ -203,7 +203,7 @@ export default ({ insightsModule }: { insightsModule: BrowserCoreModule }) => {
 
   return (
     <View style={styles.container}>
-      <View style={styles.titleContainer}>
+      {/* <View style={styles.titleContainer}>
         <NativeDrawable
           style={styles.icon}
           source="search"
@@ -236,7 +236,7 @@ export default ({ insightsModule }: { insightsModule: BrowserCoreModule }) => {
             </Text>
           </View>
         </View>
-      </View>
+      </View> */}
 
       <View style={styles.titleContainer}>
         <NativeDrawable

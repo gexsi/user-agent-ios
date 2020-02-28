@@ -176,11 +176,11 @@ class Results extends React.Component {
     this.state = {
       searchEngines: [],
     };
-    browser.search.get().then(searchEngines => {
-      this.setState({
-        searchEngines,
-      });
-    });
+    // browser.search.get().then(searchEngines => {
+    //   this.setState({
+    //     searchEngines,
+    //   });
+    // });
   }
 
   // eslint-disable-next-line react/no-deprecated
@@ -321,12 +321,13 @@ class Results extends React.Component {
                 </View>
               </TouchableWithoutFeedback>
             </View>
-
-            <View style={styles.searchEnginesHeader}>
-              <Text style={styles.searchEnginesHeaderText}>
-                {t('search_alternative_search_engines_info')}
-              </Text>
-            </View>
+            {searchEngines.length > 0 && (
+              <View style={styles.searchEnginesHeader}>
+                <Text style={styles.searchEnginesHeaderText}>
+                  {t('search_alternative_search_engines_info')}
+                </Text>
+              </View>
+            )}
             <View style={styles.searchEnginesContainer}>
               {groupBy(searchEngines, 3).map(
                 (searchEnginesGroup, groupIndex) => (
