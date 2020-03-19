@@ -309,11 +309,11 @@ class Results extends React.Component {
               >
                 <View style={styles.showMoreButtonWrapper}>
                   <View style={styles.showMoreButton}>
-                    <NativeDrawable
+                    {/* <NativeDrawable
                       style={styles.footerIcon}
                       source="nav-menu"
                       color="#ffffff"
-                    />
+                    /> */}
                     <Text style={styles.footerText} allowFontScaling={false}>
                       {t('search_footer')}
                     </Text>
