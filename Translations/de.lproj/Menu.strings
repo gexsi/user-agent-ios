@@ -39,7 +39,7 @@
 "Menu.OpenTopSitesAction.AccessibilityLabel" = "Meistbesuchte Seiten";
 
 /* Label for the button, displayed in the menu, used to open the What's new page. */
-"Menu.OpenWhatsNewAction.Title" = "Was ist neu";
+"Menu.OpenWhatsNewAction.Title" = "Aktuelles Projekt";
 
 /* "Label for the button, displayed in the menu, used to open the Privacy Statement." */
 "Menu.OpenPrivacyStatementAction.Title" = "Zum Datenschutz";

@@ -163,7 +163,7 @@ class AppSettingsTableViewController: SettingsTableViewController {
     private func aboutSettingSection() -> SettingSection {
         let aboutSettings = [
             VersionSetting(settings: self),
-            LicenseAndAcknowledgementsSetting(),
+//            LicenseAndAcknowledgementsSetting(),
             ExportBrowserDataSetting(settings: self),
             ExportLogDataSetting(settings: self),
             DeleteExportedDataSetting(settings: self),

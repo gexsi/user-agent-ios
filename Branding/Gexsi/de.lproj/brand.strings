@@ -1,0 +1,13 @@
+/* 
+  brand.strings
+  UserAgent
+
+  Created by Krzysztof Modras on 10.10.19.
+  Copyright © 2019 Cliqz. All rights reserved.
+*/
+"website" = "https://gexsi.com/";
+"whatsNewWebsite" = "https://gexsi.com/about/projekte/";
+"humanWebInfoWebsite" = "https://0x65.dev/blog/2019-12-03/human-web-collecting-data-in-a-socially-responsible-manner.html";
+"repositoryWebsite" = "https://github.com/cliqz/user-agent-ios";
+"privacyPolicyWebsite" = "https://gexsi.com/about/impressum/";
+"feedbackWebsite" = "https://gexsi.com/about/kontakt/";
