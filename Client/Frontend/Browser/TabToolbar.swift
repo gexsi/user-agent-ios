@@ -93,7 +93,7 @@ open class TabToolbarHelper: NSObject {
         toolbar.tabsButton.addGestureRecognizer(longPressGestureTabsButton)
 
         toolbar.menuButton.contentMode = .center
-        toolbar.menuButton.setImage(UIImage(named: "nav-menu")?.tinted(withColor: Theme.general.controlTint), for: .normal)
+        toolbar.menuButton.setImage(UIImage(named: "nav-menu"), for: .normal)
         toolbar.menuButton.accessibilityLabel = Strings.Menu.ButtonAccessibilityLabel
         toolbar.menuButton.addTarget(self, action: #selector(didClickMenu), for: .touchUpInside)
         toolbar.menuButton.accessibilityIdentifier = "TabToolbar.menuButton"
@@ -347,7 +347,7 @@ extension TabToolbar: Themeable, PrivateModeUI {
 
         privateModeBadge.badge.tintBackground(color: Theme.browser.background)
         self.whatsNeweBadge.badge.tintBackground(color: .clear)
-        menuButton.setImage(UIImage(named: "nav-menu")?.tinted(withColor: Theme.general.controlTint), for: .normal)
+        menuButton.setImage(UIImage(named: "nav-menu"), for: .normal)
     }
 
     func applyUIMode(isPrivate: Bool) {
