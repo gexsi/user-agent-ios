@@ -1455,7 +1455,11 @@ extension BrowserViewController: URLBarDelegate {
         if !currentTab.isPrivate {
             self.appendQuery(query: text)
         }
-        self.urlBar.closeKeyboard()
+        if let url = self.profile.searchEngines.defaultEngine.searchURLForQuery(text) {
+            self.finishEditingAndSubmit(url, visitType: .typed, forTab: currentTab)
+        } else {
+            self.urlBar.closeKeyboard()
+        }
     }
 
     private func appendQuery(query: String) {
