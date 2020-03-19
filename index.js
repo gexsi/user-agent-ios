@@ -28,6 +28,7 @@ YellowBox.ignoreWarnings([
 moment.locale(NativeModules.LocaleConstants.lang);
 
 prefs.set('tabSearchEnabled', true);
+prefs.set('modules.search.providers.cliqz.enabled', false);
 
 const app = new App({
   browser: global.browser,

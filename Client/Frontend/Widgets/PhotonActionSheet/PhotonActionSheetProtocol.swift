@@ -50,8 +50,8 @@ extension PhotonActionSheetProtocol {
 
         return [
             [
-                privacyStats,
-            ], [
+//                privacyStats,
+//            ], [
                 self.openWhatsNewItem(vcDelegate: vcDelegate),
                 // self.openPrivacyStatementItem(vcDelegate: vcDelegate),
             ], [
