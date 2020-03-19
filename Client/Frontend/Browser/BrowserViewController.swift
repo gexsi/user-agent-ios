@@ -1858,7 +1858,7 @@ extension BrowserViewController: IntroViewControllerDelegate {
                 _ = self.navigationController?.popToRootViewController(animated: true)
             }
             if shouldPresentPrivacyStatement {
-                self.presentPrivacyStatementViewController()
+//                self.presentPrivacyStatementViewController()
             }
         }
     }
