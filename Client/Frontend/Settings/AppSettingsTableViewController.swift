@@ -32,7 +32,7 @@ class AppSettingsTableViewController: SettingsTableViewController {
 
     override func generateSettings() -> [SettingSection] {
         return [
-            self.searchSettingSection(),
+//            self.searchSettingSection(),
             self.privacySettingSection(),
             self.generalSettingSection(),
             self.newsSettingSection(),
