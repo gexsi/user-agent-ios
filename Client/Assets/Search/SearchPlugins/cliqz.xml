@@ -8,7 +8,9 @@
 
 <Url type="text/html" method="GET" template="https://search.gexsi.com/search">
     <Param name="q" value="{searchTerms}"/>
-    <Param name="pk_campaign" value="gexsi-app-ios"/>
+    <Param name="gx1" value="ge"/>
+    <Param name="gx2" value="ap"/>
+    <Param name="gx3" value="io"/>
 </Url>
 <SearchForm>https://search.gexsi.com</SearchForm>
 </SearchPlugin>
