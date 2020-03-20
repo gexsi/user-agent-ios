@@ -2,16 +2,16 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "1C-EN-New-1.png"
+      "filename" : "2C-gexsi-transparent.png"
     },
     {
       "idiom" : "universal",
-      "filename" : "1C-DE-new.png",
+      "filename" : "2C-gexsi-transparent-1.png",
       "locale" : "de"
     },
     {
       "idiom" : "universal",
-      "filename" : "1C-EN-New.png",
+      "filename" : "2C-gexsi-transparent-2.png",
       "locale" : "en"
     }
   ],

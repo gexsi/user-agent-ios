@@ -6,16 +6,16 @@
 "Intro.Slides.AntiTracking.Title" = "Höchster Datenschutz";
 
 /* Description for the 'Search' panel in the First Run tour. */
-"Intro.Slides.Search.Description" = "Unsere anonyme Suchmaschine liefert dir noch während der Eingabe Ergebnisse in Echtzeit. Keine Werbung. Keine Datensammlung.";
+"Intro.Slides.Search.Description" = "Deine Suchanfragen generieren Einnahmen. Mit diesen unterstützen wir Projekte, die die Welt positiv verändern.";
 
 /* Title for the 'Search' panel in the First Run tour. */
-"Intro.Slides.Search.Title" = "Anonyme Schnellsuche";
+"Intro.Slides.Search.Title" = "Die Suchmaschine für eine bessere Welt";
 
 /* Button title for skipping tour. */
 "Intro.Slides.Skip.Title" = "Überspringen";
 
 /* Button title for starting browsing. */
-"Intro.Slides.Welcome.Button.Title" = "Viel Spaß mit Cliqz";
+"Intro.Slides.Welcome.Button.Title" = "Suchen und Gutes tun";
 
 /* Description for the 'Welcome' panel in the First Run tour. */
-"Intro.Slides.Welcome.Description" = "Wir schaffen eine unabhängige europäische Alternative zu den marktbeherrschenden US-Plattformen. Vielen Dank für dein Vertrauen und dass du den Weg in die digitale Ära mit uns gehst.";
+"Intro.Slides.Welcome.Description" = "Wir sind ein Social Business, das dem Gemeinwohl verpflichtet ist.";
