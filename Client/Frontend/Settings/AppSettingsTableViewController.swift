@@ -125,7 +125,7 @@ class AppSettingsTableViewController: SettingsTableViewController {
             BoolSetting(
                 prefs: prefs,
                 prefKey: PrefsKeys.NewTabNewsEnabled,
-                defaultValue: true,
+                defaultValue: false,
                 titleText: Strings.Settings.News.NewsFromNewTabPage
             ) { (_) in
                 NotificationCenter.default.post(name: .NewsSettingsDidChange, object: nil)
@@ -140,7 +140,7 @@ class AppSettingsTableViewController: SettingsTableViewController {
                 prefKey: PrefsKeys.NewTabNewsImagesEnabled,
                 defaultValue: true,
                 titleText: Strings.Settings.News.NewsImages,
-                enabled: prefs.boolForKey(PrefsKeys.NewTabNewsEnabled) ?? true
+                enabled: prefs.boolForKey(PrefsKeys.NewTabNewsEnabled) ?? false
             ) { (_) in
                 NotificationCenter.default.post(name: .NewsSettingsDidChange, object: nil)
             },

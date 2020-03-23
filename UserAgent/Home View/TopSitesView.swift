@@ -67,7 +67,7 @@ private extension TopSitesView {
         let homeView = HomeView(
             speedDials: speedDials,
             pinnedSites: pinnedSites,
-            isNewsEnabled: self.profile.prefs.boolForKey(PrefsKeys.NewTabNewsEnabled) ?? true,
+            isNewsEnabled: self.profile.prefs.boolForKey(PrefsKeys.NewTabNewsEnabled) ?? false,
             isNewsImagesEnabled: self.profile.prefs.boolForKey(PrefsKeys.NewTabNewsImagesEnabled) ?? true
         )
 
