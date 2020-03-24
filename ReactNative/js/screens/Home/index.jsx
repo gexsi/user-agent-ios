@@ -68,6 +68,10 @@ const styles = StyleSheet.create({
   logo: {
     height: 65,
   },
+  bannerWrapper: {},
+  banner: {
+    height: 300,
+  },
 });
 
 const EmptySpeedDial = () => <View style={styles.speedDial} />;
@@ -131,6 +135,13 @@ export default function Home({
           <View style={styles.speedDialsContainer}>
             <SpeedDialRow dials={firstRow} />
             <SpeedDialRow dials={secondRow} />
+          </View>
+          <View style={styles.bannerWrapper}>
+            <Image
+              style={styles.banner}
+              source={{ uri: 'banner' }}
+              resizeMode="contain"
+            />
           </View>
           {isNewsEnabled && (
             <News

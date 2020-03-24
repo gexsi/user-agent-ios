@@ -1,0 +1,57 @@
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "filename" : "app-home-en-positiv-1.png"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "app-home-en-negativ-1.png",
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ]
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "app-home-de-positiv.png",
+      "locale" : "de"
+    },
+    {
+      "locale" : "de",
+      "idiom" : "universal",
+      "filename" : "app-home-de-negativ.png",
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ]
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "app-home-en-positiv.png",
+      "locale" : "en"
+    },
+    {
+      "locale" : "en",
+      "idiom" : "universal",
+      "filename" : "app-home-en-negativ.png",
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ]
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  },
+  "properties" : {
+    "localizable" : true
+  }
+}
