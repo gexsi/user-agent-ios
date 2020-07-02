@@ -16,7 +16,7 @@ extension Features.BrowserCore {
 
 extension Features.Search.AdditionalSearchEngines {
     public static var isEnabled: Bool {
-        return true
+        return false
     }
 }
 
@@ -25,7 +25,7 @@ extension Features.Search {
         return .search
     }
     public static var defaultEngineName: String {
-        return "DuckDuckGo"
+        return "Gexsi"
     }
 }
 

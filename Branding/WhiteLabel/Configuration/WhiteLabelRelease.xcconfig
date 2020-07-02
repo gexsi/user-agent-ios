@@ -1,18 +1,18 @@
 // Display name
-BUNDLE_DISPLAY_NAME = WhiteLabel
+BUNDLE_DISPLAY_NAME = Gexsi
 
 // Bundle Identifier
-APP_BUNDLE_ID = com.whiteLabel
+APP_BUNDLE_ID = com.gexsi
 
 // Marketing version
 APP_MARKETING_VERSION = 1.0.0
 
 // URL Scheme
-USER_AGENT_URL_SCHEME = WhiteLabel
+USER_AGENT_URL_SCHEME = Gexsi
 
 // User Activity Types
 USER_ACTIVITY_TYPES= $(APP_BUNDLE_ID).activity.types
 
 APP_DEVELOPMENT_TEAM = XXXXXXXXXX
 
-EXTENSION_OPEN_IN_APP_BUNDLE_ID_POSTFIX = WhiteLabelOpenIn
+EXTENSION_OPEN_IN_APP_BUNDLE_ID_POSTFIX = GexsiOpenIn

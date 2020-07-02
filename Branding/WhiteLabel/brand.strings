@@ -6,10 +6,10 @@
   Copyright © 2019 Cliqz. All rights reserved.
 */
 
-"website" = "";
-"whatsNewWebsite" = "";
-"humanWebInfoWebsite" = "";
-"repositoryWebsite" = "";
-"privacyPolicyWebsite" = "";
-"feedbackWebsite" = "";
-"licensesHeader" = "WhiteLabel";
+"website" = "https://gexsi.com/";
+"whatsNewWebsite" = "https://gexsi.com/about/en/projects/";
+"humanWebInfoWebsite" = "https://0x65.dev/blog/2019-12-03/human-web-collecting-data-in-a-socially-responsible-manner.html";
+"repositoryWebsite" = "https://github.com/cliqz/user-agent-ios";
+"privacyPolicyWebsite" = "https://gexsi.com/about/en/privacy-policy";
+"feedbackWebsite" = "https://gexsi.com/about/en/privacy-policy";
+"licensesHeader" = "Gexsi";
