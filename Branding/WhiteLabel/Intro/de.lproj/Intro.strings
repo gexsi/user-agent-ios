@@ -1,0 +1,20 @@
+/* Description for the 'AntiTracking' panel in the First Run tour. */
+"Intro.Slides.AntiTracking.Description" = "Unser intelligentes Anti-Tracking verhindert, dass Datensammler dich quer durchs Netz verfolgen. Unser Werbeblocker hält dir aufdringliche Anzeigen vom Hals.";
+
+/* Title for the 'AntiTracking' panel in the First Run tour. */
+"Intro.Slides.AntiTracking.Title" = "Höchster Datenschutz";
+
+/* Description for the 'Search' panel in the First Run tour. */
+"Intro.Slides.Search.Description" = "Deine Suchanfragen generieren Einnahmen. Mit diesen unterstützen wir Projekte, die die Welt positiv verändern.";
+
+/* Title for the 'Search' panel in the First Run tour. */
+"Intro.Slides.Search.Title" = "Die Suchmaschine für eine bessere Welt";
+
+/* Button title for skipping tour. */
+"Intro.Slides.Skip.Title" = "Überspringen";
+
+/* Button title for starting browsing. */
+"Intro.Slides.Welcome.Button.Title" = "Suchen und Gutes tun";
+
+/* Description for the 'Welcome' panel in the First Run tour. */
+"Intro.Slides.Welcome.Description" = "Wir sind ein Social Business, das dem Gemeinwohl verpflichtet ist.";

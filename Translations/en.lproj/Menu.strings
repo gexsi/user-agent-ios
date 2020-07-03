@@ -27,7 +27,7 @@
 "Menu.OpenSettingsAction.Title" = "Settings";
 
 /* Label for the button, displayed in the menu, used to open the What's new page. */
-"Menu.OpenWhatsNewAction.Title" = "What's new";
+"Menu.OpenWhatsNewAction.Title" = "Current Project";
 
 /* "Label for the button, displayed in the menu, used to open the Privacy Statement." */
 "Menu.OpenPrivacyStatementAction.Title" = "About privacy & data";
