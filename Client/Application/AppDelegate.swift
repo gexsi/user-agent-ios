@@ -12,6 +12,7 @@ import LocalAuthentication
 import CoreSpotlight
 import UserNotifications
 import StoreKit
+import Firebase
 #if DEBUG
 import FlipperKit
 #endif
@@ -202,6 +203,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UIViewControllerRestorati
         #if DEBUG
         self.setupFlipper(application)
         #endif
+
+        FirebaseApp.configure()
+
         // Override point for customization after application launch.
         var shouldPerformAdditionalDelegateHandling = true
         self.askForReview()

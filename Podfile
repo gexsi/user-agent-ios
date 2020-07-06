@@ -180,6 +180,11 @@ def main_app
   flipper
 end
 
+def firebase
+  pod 'Firebase/Crashlytics'
+  pod 'Firebase/Analytics'
+end
+
 def extensions
   snapkit
   swiftyjson
@@ -196,6 +201,7 @@ end
 
 target 'WhiteLabel' do
   main_app
+  firebase
 end
 
 target 'Storage' do

@@ -188,7 +188,7 @@
 "ReopenAlert.Title" = "Zuletzt geschlossenen Tab wiederherstellen";
 
 /* The text shown in the URL bar on about:home */
-"UrlBar.Placeholder" = "Suchen oder URL eingeben";
+"UrlBar.Placeholder" = "Suchen und Gutes tun";
 
 /* Message in error prompt explaining why the URL is invalid. */
 "SendTo.Error.Message" = "Nur HTTP- und HTTPS-Links können geteilt werden.";
