@@ -4,7 +4,7 @@
 <dict>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.com.whiteLabel.browser.nightly</string>
+		<string>group.com.gexsi.nightly</string>
 	</array>
 </dict>
 </plist>

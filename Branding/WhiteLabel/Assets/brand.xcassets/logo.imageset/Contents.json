@@ -6,45 +6,12 @@
       "scale" : "1x"
     },
     {
-      "appearances" : [
-        {
-          "appearance" : "luminosity",
-          "value" : "dark"
-        }
-      ],
-      "filename" : "76972773-5a71ac80-692f-11ea-81c2-2e801f7b8533.png",
-      "idiom" : "universal",
-      "scale" : "1x"
-    },
-    {
       "filename" : "gexsi-logo-1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "appearances" : [
-        {
-          "appearance" : "luminosity",
-          "value" : "dark"
-        }
-      ],
-      "filename" : "76972773-5a71ac80-692f-11ea-81c2-2e801f7b8533-1.png",
-      "idiom" : "universal",
-      "scale" : "2x"
-    },
-    {
       "filename" : "gexsi-logo-2.png",
-      "idiom" : "universal",
-      "scale" : "3x"
-    },
-    {
-      "appearances" : [
-        {
-          "appearance" : "luminosity",
-          "value" : "dark"
-        }
-      ],
-      "filename" : "76972773-5a71ac80-692f-11ea-81c2-2e801f7b8533-2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

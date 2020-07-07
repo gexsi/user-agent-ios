@@ -4,11 +4,11 @@
 <dict>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.com.whiteLabel.browser.nightly</string>
+		<string>group.com.gexsi.nightly</string>
 	</array>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>$(AppIdentifierPrefix)com.whiteLabel.ShareTo</string>
+		<string>$(AppIdentifierPrefix)com.gexsi.nightly.ShareTo</string>
 	</array>
 </dict>
 </plist>

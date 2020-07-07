@@ -15,11 +15,11 @@ export const getStyles = theme => ({
   circle: {
     padding: 20,
     borderRadius: 60,
-    backgroundColor: '#ffffff33',
+    backgroundColor: '#d9d9d9',
   },
   label: {
     marginTop: 5,
-    color: 'white',
+    color: 'black',
     fontSize: 12,
     fontWeight: '500',
   },

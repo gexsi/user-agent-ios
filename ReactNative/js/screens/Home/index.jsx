@@ -1,4 +1,5 @@
 import React, { useMemo, useRef, useCallback } from 'react';
+import { Platform } from 'react-native'
 import {
   Dimensions,
   NativeModules,
@@ -19,14 +20,14 @@ import useNews from './hooks/news';
 
 const hideKeyboard = () => NativeModules.BrowserActions.hideKeyboard();
 
-const getStyles = toolbarHeight => {
+const getStyles = (toolbarHeight, isNewsEnabled, isPhoneLandscape) => {
   const maxWidth = Math.min(
     Dimensions.get('window').width,
     Dimensions.get('window').height,
   );
 
-  const logoHeight = 47;
   const newsToolbarHeight = 50;
+  const logoWrapperTop = isPhoneLandscape ? 0 : isNewsEnabled ? newsToolbarHeight : 0 + toolbarHeight;
 
   return StyleSheet.create({
     safeArea: {
@@ -48,19 +49,22 @@ const getStyles = toolbarHeight => {
       justifyContent: 'space-evenly',
     },
     logoWrapper: {
-      paddingTop: newsToolbarHeight + toolbarHeight,
+      height: '40%',
+      paddingTop: logoWrapperTop,
       justifyContent: 'flex-end',
       flexGrow: 1,
     },
     logo: {
-      height: logoHeight,
+      height: '90%',
     },
     urlBarWrapper: {
+      height: '20%',
       paddingHorizontal: 10,
       width: '100%',
-      paddingVertical: logoHeight,
+      justifyContent: 'center',
     },
     speedDialsContainer: {
+      height: '40%',
       width: '100%',
       flexGrow: 1,
     },
@@ -97,10 +101,18 @@ export default function Home({
   toolbarHeight,
   Features,
 }) {
+  const isPhoneLandscape = useMemo(() => {
+    if (Platform.isPad) { return false }
+    if (Dimensions.get('window').width < Dimensions.get('window').height) {
+      return false;
+    } else {
+      return true;
+    }
+  });
   const [news, edition] = useNews(newsModule);
   const scrollViewElement = useRef(null);
   const newsElement = useRef(null);
-  const styles = getStyles(toolbarHeight);
+  const styles = getStyles(toolbarHeight, isNewsEnabled, isPhoneLandscape);
   const [firstRow, secondRow] = useMemo(() => {
     const pinnedDomains = new Set([
       ...pinnedSites.map(s => parse(s.url).domain),
@@ -134,7 +146,7 @@ export default function Home({
     );
     hideKeyboard();
   }, [telemetry]);
-
+  
   return (
     <ScrollView
       ref={scrollViewElement}
@@ -144,12 +156,12 @@ export default function Home({
       contentContainerStyle={styles.contentContainer}
       scrollEnabled={isNewsEnabled}
     >
-      <Background height={height - toolbarHeight} Features={Features}>
+      <Background height={height - (isPhoneLandscape ? 0 : toolbarHeight)} Features={Features}>
         <View style={styles.wrapper}>
           <View style={styles.logoWrapper}>
             <Image
               style={styles.logo}
-              source={{ uri: 'logo' }}
+              source={{ uri: 'banner' }}
               resizeMode="contain"
             />
           </View>
@@ -160,7 +172,9 @@ export default function Home({
 
           <View style={styles.speedDialsContainer}>
             <SpeedDialRow dials={firstRow} />
-            <SpeedDialRow dials={secondRow} />
+            {!isPhoneLandscape && (
+              <SpeedDialRow dials={secondRow} />
+            )}
           </View>
         </View>
 
