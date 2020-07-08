@@ -35,8 +35,7 @@ class AboutLicenseHandler: InternalSchemeResponse {
         guard let path = Bundle.main.path(forResource: "Licenses", ofType: "html"), let html = try? String(contentsOfFile: path, encoding: .utf8) else {
             return nil
         }
-        var fixedHtml = html.replacingOccurrences(of: "<brand_header>", with: Strings.LicensesHeader)
-        fixedHtml = fixedHtml.replacingOccurrences(of: "<brand_repository_path>", with: Strings.RepositoryWebsite)
+        let fixedHtml = html.replacingOccurrences(of: "<brand_repository_path>", with: Strings.RepositoryWebsite)
         guard let data = fixedHtml.data(using: .utf8) else {
             return nil
         }
