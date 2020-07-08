@@ -64,6 +64,13 @@ mkdir -p ${OPEN_IN_PATH}/en.lproj
 cp -rf ${BRAND_PATH}/InfoPlists/OpenIn/de.lproj/InfoPlist.strings ${OPEN_IN_PATH}/de.lproj/InfoPlist.strings
 cp -rf ${BRAND_PATH}/InfoPlists/OpenIn/en.lproj/InfoPlist.strings ${OPEN_IN_PATH}/en.lproj/InfoPlist.strings
 
+# Translations folder path
+TRANSLATIONS_PATH=${PROJECT_PATH}/Translations
+
+# Replacing Forget mode translations
+cp -rf ${BRAND_PATH}/de.lproj/ForgetMode.strings ${TRANSLATIONS_PATH}/de.lproj/ForgetMode.strings
+cp -rf ${BRAND_PATH}/en.lproj/ForgetMode.strings ${TRANSLATIONS_PATH}/en.lproj/ForgetMode.strings
+
 # Today folder path
 TODAY_PATH=${PROJECT_PATH}/Extensions/Today
 
