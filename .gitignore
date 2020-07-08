@@ -79,6 +79,8 @@ Extensions/OpenIn/Entitlements/
 Extensions/OpenIn/OpenIn.xcassets/
 Extensions/OpenIn/de.lproj/
 Extensions/OpenIn/en.lproj/
+Translations/en.lproj/ForgetMode.strings
+Translations/de.lproj/ForgetMode.strings
 Extensions/Today/Entitlements/
 Extensions/Today/de.lproj/InfoPlist.strings
 Extensions/Today/en.lproj/InfoPlist.strings
