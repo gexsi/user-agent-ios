@@ -1,6 +1,6 @@
 
 /* Description for the 'AntiTracking' panel in the First Run tour. */
-"Intro.Slides.AntiTracking.Description" = "Our intelligent anti-tracking prevents data collectors from following you across the net. Our ad blocker keeps intrusive ads off your back.";
+"Intro.Slides.AntiTracking.Description" = "Our intelligent anti-tracking prevents data collectors from following you across the net. Our ad blocker keeps intrusive ads away from you.";
 
 /* Title for the 'AntiTracking' panel in the First Run tour. */
 "Intro.Slides.AntiTracking.Title" = "Highest level of data protection";
@@ -9,13 +9,13 @@
 "Intro.Slides.Search.Description" = "Your search generates money for projects that make the world a better place.";
 
 /* Title for the 'Search' panel in the First Run tour. */
-"Intro.Slides.Search.Title" = "The Search Engine for a Better World";
+"Intro.Slides.Search.Title" = "The search engine for a better world";
 
 /* Button title for skipping tour. */
 "Intro.Slides.Skip.Title" = "Skip";
 
 /* Button title for starting browsing. */
-"Intro.Slides.Welcome.Button.Title" = "Seek and Do Good";
+"Intro.Slides.Welcome.Button.Title" = "Search and do good";
 
 /* Description for the 'Welcome' panel in the First Run tour. */
-"Intro.Slides.Welcome.Description" = "We are a social business that is committed to the common good.";
+"Intro.Slides.Welcome.Description" = "We are a social business, 100% non-profit.";
