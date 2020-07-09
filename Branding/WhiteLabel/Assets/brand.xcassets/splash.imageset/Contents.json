@@ -1,18 +1,8 @@
 {
   "images" : [
     {
-      "filename" : "start-screen-2_german.png",
+      "filename" : "launchscreen-gexsi.png",
       "idiom" : "universal"
-    },
-    {
-      "filename" : "start-screen-2_german-1.png",
-      "idiom" : "universal",
-      "locale" : "de"
-    },
-    {
-      "filename" : "start-screen-2_english.png",
-      "idiom" : "universal",
-      "locale" : "en"
     }
   ],
   "info" : {
