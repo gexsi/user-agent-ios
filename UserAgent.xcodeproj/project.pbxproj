@@ -73,6 +73,7 @@
 		2B22E67B23F683A7000A39E6 /* FileDownloadActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB1A7C23F5388E008A0F01 /* FileDownloadActivity.swift */; };
 		2B28FFCB244593910075AF8A /* BrowserViewController+UseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B28FFCA244593910075AF8A /* BrowserViewController+UseCases.swift */; };
 		2B28FFCC244593910075AF8A /* BrowserViewController+UseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B28FFCA244593910075AF8A /* BrowserViewController+UseCases.swift */; };
+		2B2B173824B7435B00082787 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B2B173724B7435B00082787 /* LaunchScreen.storyboard */; };
 		2B2EA06A235DE3DC00FCB9D3 /* ContentBlocker+Tracking+Whitelist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EA069235DE3DC00FCB9D3 /* ContentBlocker+Tracking+Whitelist.swift */; };
 		2B2EA06B235F087100FCB9D3 /* ContentBlocker+Tracking+Whitelist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EA069235DE3DC00FCB9D3 /* ContentBlocker+Tracking+Whitelist.swift */; };
 		2B308AC4242B2B4A009AF3D1 /* Siri.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2B308ABD242B2B4A009AF3D1 /* Siri.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -581,7 +582,6 @@
 		2BE9D525243C805400553556 /* SpeechSynthesizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE9D523243C805400553556 /* SpeechSynthesizer.swift */; };
 		2BEA07BF246973EE008E1622 /* Strings+Intro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEA07BE246973EE008E1622 /* Strings+Intro.swift */; };
 		2BEB1A7D23F5388E008A0F01 /* FileDownloadActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB1A7C23F5388E008A0F01 /* FileDownloadActivity.swift */; };
-		2BF5C1BF24ADDDF500829BE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BF5C1BE24ADDDF500829BE7 /* LaunchScreen.storyboard */; };
 		2BF5F142246E6CE500837817 /* Strings+AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF5F141246E6CE500837817 /* Strings+AlertController.swift */; };
 		2BFB7C36238FA9A400CE2E69 /* AutomaticForgetModePolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFB7C35238FA9A400CE2E69 /* AutomaticForgetModePolicy.swift */; };
 		2BFB7C37238FA9A400CE2E69 /* AutomaticForgetModePolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFB7C35238FA9A400CE2E69 /* AutomaticForgetModePolicy.swift */; };
@@ -1747,6 +1747,7 @@
 		2B189392247535EF003DA87D /* DataAndPrivacy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAndPrivacy.swift; sourceTree = "<group>"; };
 		2B18939424753898003DA87D /* DataAndPrivacy+Cliqz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataAndPrivacy+Cliqz.swift"; sourceTree = "<group>"; };
 		2B28FFCA244593910075AF8A /* BrowserViewController+UseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BrowserViewController+UseCases.swift"; sourceTree = "<group>"; };
+		2B2B173724B7435B00082787 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B2EA069235DE3DC00FCB9D3 /* ContentBlocker+Tracking+Whitelist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentBlocker+Tracking+Whitelist.swift"; sourceTree = "<group>"; };
 		2B308ABD242B2B4A009AF3D1 /* Siri.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Siri.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B308ACE242B2DC1009AF3D1 /* IntentHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
@@ -1960,7 +1961,6 @@
 		2BF1946B242238CD000B5920 /* CliqzToday.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CliqzToday.entitlements; sourceTree = "<group>"; };
 		2BF1946C242238CD000B5920 /* CliqzTodayDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CliqzTodayDebug.entitlements; sourceTree = "<group>"; };
 		2BF1946D242238CD000B5920 /* CliqzTodayAdhoc.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CliqzTodayAdhoc.entitlements; sourceTree = "<group>"; };
-		2BF5C1BE24ADDDF500829BE7 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2BF5F141246E6CE500837817 /* Strings+AlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+AlertController.swift"; sourceTree = "<group>"; };
 		2BFB7C35238FA9A400CE2E69 /* AutomaticForgetModePolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomaticForgetModePolicy.swift; sourceTree = "<group>"; };
 		2BFB7C38238FB06300CE2E69 /* AutomaticForgetModeDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomaticForgetModeDetector.swift; sourceTree = "<group>"; };
@@ -3040,7 +3040,7 @@
 				2B139CFA24B4B23800D43BDA /* brand.strings */,
 				2B65717724AB693E005DE5D3 /* InfoPlist.strings */,
 				2B65717924AB693E005DE5D3 /* ForgetMode.strings */,
-				2BF5C1BE24ADDDF500829BE7 /* LaunchScreen.storyboard */,
+				2B2B173724B7435B00082787 /* LaunchScreen.storyboard */,
 				2B6571A124AB693E005DE5D3 /* BrandColors.xcassets */,
 			);
 			path = WhiteLabel;
@@ -5306,7 +5306,6 @@
 				2B65708F24AB68A7005DE5D3 /* MainFrameAtDocumentStart.js in Resources */,
 				2BCD92E124B5EFD8007B4F2D /* ContextualOnboarding.strings in Resources */,
 				2BCD92D524B5EFD8007B4F2D /* Authenticator.strings in Resources */,
-				2BF5C1BF24ADDDF500829BE7 /* LaunchScreen.storyboard in Resources */,
 				2B65709024AB68A7005DE5D3 /* SearchPlugins in Resources */,
 				2B65709124AB68A7005DE5D3 /* MailSchemes.plist in Resources */,
 				2BCD930924B5EFD8007B4F2D /* ReaderMode.strings in Resources */,
@@ -5321,6 +5320,7 @@
 				2BCD92F524B5EFD8007B4F2D /* General.strings in Resources */,
 				2BCD92ED24B5EFD8007B4F2D /* UserAgent.strings in Resources */,
 				2B65709924AB68A7005DE5D3 /* safari-popups-network.json in Resources */,
+				2B2B173824B7435B00082787 /* LaunchScreen.storyboard in Resources */,
 				2B65709A24AB68A7005DE5D3 /* ReaderViewLoading.html in Resources */,
 				2B65709D24AB68A7005DE5D3 /* tracker_db_v2.json in Resources */,
 				2B65709E24AB68A7005DE5D3 /* SendTo.xcassets in Resources */,
