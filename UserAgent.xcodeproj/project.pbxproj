@@ -5306,6 +5306,7 @@
 				2B65708F24AB68A7005DE5D3 /* MainFrameAtDocumentStart.js in Resources */,
 				2BCD92E124B5EFD8007B4F2D /* ContextualOnboarding.strings in Resources */,
 				2BCD92D524B5EFD8007B4F2D /* Authenticator.strings in Resources */,
+				2BF5C1BF24ADDDF500829BE7 /* LaunchScreen.storyboard in Resources */,
 				2B65709024AB68A7005DE5D3 /* SearchPlugins in Resources */,
 				2B65709124AB68A7005DE5D3 /* MailSchemes.plist in Resources */,
 				2BCD930924B5EFD8007B4F2D /* ReaderMode.strings in Resources */,
