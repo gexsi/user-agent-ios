@@ -5407,6 +5407,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = "${APP_BUILD_VERSION}";
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = ZX98ZK2A75;
@@ -5451,6 +5452,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = "${APP_BUILD_VERSION}";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = ZX98ZK2A75;
@@ -5490,6 +5492,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = "${APP_BUILD_VERSION}";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = ZX98ZK2A75;
@@ -5528,6 +5531,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = "${APP_BUILD_VERSION}";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = ZX98ZK2A75;
@@ -5662,6 +5666,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = "${APP_BUILD_VERSION}";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = ZX98ZK2A75;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -5696,6 +5701,7 @@
 				CODE_SIGN_ENTITLEMENTS = Extensions/Today/Entitlements/TodayDebug.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = "${APP_BUILD_VERSION}";
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = "${APP_DEVELOPMENT_TEAM}";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -5733,6 +5739,7 @@
 				CODE_SIGN_ENTITLEMENTS = Extensions/Today/Entitlements/TodayAdHoc.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = "${APP_BUILD_VERSION}";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = "${APP_DEVELOPMENT_TEAM}";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -5765,6 +5772,7 @@
 				CODE_SIGN_ENTITLEMENTS = Extensions/Today/Entitlements/Today.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = "${APP_BUILD_VERSION}";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = "${APP_DEVELOPMENT_TEAM}";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -5796,6 +5804,7 @@
 				CODE_SIGN_ENTITLEMENTS = Extensions/Today/Entitlements/Today.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = "${APP_BUILD_VERSION}";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = "${APP_DEVELOPMENT_TEAM}";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -5824,6 +5833,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = "${APP_BUILD_VERSION}";
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = "${APP_DEVELOPMENT_TEAM}";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -5857,6 +5867,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = "${APP_BUILD_VERSION}";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = "${APP_DEVELOPMENT_TEAM}";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -5885,6 +5896,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = "${APP_BUILD_VERSION}";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = "${APP_DEVELOPMENT_TEAM}";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -5913,6 +5925,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = "${APP_BUILD_VERSION}";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = "${APP_DEVELOPMENT_TEAM}";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -5940,7 +5953,7 @@
 				CODE_SIGN_ENTITLEMENTS = "$(inherit)Branding/WhiteLabel/Entitlements/WhiteLabelDebug.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = "${APP_BUILD_VERSION}";
 				DEVELOPMENT_TEAM = "${APP_DEVELOPMENT_TEAM}";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = (
@@ -5998,7 +6011,7 @@
 				CODE_SIGN_ENTITLEMENTS = "$(inherit)Branding/WhiteLabel/Entitlements/WhiteLabelAdHoc.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = "${APP_BUILD_VERSION}";
 				DEVELOPMENT_TEAM = "${APP_DEVELOPMENT_TEAM}";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = (
@@ -6056,7 +6069,7 @@
 				CODE_SIGN_ENTITLEMENTS = "$(inherit)Branding/WhiteLabel/Entitlements/WhiteLabel.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = "${APP_BUILD_VERSION}";
 				DEVELOPMENT_TEAM = "${APP_DEVELOPMENT_TEAM}";
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -6099,7 +6112,7 @@
 				CODE_SIGN_ENTITLEMENTS = "$(inherit)Branding/WhiteLabel/Entitlements/WhiteLabel.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = "${APP_BUILD_VERSION}";
 				DEVELOPMENT_TEAM = "${APP_DEVELOPMENT_TEAM}";
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -6148,6 +6161,7 @@
 				CODE_SIGN_ENTITLEMENTS = Extensions/OpenIn/Entitlements/OpenInDebug.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = "${APP_BUILD_VERSION}";
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = "${APP_DEVELOPMENT_TEAM}";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -6186,6 +6200,7 @@
 				CODE_SIGN_ENTITLEMENTS = Extensions/OpenIn/Entitlements/OpenInAdHoc.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = "${APP_BUILD_VERSION}";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = "${APP_DEVELOPMENT_TEAM}";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -6219,6 +6234,7 @@
 				CODE_SIGN_ENTITLEMENTS = Extensions/OpenIn/Entitlements/OpenIn.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = "${APP_BUILD_VERSION}";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = "${APP_DEVELOPMENT_TEAM}";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -6252,6 +6268,7 @@
 				CODE_SIGN_ENTITLEMENTS = Extensions/OpenIn/Entitlements/OpenIn.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = "${APP_BUILD_VERSION}";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = "${APP_DEVELOPMENT_TEAM}";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -6278,6 +6295,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = "${APP_BUILD_VERSION}";
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = ZX98ZK2A75;
@@ -6559,7 +6577,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = "${APP_BUILD_VERSION}";
 				DEBUG_ACTIVITY_MODE = "";
 				"DEBUG_ACTIVITY_MODE[sdk=iphonesimulator*]" = disable;
 				ENABLE_BITCODE = YES;
@@ -6613,6 +6631,7 @@
 				CODE_SIGN_ENTITLEMENTS = "$(inherit)Extensions/ShareTo/Entitlements/ShareTo.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = "${APP_BUILD_VERSION}";
 				DEVELOPMENT_TEAM = "${APP_DEVELOPMENT_TEAM}";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Extensions/ShareTo/Info.plist;
@@ -6637,6 +6656,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = "${APP_BUILD_VERSION}";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = ZX98ZK2A75;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -6667,6 +6687,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = "${APP_BUILD_VERSION}";
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = ZX98ZK2A75;
@@ -6884,7 +6905,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = "${APP_BUILD_VERSION}";
 				DEBUG_ACTIVITY_MODE = "";
 				"DEBUG_ACTIVITY_MODE[sdk=iphonesimulator*]" = disable;
 				ENABLE_BITCODE = YES;
@@ -6940,6 +6961,7 @@
 				CODE_SIGN_ENTITLEMENTS = "$(inherit)Extensions/ShareTo/Entitlements/ShareToAdHoc.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = "${APP_BUILD_VERSION}";
 				DEVELOPMENT_TEAM = "${APP_DEVELOPMENT_TEAM}";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Extensions/ShareTo/Info.plist;
@@ -6964,6 +6986,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = "${APP_BUILD_VERSION}";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = ZX98ZK2A75;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -6993,6 +7016,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = "${APP_BUILD_VERSION}";
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = ZX98ZK2A75;
@@ -7215,7 +7239,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = "${APP_BUILD_VERSION}";
 				DEBUG_ACTIVITY_MODE = "";
 				"DEBUG_ACTIVITY_MODE[sdk=iphonesimulator*]" = disable;
 				ENABLE_BITCODE = YES;
@@ -7292,6 +7316,7 @@
 				CODE_SIGN_ENTITLEMENTS = "$(inherit)Extensions/ShareTo/Entitlements/ShareTo.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = "${APP_BUILD_VERSION}";
 				DEVELOPMENT_TEAM = "${APP_DEVELOPMENT_TEAM}";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Extensions/ShareTo/Info.plist;
@@ -7316,6 +7341,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = "${APP_BUILD_VERSION}";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = ZX98ZK2A75;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -7346,6 +7372,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = "${APP_BUILD_VERSION}";
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = ZX98ZK2A75;
@@ -7464,7 +7491,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = "${APP_BUILD_VERSION}";
 				DEBUG_ACTIVITY_MODE = "";
 				"DEBUG_ACTIVITY_MODE[sdk=iphonesimulator*]" = disable;
 				ENABLE_BITCODE = NO;
@@ -7542,6 +7569,7 @@
 				CODE_SIGN_ENTITLEMENTS = "$(inherit)Extensions/ShareTo/Entitlements/ShareToDebug.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = "${APP_BUILD_VERSION}";
 				DEVELOPMENT_TEAM = "${APP_DEVELOPMENT_TEAM}";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Extensions/ShareTo/Info.plist;

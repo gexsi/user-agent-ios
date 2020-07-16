@@ -7,6 +7,9 @@ APP_BUNDLE_ID = com.gexsi
 // Marketing version
 APP_MARKETING_VERSION = 3.0.5
 
+// Build version
+APP_BUILD_VERSION = 1
+
 // URL Scheme
 USER_AGENT_URL_SCHEME = Gexsi
 
