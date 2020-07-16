@@ -191,14 +191,6 @@ def extensions
   fuzi
 end
 
-target 'Cliqz' do
-  main_app
-end
-
-target 'Ghostery' do
-  main_app
-end
-
 target 'WhiteLabel' do
   main_app
   firebase

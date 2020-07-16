@@ -9,11 +9,11 @@
 	<key>INIntentDefinitionNamespace</key>
 	<string>uLmBZn</string>
 	<key>INIntentDefinitionSystemVersion</key>
-	<string>19D76</string>
+	<string>19F101</string>
 	<key>INIntentDefinitionToolsBuildVersion</key>
-	<string>11C504</string>
+	<string>11E708</string>
 	<key>INIntentDefinitionToolsVersion</key>
-	<string>11.3.1</string>
+	<string>11.6</string>
 	<key>INIntents</key>
 	<array>
 		<dict>
@@ -22,7 +22,7 @@
 			<key>INIntentConfigurable</key>
 			<true/>
 			<key>INIntentDescription</key>
-			<string>Search any query with Cliqz</string>
+			<string>Search any query with Gexsi</string>
 			<key>INIntentDescriptionID</key>
 			<string>nChTLr</string>
 			<key>INIntentIneligibleForSuggestions</key>
@@ -36,7 +36,7 @@
 					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
 					<true/>
 					<key>INIntentParameterCombinationTitle</key>
-					<string>Search With Cliqz</string>
+					<string>Search With Gexsi</string>
 					<key>INIntentParameterCombinationTitleID</key>
 					<string>WogcPW</string>
 					<key>INIntentParameterCombinationUpdatesLinked</key>
@@ -99,7 +99,7 @@
 				</array>
 			</dict>
 			<key>INIntentTitle</key>
-			<string>Search With Cliqz</string>
+			<string>Search With Gexsi</string>
 			<key>INIntentTitleID</key>
 			<string>uYCcdq</string>
 			<key>INIntentType</key>
