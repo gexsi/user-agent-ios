@@ -57,8 +57,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2B656F4C24AB68A7005DE5D3"
-               BuildableName = "WhiteLabel.app"
-               BlueprintName = "WhiteLabel"
+               BuildableName = "Gexsi.app"
+               BlueprintName = "Gexsi"
                ReferencedContainer = "container:UserAgent.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

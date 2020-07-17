@@ -191,7 +191,7 @@ def extensions
   fuzi
 end
 
-target 'WhiteLabel' do
+target 'Gexsi' do
   main_app
   firebase
 end

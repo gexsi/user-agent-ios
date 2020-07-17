@@ -6,8 +6,8 @@
 #
 
 if [ -z "$1" ]; then
-   echo "No argument specified. Fallback to WhiteLabel"
-   sh Branding/setup.sh WhiteLabel ./
+   echo "No argument specified. Fallback to Gexsi"
+   sh Branding/setup.sh Gexsi ./
 else
    sh Branding/setup.sh $1 ./
 fi
