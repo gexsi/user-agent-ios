@@ -191,14 +191,6 @@ def extensions
   fuzi
 end
 
-target 'Cliqz' do
-  main_app
-end
-
-target 'Ghostery' do
-  main_app
-end
-
 target 'WhiteLabel' do
   main_app
   firebase
@@ -248,9 +240,9 @@ target 'Shared' do
   xclogger
 end
 
-target 'Today' do
-  react_native
-end
+#target 'Today' do
+#  react_native
+#end
 
 pre_install do |installer|
   flipper_pre_install(installer)
