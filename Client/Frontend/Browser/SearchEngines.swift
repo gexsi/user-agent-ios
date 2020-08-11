@@ -156,7 +156,10 @@ class SearchEngines {
     }
 
     fileprivate func resetDisabledEngineNamesIfNeeded() {
-        let defaultEnabledEnginesIDs = ["google-b-m", "google-b-1-m", "bing", "ddg", "gexsi"]
+        var defaultEnabledEnginesIDs = ["google-b-m", "google-b-1-m", "bing", "ddg"]
+        if !Features.Search.defaultEngineName.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+            defaultEnabledEnginesIDs.append(Features.Search.defaultEngineName.lowercased())
+        }
         let reset = self.prefs.boolForKey(ResetDisabledEngineNames)
         if reset == nil || !reset! {
             var disabledNames = [String]()
