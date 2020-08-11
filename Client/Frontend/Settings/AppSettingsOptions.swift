@@ -213,13 +213,28 @@ class ShowIntroductionSetting: Setting {
     }
 }
 
-class SendFeedbackSetting: Setting {
+class AboutSetting: Setting {
     override var title: NSAttributedString? {
-        return NSAttributedString(string: Strings.Settings.Support.FAQAndSupport, attributes: [NSAttributedString.Key.foregroundColor: Theme.tableView.rowText])
+        let aboutTitle = String(format: Strings.Settings.Support.About, AppInfo.displayName)
+        return NSAttributedString(string: aboutTitle, attributes: [NSAttributedString.Key.foregroundColor: Theme.tableView.rowText])
     }
 
     override var url: URL? {
-        return URL(string: Strings.FeedbackWebsite)
+        return URL(string: Strings.About)
+    }
+
+    override func onClick(_ navigationController: UINavigationController?) {
+        setUpAndPushSettingsContentViewController(navigationController)
+    }
+}
+
+class ContactSetting: Setting {
+    override var title: NSAttributedString? {
+        return NSAttributedString(string: Strings.Settings.Support.Contact, attributes: [NSAttributedString.Key.foregroundColor: Theme.tableView.rowText])
+    }
+
+    override var url: URL? {
+        return URL(string: Strings.Contact)
     }
 
     override func onClick(_ navigationController: UINavigationController?) {
@@ -357,6 +372,20 @@ class TodayWidgetSetting: Setting {
         let viewController = TodayWidgetViewController()
         viewController.profile = self.profile
         navigationController?.pushViewController(viewController, animated: true)
+    }
+}
+
+class TermsOfUseSetting: Setting {
+    override var title: NSAttributedString? {
+        return NSAttributedString(string: Strings.Settings.Support.TermsOfUse, attributes: [NSAttributedString.Key.foregroundColor: Theme.tableView.rowText])
+    }
+
+    override var url: URL? {
+        return URL(string: Strings.TermsOfUse)
+    }
+
+    override func onClick(_ navigationController: UINavigationController?) {
+        setUpAndPushSettingsContentViewController(navigationController)
     }
 }
 

@@ -198,7 +198,10 @@ class AppSettingsTableViewController: SettingsTableViewController {
         if Onboarding.isEnabled {
             supportSettigns.insert(ShowIntroductionSetting(settings: self), at: 0)
         }
-        supportSettigns.append(SendFeedbackSetting())
+        supportSettigns.append(AboutSetting())
+        supportSettigns.append(ContactSetting())
+        supportSettigns.append(TermsOfUseSetting())
+        supportSettigns.append(PrivacyPolicySetting())
         if Features.HumanWeb.isEnabled {
             supportSettigns.append(HumanWebSetting(prefs: prefs))
         }
@@ -206,7 +209,6 @@ class AppSettingsTableViewController: SettingsTableViewController {
             let telemetrySetting = TelemetrySetting(prefs: prefs, attributedStatusText: NSAttributedString(string: Strings.Settings.Support.SendUsageStatus, attributes: [NSAttributedString.Key.foregroundColor: Theme.tableView.headerTextLight]))
             supportSettigns.append(telemetrySetting)
         }
-        supportSettigns.append(PrivacyPolicySetting())
         return SettingSection(title: NSAttributedString(string: Strings.Settings.Support.SectionTitle), children: supportSettigns)
     }
 
