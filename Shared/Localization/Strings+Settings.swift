@@ -131,9 +131,11 @@ extension Strings {
         public struct Support {
             public static let SectionTitle = NSLocalizedString("Settings.Support.SectionTitle", tableName: "Settings", comment: "Support section title")
             public static let HumanWebTitle = NSLocalizedString("Settings.Support.HumanWebTitle", tableName: "Settings", comment: "The title for the human web setting")
-            public static let FAQAndSupport = NSLocalizedString("Settings.Support.FAQAndSupport", tableName: "Settings", comment: "Menu item in settings used to open https://cliqz.com/support")
+            public static let About = NSLocalizedString("Settings.Support.About", tableName: "Settings", comment: "Menu item in settings used to open about page")
+            public static let Contact = NSLocalizedString("Settings.Support.Contact", tableName: "Settings", comment: "Menu item in settings used to open https://cliqz.com/support")
             public static let ShowTour = NSLocalizedString("Settings.Support.ShowTour", tableName: "Settings", comment: "Show the on-boarding screen again from the settings")
             public static let PrivacyPolicy = NSLocalizedString("Settings.Support.PrivacyPolicy", tableName: "Settings", comment: "Show Firefox Browser Privacy Policy page from the Privacy section in the settings. See https://www.mozilla.org/privacy/firefox/")
+            public static let TermsOfUse = NSLocalizedString("Settings.Support.TermsOfUse", tableName: "Settings", comment: "Show Browser Terms Of Use page")
             public static let SendUsageTitle = NSLocalizedString("Settings.Support.SendUsageTitle", tableName: "Settings", comment: "The title for the setting to send usage data.")
             public static let SendUsageStatus = String(format: NSLocalizedString("Settings.Support.SendUsageStatus", tableName: "Settings", comment: "A short description that explains why mozilla collects usage data."), AppInfo.displayName, AppInfo.displayName)
         }
