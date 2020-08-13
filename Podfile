@@ -185,6 +185,10 @@ def firebase
   pod 'Firebase/Analytics'
 end
 
+def facebook
+  pod 'FBSDKCoreKit/Swift'
+end
+
 def extensions
   snapkit
   swiftyjson
@@ -194,6 +198,7 @@ end
 target 'Gexsi' do
   main_app
   firebase
+  facebook
 end
 
 target 'Storage' do
