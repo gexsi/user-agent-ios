@@ -55,7 +55,7 @@ class SearchResultsViewController: UIViewController {
     private let profile: Profile
 
     // MARK: - Initialization
-    init(profile: Profile, isPrivate: Bool) {
+    init(profile: Profile, useCases: UseCases) {
         self.profile = profile
         super.init(nibName: nil, bundle: nil)
     }

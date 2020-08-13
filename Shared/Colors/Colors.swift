@@ -31,6 +31,7 @@ extension UIColor {
     public static let TextHighlightBlue = UIColor(named: "TextHighlightBlue")!
     public static let ForgetMode = UIColor(named: "ForgetMode")!
     public static let ReaderModeSepia = UIColor(named: "ReaderModeSepia")!
+    public static let Link = UIColor(named: "Link")!
 
     // Functional Colors
     public static let DarkGreen = UIColor(named: "DarkGreen")!
