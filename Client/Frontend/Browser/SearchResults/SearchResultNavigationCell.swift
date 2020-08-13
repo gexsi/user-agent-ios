@@ -58,7 +58,7 @@ class SearchResultNavigationCell: UITableViewCell {
         self.titleLabel.snp.makeConstraints { (make) in
             make.left.equalTo(self.iconImageView.snp.right).offset(10)
             make.centerY.equalTo(self.iconImageView.snp.centerY)
-            make.right.lessThanOrEqualToSuperview().offset(10)
+            make.right.equalToSuperview().offset(-10)
         }
         self.descriptionLabel.textColor = UIColor.Link
         self.descriptionLabel.font = DynamicFontHelper.defaultHelper.SmallSizeRegularWeightAS
@@ -66,7 +66,7 @@ class SearchResultNavigationCell: UITableViewCell {
         self.descriptionLabel.snp.makeConstraints { (make) in
             make.left.equalTo(self.titleLabel.snp.left)
             make.top.equalTo(self.titleLabel.snp.bottom)
-            make.right.lessThanOrEqualToSuperview().offset(10)
+            make.right.equalToSuperview().offset(-10)
         }
         let longPress = UILongPressGestureRecognizer(target: self, action: #selector(onLongPressGestureRecognized(_:)))
         self.contentView.addGestureRecognizer(longPress)

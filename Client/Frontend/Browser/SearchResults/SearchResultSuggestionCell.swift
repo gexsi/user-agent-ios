@@ -46,7 +46,7 @@ class SearchResultSuggestionCell: UITableViewCell {
         self.titleLabel.snp.makeConstraints { (make) in
             make.left.equalTo(imageView.snp.right).offset(10)
             make.centerY.equalToSuperview()
-            make.right.lessThanOrEqualToSuperview().offset(10)
+            make.right.equalToSuperview().offset(-10)
         }
     }
 
