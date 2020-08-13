@@ -28,7 +28,60 @@ class SearchSuggestClient {
         self.userAgent = userAgent
     }
 
-    func query(_ query: String, callback: @escaping (_ response: [String]?, _ error: NSError?) -> Void) {
+    func requestImpression(urlString: String?) {
+        guard let urlString = urlString, let url = URL(string: urlString) else {
+            return
+        }
+        self.urlSession.dataTask(with: url).resume()
+    }
+
+    func query(_ query: String, callback: @escaping (_ response: (suggestions: [String], navigations: [[String: Any]])?, _ error: NSError?) -> Void) {
+        let url = searchEngine.suggestURLForQuery(query)
+        if url == nil {
+            let error = NSError(domain: SearchSuggestClientErrorDomain, code: SearchSuggestClientErrorInvalidEngine, userInfo: nil)
+            callback(nil, error)
+            return
+        }
+
+        task = urlSession.dataTask(with: url!) { (data, response, error) in
+            if let error = error {
+                callback(nil, error as NSError?)
+                return
+            }
+
+            guard let data = data, let _ = validatedHTTPResponse(response, statusCode: 200..<300) else {
+                let error = NSError(domain: SearchSuggestClientErrorDomain, code: SearchSuggestClientErrorInvalidResponse, userInfo: nil)
+                callback(nil, error as NSError?)
+                return
+            }
+
+            let json = JSON(data)
+            let dict = json.dictionaryObject
+            let array = dict?["results"] as? [[String: Any]]
+            let mappedQueries = array?.compactMap({ (dict) -> String? in
+                guard let type = dict["type"] as? String, let query = dict["q"] as? String else {
+                    return nil
+                }
+                if type == "QUERY" && !query.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+                    return query
+                }
+                return nil
+            }) ?? []
+            let mappedNavigations = array?.compactMap({ (dict) -> [String: Any]? in
+                guard let type = dict["type"] as? String else {
+                    return nil
+                }
+                if type == "NAVIGATION" {
+                    return dict
+                }
+                return nil
+            }) ?? []
+            callback((mappedQueries, mappedNavigations), nil)
+        }
+        task?.resume()
+    }
+
+    /*func query(_ query: String, callback: @escaping (_ response: [String]?, _ error: NSError?) -> Void) {
         let url = searchEngine.suggestURLForQuery(query)
         if url == nil {
             let error = NSError(domain: SearchSuggestClientErrorDomain, code: SearchSuggestClientErrorInvalidEngine, userInfo: nil)
@@ -70,7 +123,7 @@ class SearchSuggestClient {
             callback(suggestions, nil)
         }
         task?.resume()
-    }
+    }*/
 
     func cancelPendingRequest() {
         task?.cancel()

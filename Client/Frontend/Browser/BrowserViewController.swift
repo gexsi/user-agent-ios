@@ -931,8 +931,7 @@ class BrowserViewController: UIViewController {
             return
         }
 
-        let isPrivate = tabManager.selectedTab?.isPrivate ?? false
-        let searchController = SearchResultsViewController(profile: profile, isPrivate: isPrivate)
+        let searchController = SearchResultsViewController(profile: profile, useCases: self.useCases)
 
         self.searchController = searchController
     }
@@ -957,7 +956,7 @@ class BrowserViewController: UIViewController {
             make.top.equalTo(urlBar.snp.bottom).offset(-self.urlBar.frame.size.height / 2)
             make.left.equalTo(urlBar.locationContainer.snp.left)
             make.right.equalTo(urlBar.locationContainer.snp.right)
-            make.bottom.equalToSuperview()
+            make.bottom.lessThanOrEqualTo(self.view.safeAreaLayoutGuide.snp.bottom).offset(-20).priority(.required)
         }
 
         view.bringSubviewToFront(notchAreaCover)
