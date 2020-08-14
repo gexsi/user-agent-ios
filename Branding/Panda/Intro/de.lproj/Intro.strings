@@ -1,0 +1,20 @@
+/* Description for the 'AntiTracking' panel in the First Run tour. */
+"Intro.Slides.AntiTracking.Description" = "Unser intelligentes Anti-Tracking verhindert, dass Datensammler dich quer durchs Netz verfolgen. Unser Werbeblocker hält dir aufdringliche Anzeigen vom Hals.";
+
+/* Title for the 'AntiTracking' panel in the First Run tour. */
+"Intro.Slides.AntiTracking.Title" = "Höchster Datenschutz";
+
+/* Description for the 'Search' panel in the First Run tour. */
+"Intro.Slides.Search.Description" = "Panda ist eine Suchmaschine, die sich für eine bessere Welt einsetzt. Deine Suchanfragen generieren Einnahmen. Mit diesen unterstützt du Projekte und Kampagnen des WWF.";
+
+/* Title for the 'Search' panel in the First Run tour. */
+"Intro.Slides.Search.Title" = "Suchen und Gutes tun";
+
+/* Button title for skipping tour. */
+"Intro.Slides.Skip.Title" = "Überspringen";
+
+/* Button title for starting browsing. */
+"Intro.Slides.Welcome.Button.Title" = "Gemeinsam Zukunft gestalten";
+
+/* Description for the 'Welcome' panel in the First Run tour. */
+"Intro.Slides.Welcome.Description" = "Der WWF will die weltweite Zerstörung der Natur und Umwelt stoppen und eine Zukunft gestalten, in der Mensch und Natur in Einklang miteinander leben.";

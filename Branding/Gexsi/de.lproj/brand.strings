@@ -15,3 +15,6 @@
 "about" = "https://gexsi.com/about/";
 "termsOfUse" = "https://gexsi.com/about/nutzungsbedingungen/";
 "licensesHeader" = "Gexsi";
+
+/* The text shown in the URL bar on about:home */
+"UrlBar.Placeholder" = "Suchen und Gutes tun";

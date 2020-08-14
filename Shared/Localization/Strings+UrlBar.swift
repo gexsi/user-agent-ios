@@ -10,6 +10,6 @@ import Foundation
 
 extension Strings {
     public struct UrlBar {
-        public static let Placeholder = NSLocalizedString("UrlBar.Placeholder", comment: "The text shown in the URL bar on about:home")
+        public static let Placeholder = NSLocalizedString("UrlBar.Placeholder", tableName: "brand", comment: "The text shown in the URL bar on about:home")
     }
 }

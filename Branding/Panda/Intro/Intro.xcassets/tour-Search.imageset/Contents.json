@@ -1,0 +1,25 @@
+{
+  "images" : [
+    {
+      "filename" : "2C-gexsi-transparent-german.png",
+      "idiom" : "universal"
+    },
+    {
+      "filename" : "2C-gexsi-transparent-german-1.png",
+      "idiom" : "universal",
+      "locale" : "de"
+    },
+    {
+      "filename" : "2C-gexsi-transparent_english.png",
+      "idiom" : "universal",
+      "locale" : "en"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "localizable" : true
+  }
+}
