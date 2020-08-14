@@ -74,7 +74,7 @@ class Constants: NSObject {
             "fontSizeSmall": DynamicFontHelper.defaultHelper.SmallSizeRegularWeightAS.pointSize,
             "fontSizeMedium": DynamicFontHelper.defaultHelper.MediumSizeRegularWeightAS.pointSize,
             "fontSizeLarge": DynamicFontHelper.defaultHelper.LargeSizeRegularWeightAS.pointSize,
-            "brandColor": UIColor.Blue.hexString,
+            "brandColor": UIColor.Brand.hexString,
             "brandTintColor": Theme.general.controlTint.hexString,
         ]
     }

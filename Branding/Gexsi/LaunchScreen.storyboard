@@ -19,7 +19,7 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UUC-A1-LLN">
                                 <rect key="frame" x="0.0" y="746" width="414" height="150"/>
-                                <color key="backgroundColor" name="CliqzBlue"/>
+                                <color key="backgroundColor" name="Brand"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="eUi-W9-h8J"/>
                                 </constraints>
@@ -49,8 +49,8 @@
     </scenes>
     <resources>
         <image name="splash" width="750" height="1334"/>
-        <namedColor name="CliqzBlue">
-            <color red="0.0" green="0.68199998140335083" blue="0.94099998474121094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="Brand">
+            <color red="0.0" green="0.75300002098083496" blue="0.74500000476837158" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

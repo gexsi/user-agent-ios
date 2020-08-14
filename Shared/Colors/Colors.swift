@@ -10,7 +10,7 @@ import UIKit
 
 extension UIColor {
     // Primary Colors
-    public static let Blue = UIColor(named: "Blue")!
+    public static let Brand = UIColor(named: "Brand")!
     public static let Black = UIColor(named: "Black")!
     public static let White = UIColor(named: "White")!
 

@@ -52,7 +52,6 @@
 		2B4400E8242B9DB500DD26DE /* SiriActivityTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4400E5242B9DB500DD26DE /* SiriActivityTypes.swift */; };
 		2B4400EB242BA02300DD26DE /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 2B4400ED242BA02300DD26DE /* Intents.intentdefinition */; };
 		2B4EFBDD239E6F53007A10E0 /* URIFixup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C744CC1A687D6C004CE85D /* URIFixup.swift */; };
-		2B571CB024E6781D00F17C1A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2BAD2B4424E676060098F3D1 /* Info.plist */; };
 		2B571CB124E6783E00F17C1A /* brand.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BAD2B4224E676060098F3D1 /* brand.xcassets */; };
 		2B571CB224E6785500F17C1A /* Intro.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2BAD2B1924E676060098F3D1 /* Intro.strings */; };
 		2B571CB324E6786400F17C1A /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAD2B1C24E676060098F3D1 /* IntroViewController.swift */; };
@@ -63,6 +62,7 @@
 		2B571CB824E6789E00F17C1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BAD2B1724E676060098F3D1 /* LaunchScreen.storyboard */; };
 		2B571CB924E678A500F17C1A /* brand.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2BAD2B0E24E676060098F3D1 /* brand.strings */; };
 		2B571CBA24E678AA00F17C1A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2BAD2B0A24E676060098F3D1 /* InfoPlist.strings */; };
+		2B571CBD24E6899700F17C1A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2BAD2B2024E676060098F3D1 /* GoogleService-Info.plist */; };
 		2B5D877924E446E800768664 /* SearchResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5D877824E446E800768664 /* SearchResultView.swift */; };
 		2B5D877B24E5419E00768664 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE7522C24E4443A00482803 /* SearchResultsViewController.swift */; };
 		2B5D877D24E542F600768664 /* SearchResultSuggestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5D877C24E542F600768664 /* SearchResultSuggestionCell.swift */; };
@@ -4544,7 +4544,6 @@
 				2BAD2ABC24E6755B0098F3D1 /* Storage.strings in Resources */,
 				2BAD2ABD24E6755B0098F3D1 /* top_sites.json in Resources */,
 				2BAD2ABE24E6755B0098F3D1 /* Reader.html in Resources */,
-				2B571CB024E6781D00F17C1A /* Info.plist in Resources */,
 				2BAD2ABF24E6755B0098F3D1 /* 3DTouchActions.strings in Resources */,
 				2B571CBA24E678AA00F17C1A /* InfoPlist.strings in Resources */,
 				2BAD2AC024E6755B0098F3D1 /* Licenses.html in Resources */,
@@ -4567,6 +4566,7 @@
 				2BAD2AD224E6755B0098F3D1 /* Authenticator.strings in Resources */,
 				2BAD2AD324E6755B0098F3D1 /* SearchPlugins in Resources */,
 				2BAD2AD424E6755B0098F3D1 /* MailSchemes.plist in Resources */,
+				2B571CBD24E6899700F17C1A /* GoogleService-Info.plist in Resources */,
 				2BAD2AD524E6755B0098F3D1 /* ReaderMode.strings in Resources */,
 				2BAD2AD624E6755B0098F3D1 /* adult-domains.bin in Resources */,
 				2BAD2AD724E6755B0098F3D1 /* ControlCenter.strings in Resources */,
