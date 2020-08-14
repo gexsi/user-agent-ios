@@ -841,7 +841,6 @@
 		4667B092242123EC001A4197 /* Bridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4667B091242123EC001A4197 /* Bridge.swift */; };
 		4667B0952421266B001A4197 /* Today.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4667B0972421266B001A4197 /* Today.strings */; };
 		466B372A246301A200747C50 /* Features.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466B3729246301A200747C50 /* Features.swift */; };
-		467781D6242B64CD00B609F0 /* Strings+UrlBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467781D5242B64CD00B609F0 /* Strings+UrlBar.swift */; };
 		467C107024572E66003F7101 /* Strings+Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467C106F24572E66003F7101 /* Strings+Search.swift */; };
 		46BBFA6023575AEC00283594 /* Strings+PrivateBrowsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BBFA5F23575AEC00283594 /* Strings+PrivateBrowsing.swift */; };
 		46BBFA6223575B0000283594 /* Strings+Brand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BBFA6123575B0000283594 /* Strings+Brand.swift */; };
@@ -1597,7 +1596,6 @@
 		4667B0962421266B001A4197 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Today.strings; sourceTree = "<group>"; };
 		4667B0982421266E001A4197 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Today.strings; sourceTree = "<group>"; };
 		466B3729246301A200747C50 /* Features.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features.swift; sourceTree = "<group>"; };
-		467781D5242B64CD00B609F0 /* Strings+UrlBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Strings+UrlBar.swift"; sourceTree = "<group>"; };
 		467805F323154A160031E226 /* libSentry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSentry.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		46796FF624810C1100E64738 /* Features+toDict.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Features+toDict.swift"; sourceTree = "<group>"; };
 		467C106F24572E66003F7101 /* Strings+Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Strings+Search.swift"; sourceTree = "<group>"; };
@@ -3185,7 +3183,6 @@
 				46BBFA5F23575AEC00283594 /* Strings+PrivateBrowsing.swift */,
 				467C106F24572E66003F7101 /* Strings+Search.swift */,
 				AC33579B2387F2CC00693969 /* Strings+Storage.swift */,
-				467781D5242B64CD00B609F0 /* Strings+UrlBar.swift */,
 				2BF5F141246E6CE500837817 /* Strings+AlertController.swift */,
 				2BD94C33246E8AB000CAD463 /* Strings+Accessibility.swift */,
 				2BE3BD79246E9DF90066D0BD /* Strings+ForceTouchActions.swift */,
@@ -5367,7 +5364,6 @@
 				2BF5F142246E6CE500837817 /* Strings+AlertController.swift in Sources */,
 				E65075AE1E37F7AB006961AC /* UIImageExtensions.swift in Sources */,
 				E65075A71E37F7AB006961AC /* ScannerExtensions.swift in Sources */,
-				467781D6242B64CD00B609F0 /* Strings+UrlBar.swift in Sources */,
 				E65075A21E37F7AB006961AC /* HexExtensions.swift in Sources */,
 				288A2DB61AB8B38D0023ABC3 /* Result.swift in Sources */,
 				2B9CE16E246978D7007E8286 /* Onboarding.swift in Sources */,

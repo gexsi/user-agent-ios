@@ -13,8 +13,12 @@
 "privacyPolicyWebsite" = "https://gexsi.com/about/en/privacy-policy";
 "contact" = "https://gexsi.com/about/en/contact/";
 "about" = "https://gexsi.com/about/en/";
+"faq" = "";
 "termsOfUse" = "https://gexsi.com/about/en/terms-of-use/";
 "licensesHeader" = "Gexsi";
 
 /* The text shown in the URL bar on about:home */
 "UrlBar.Placeholder" = "Search and do good";
+
+/* Label for the button, displayed in the menu, used to open the What's new page. */
+"Menu.OpenWhatsNewAction.Title" = "Current Project";

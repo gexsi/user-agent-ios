@@ -29,6 +29,12 @@ extension Features.Search {
     }
 }
 
+extension Features.FAQ {
+    public static var isEnabled: Bool {
+        return true
+    }
+}
+
 extension Features.Search.QuickSearch {
     public static var isEnabled: Bool {
         return false

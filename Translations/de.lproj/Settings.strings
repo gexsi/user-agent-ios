@@ -18,6 +18,9 @@
 /* Menu item in settings used to open input.mozilla.org where people can submit feedback */
 "Settings.Support.Contact" = "Kontakt";
 
+/* Menu item in settings used to open input.mozilla.org where people can submit feedback */
+"Settings.Support.FAQ" = "FAQ";
+
 /* Menu item in settings used to open about page */
 "Settings.Support.About" = "Über %@";
 

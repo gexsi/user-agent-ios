@@ -523,7 +523,7 @@ extension PhotonActionSheetProtocol {
 
     private func openWhatsNewItem(vcDelegate: PageOptionsVC) -> PhotonActionSheetItem {
         let badgeIconName: String? = (self.profile.prefs.boolForKey(PrefsKeys.WhatsNewBubble) == nil) ? "menuBadge" : nil
-        let openSettings = PhotonActionSheetItem(title: Strings.Menu.WhatsNewTitleString, iconString: "menu-whatsNew", isEnabled: badgeIconName != nil, badgeIconNamed: badgeIconName) { action in
+        let openSettings = PhotonActionSheetItem(title: Strings.WhatsNewTitleString, iconString: "menu-whatsNew", isEnabled: badgeIconName != nil, badgeIconNamed: badgeIconName) { action in
             self.profile.prefs.setBool(true, forKey: PrefsKeys.WhatsNewBubble)
             (vcDelegate as? BrowserViewController)?.presentWhatsNewViewController()
         }

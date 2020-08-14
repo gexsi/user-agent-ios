@@ -71,6 +71,12 @@ public struct Features {
         }
     }
 
+    public struct FAQ {
+        public static var isEnabled: Bool {
+            return false
+        }
+    }
+
     public struct Icons {
         public enum IconType: String {
             case cliqz = "cliqz"
