@@ -106,7 +106,7 @@ class ActionMenuColor {
     }
     var iPhoneBackground: UIColor { return Theme.browser.background.withAlphaComponent(0.7) }
     var closeButtonBackground: UIColor { return UIColor.defaultBackground }
-    var closeButtonTitleColor: UIColor { return UIColor.BrightBlue }
+    var closeButtonTitleColor: UIColor { return UIColor.Brand }
 }
 
 class URLBarColor {
@@ -330,7 +330,7 @@ class GeneralColor {
     var highlightBlue: UIColor { return UIColor.Blue40 }
     var destructiveRed: UIColor { return UIColor.BrightRed }
     var separator: UIColor { return Theme.defaultSeparator }
-    var controlTint: UIColor { return UIColor.BrightBlue }
+    var controlTint: UIColor { return UIColor.Brand }
 
     var settingsTextPlaceholder: UIColor {
         if #available(iOS 13.0, *) {

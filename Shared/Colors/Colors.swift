@@ -18,7 +18,6 @@ extension UIColor {
     public static let DarkRain = UIColor(named: "DarkRain")!
     public static let CloudySky = UIColor(named: "CloudySky")!
     public static let LightSky = UIColor(named: "LightSky")!
-    public static let BrightBlue = UIColor(named: "BrightBlue")!
     public static let DarkBlue = UIColor(named: "DarkBlue")!
     public static let LightBlue = UIColor(named: "LightBlue")!
     public static let LightGrey = UIColor(named: "LightGrey")!

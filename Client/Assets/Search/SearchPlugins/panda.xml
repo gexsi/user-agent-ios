@@ -10,11 +10,11 @@
     <Param name="rtag" value="panda"/>
     <Param name="fmt" value="rch2"/>
 </Url>
-<Url type="text/html" method="GET" template="https://search.gexsi.com/search">
+<Url type="text/html" method="GET" template="https://panda-search.org/search/">
     <Param name="q" value="{searchTerms}"/>
     <Param name="gx1" value="ge"/>
     <Param name="gx2" value="ap"/>
     <Param name="gx3" value="io"/>
 </Url>
-<SearchForm>https://search.gexsi.com</SearchForm>
+<SearchForm>https://panda-search.org/search/</SearchForm>
 </SearchPlugin>

@@ -40,6 +40,7 @@
 		28D52E2F1BCDF53900187A1D /* ResetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D52E081BCDF44100187A1D /* ResetTests.swift */; };
 		28E08C991AF44EF9009BA2FA /* SQLiteHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCAE2551ABB531100877008 /* SQLiteHistory.swift */; };
 		28E08C9A1AF44F00009BA2FA /* BrowserSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282915E51AF1A7920006EEB5 /* BrowserSchema.swift */; };
+		2B08FD2B24E690ED0063805E /* Features.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAD2B3A24E676060098F3D1 /* Features.swift */; };
 		2B0E93692407A92300ED7703 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3905274B1C874D35007E0BB7 /* NotificationCenter.framework */; };
 		2B0E936C2407A92300ED7703 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E936B2407A92300ED7703 /* TodayViewController.swift */; };
 		2B139CF824B4B23800D43BDA /* brand.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2B139CFA24B4B23800D43BDA /* brand.strings */; };
@@ -5775,6 +5776,7 @@
 				2BAD29D124E6755B0098F3D1 /* TestAppDelegate.swift in Sources */,
 				2BAD29D224E6755B0098F3D1 /* BrowserSearch.swift in Sources */,
 				2BAD29D324E6755B0098F3D1 /* AllowList.swift in Sources */,
+				2B08FD2B24E690ED0063805E /* Features.swift in Sources */,
 				2BAD29D424E6755B0098F3D1 /* BrowserCoreClient.swift in Sources */,
 				2BAD29D524E6755B0098F3D1 /* BookmarkDetailViewController.swift in Sources */,
 				2BAD29D624E6755B0098F3D1 /* Clearables.swift in Sources */,
@@ -7407,7 +7409,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_Developer;
 				BUNDLE_DISPLAY_NAME = "${BUNDLE_DISPLAY_NAME}";
-				CODE_SIGN_ENTITLEMENTS = "$(inherit)Branding/Gexsi/Entitlements/GexsiDebug.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "$(inherit)Branding/Panda/Entitlements/PandaDebug.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = "${APP_BUILD_VERSION}";
@@ -7465,7 +7467,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_Adhoc;
 				BUNDLE_DISPLAY_NAME = "${BUNDLE_DISPLAY_NAME}";
-				CODE_SIGN_ENTITLEMENTS = "$(inherit)Branding/Gexsi/Entitlements/GexsiAdHoc.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "$(inherit)Branding/Panda/Entitlements/PandaAdHoc.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = "${APP_BUILD_VERSION}";
@@ -7523,7 +7525,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUNDLE_DISPLAY_NAME = "${BUNDLE_DISPLAY_NAME}";
-				CODE_SIGN_ENTITLEMENTS = "$(inherit)Branding/Gexsi/Entitlements/Gexsi.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "$(inherit)Branding/Panda/Entitlements/Panda.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = "${APP_BUILD_VERSION}";
@@ -7566,7 +7568,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUNDLE_DISPLAY_NAME = "${BUNDLE_DISPLAY_NAME}";
-				CODE_SIGN_ENTITLEMENTS = "$(inherit)Branding/Gexsi/Entitlements/Gexsi.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "$(inherit)Branding/Panda/Entitlements/Panda.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = "${APP_BUILD_VERSION}";
