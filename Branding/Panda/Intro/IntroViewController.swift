@@ -17,7 +17,7 @@ struct IntroUX {
     static let SkipButtonHeight = 50
     static let StartBrowsingButtonColor = UIColor.Brand
     static let StartBrowsingButtonHeight = UIScreen.main.bounds.width <= 320 ? 40 : 50
-    static let StartBrowsingButtonWidth = UIScreen.main.bounds.width <= 320 ? 220 : 260
+    static let StartBrowsingButtonWidth = UIScreen.main.bounds.width <= 320 ? 240 : 280
     static let PageControlHeight = 40
     static let FadeDuration = 0.25
     static let LogoImageSize = 42.0
@@ -81,7 +81,7 @@ class IntroViewController: UIViewController {
     // Because a stackview cannot have a background color
     fileprivate var imagesBackgroundView = UIView()
 
-    fileprivate var logoImageView = UIImageView(image: UIImage(named: "tour-Logo"))
+    fileprivate var logoImageView = UIImageView(image: UIImage(named: "tour-Search"))
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -109,7 +109,7 @@ class IntroViewController: UIViewController {
             make.bottom.equalTo(imageViewContainer)
         }
         imageViewContainer.snp.makeConstraints { make in
-            make.top.equalTo(self.view.safeAreaLayoutGuide.snp.topMargin)
+            make.top.equalTo(self.view.snp.top)
             make.left.equalTo(self.scrollView)
             make.height.equalTo(self.view.snp.height).multipliedBy(0.5)
         }
@@ -163,13 +163,11 @@ class IntroViewController: UIViewController {
         let imageContentView = UIView()
         imageContentView.backgroundColor = .clear
         let imageView = UIImageView(image: image)
+        imageView.clipsToBounds = true
         imageView.contentMode = card.imageContentMode
         imageContentView.addSubview(imageView)
         imageView.snp.makeConstraints { make in
-            make.bottom.equalTo(imageContentView)
-            make.height.equalTo(imageContentView.snp.height).offset(IntroUX.ContainerImageTopOffes)
-            make.centerX.equalTo(imageContentView.snp.centerX)
-            make.height.equalTo(imageView.snp.width).multipliedBy(975.0/879.0)
+            make.edges.equalTo(imageContentView)
         }
         imageViewContainer.addArrangedSubview(imageContentView)
         imageContentView.snp.makeConstraints { make in
@@ -291,11 +289,10 @@ extension IntroViewController: UIScrollViewDelegate {
         let page = Int(round(scrollView.contentOffset.x / scrollView.frame.size.width))
         if self.cards.count > page {
             self.logoImageView.isHidden = false
-            if self.cards.count == page + 1 {
-                self.logoImageView.image = nil
-                self.logoImageView.isHidden = true
+            if page == 0 {
+                self.logoImageView.image = UIImage(named: "tour-Search")
             } else if page == 1 {
-                self.logoImageView.image = UIImage(named: "tour-lock")
+                self.logoImageView.image = UIImage(named: "tour-Lock")
             } else {
                 self.logoImageView.image = UIImage(named: "tour-Logo")
             }
@@ -420,9 +417,9 @@ struct IntroCard {
     }
 
     static func defaultCards() -> [IntroCard] {
-        let search = IntroCard(title: Strings.Intro.Slides.Search.Title, text: Strings.Intro.Slides.Search.Description, imageName: "tour-Search", imageContentMode: .scaleAspectFit, imageBackgroundColor: UIColor.Brand)
-        let antiTracking = IntroCard(title: Strings.Intro.Slides.AntiTracking.Title, text: Strings.Intro.Slides.AntiTracking.Description, imageName: "tour-antiTracking", imageContentMode: .scaleAspectFit, imageBackgroundColor: UIColor.Brand)
-        let welcome = IntroCard(title: "", text: Strings.Intro.Slides.Welcome.Description, imageName: "tour-LogoFull", imageContentMode: .scaleAspectFit, buttonText: Strings.Intro.Slides.Welcome.ButtonTitle, buttonSelector: #selector(IntroViewController.startBrowsing).description)
+        let search = IntroCard(title: Strings.Intro.Slides.Search.Title, text: Strings.Intro.Slides.Search.Description, imageName: "tour-Panda", imageContentMode: .scaleAspectFill, imageBackgroundColor: UIColor.Brand)
+        let antiTracking = IntroCard(title: Strings.Intro.Slides.AntiTracking.Title, text: Strings.Intro.Slides.AntiTracking.Description, imageName: "tour-antiTracking", imageContentMode: .scaleAspectFill, imageBackgroundColor: UIColor.Brand)
+        let welcome = IntroCard(title: Strings.Intro.Slides.Welcome.Title, text: Strings.Intro.Slides.Welcome.Description, imageName: "tour-LogoFull", imageContentMode: .scaleAspectFill, imageBackgroundColor: UIColor.Brand, buttonText: Strings.Intro.Slides.Welcome.ButtonTitle, buttonSelector: #selector(IntroViewController.startBrowsing).description)
         return [search, antiTracking, welcome]
     }
 

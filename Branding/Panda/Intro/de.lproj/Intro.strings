@@ -14,7 +14,10 @@
 "Intro.Slides.Skip.Title" = "Überspringen";
 
 /* Button title for starting browsing. */
-"Intro.Slides.Welcome.Button.Title" = "Gemeinsam Zukunft gestalten";
+"Intro.Slides.Welcome.Button.Title" = "Suchen und Gutes tun";
+
+/* Title for the 'Welcome' panel in the First Run tour. */
+"Intro.Slides.Welcome.Title" = "Gemeinsam Zukunft gestalten";
 
 /* Description for the 'Welcome' panel in the First Run tour. */
-"Intro.Slides.Welcome.Description" = "Der WWF will die weltweite Zerstörung der Natur und Umwelt stoppen und eine Zukunft gestalten, in der Mensch und Natur in Einklang miteinander leben.";
+"Intro.Slides.Welcome.Description" = "Setze ein Zeichen und mach Panda jetzt zu deiner Suchmaschine!";

@@ -1,16 +1,16 @@
 {
   "images" : [
     {
-      "filename" : "dashboard-DE-1.png",
+      "filename" : "antiTrackingDE.png",
       "idiom" : "universal"
     },
     {
-      "filename" : "dashboard-DE.png",
+      "filename" : "antiTrackingDE-1.png",
       "idiom" : "universal",
       "locale" : "de"
     },
     {
-      "filename" : "dashboard-EN.png",
+      "filename" : "antiTrackingEN.png",
       "idiom" : "universal",
       "locale" : "en"
     }

@@ -22,6 +22,7 @@ extension Strings {
             }
             public struct Welcome {
                 public static let ButtonTitle = NSLocalizedString("Intro.Slides.Welcome.Button.Title", tableName: "Intro", comment: "Button title for starting browsing.")
+                public static let Title = NSLocalizedString("Intro.Slides.Welcome.Title", tableName: "Intro", comment: "Title for starting browsing.")
                 public static let Description = NSLocalizedString("Intro.Slides.Welcome.Description", tableName: "Intro", comment: "Description for the 'Welcome' panel in the First Run tour.")
             }
             public static let SkipButtonTitle = NSLocalizedString("Intro.Slides.Skip.Title", tableName: "Intro", comment: "Button title for skipping tour.")
