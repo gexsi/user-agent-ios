@@ -2557,9 +2557,9 @@
 		2BAD2B1024E676060098F3D1 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
+				2B571CAF24E6781A00F17C1A /* PandaRelease.xcconfig */,
 				2B571CAD24E6781A00F17C1A /* PandaAdHoc.xcconfig */,
 				2B571CAE24E6781A00F17C1A /* PandaDebug.xcconfig */,
-				2B571CAF24E6781A00F17C1A /* PandaRelease.xcconfig */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
