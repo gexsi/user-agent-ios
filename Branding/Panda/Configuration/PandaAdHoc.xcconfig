@@ -2,7 +2,7 @@
 BUNDLE_DISPLAY_NAME = Panda Search Nightly
 
 // Bundle Identifier
-APP_BUNDLE_ID = com.gexsi.pandasearch.nightly
+APP_BUNDLE_ID = com.gexsi.panda.search.nightly
 
 // Marketing version
 APP_MARKETING_VERSION = 3.1.0
