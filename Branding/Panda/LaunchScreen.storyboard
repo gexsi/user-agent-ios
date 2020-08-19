@@ -57,11 +57,11 @@
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="q2d-xv-pGw"/>
-                                <exclude reference="u6U-Eb-qVj"/>
                                 <exclude reference="Ask-vy-vtX"/>
                                 <exclude reference="C0u-GG-ouW"/>
                                 <exclude reference="y8w-aM-imP"/>
+                                <exclude reference="q2d-xv-pGw"/>
+                                <exclude reference="u6U-Eb-qVj"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=regular">
@@ -72,16 +72,16 @@
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="constraints">
+                                <include reference="C0u-GG-ouW"/>
                                 <include reference="q2d-xv-pGw"/>
                                 <include reference="u6U-Eb-qVj"/>
-                                <include reference="C0u-GG-ouW"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
                             <mask key="constraints">
+                                <include reference="C0u-GG-ouW"/>
                                 <include reference="q2d-xv-pGw"/>
                                 <include reference="u6U-Eb-qVj"/>
-                                <include reference="C0u-GG-ouW"/>
                             </mask>
                         </variation>
                     </view>
