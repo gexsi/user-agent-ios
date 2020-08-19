@@ -132,12 +132,21 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2BB3DBE324ED13980050370A"
+            BlueprintIdentifier = "2BB3DDFF24ED34570050370A"
             BuildableName = "SEALEGACY.blue.app"
             BlueprintName = "SEALEGACY.blue"
             ReferencedContainer = "container:UserAgent.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "2BB3DBE324ED13980050370A"
+            BuildableName = "SEALEGACY.blue.app"
+            BlueprintName = "SEALEGACY.blue"
+            ReferencedContainer = "container:UserAgent.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
