@@ -20,7 +20,7 @@
 		0BA8964C1A250E6500C1010C /* TestBookmarks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA8964A1A250E6500C1010C /* TestBookmarks.swift */; };
 		0BC9C9C41F26F54D000E8AB5 /* SiteLoadTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC9C9C31F26F54D000E8AB5 /* SiteLoadTest.swift */; };
 		0BF0DB4A1E57B05E009172B0 /* LaunchArguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65075861E37F7AB006961AC /* LaunchArguments.swift */; };
-		20F04D3FD916F48F70DBBE47 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
+		20F04D3FD916F48F70DBBE47 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		281B029A1C037C1F005202C3 /* TestBrowserDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281B02991C037C1F005202C3 /* TestBrowserDB.swift */; };
 		281B2BEA1ADF4D90002917DC /* MockProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281B2BE91ADF4D90002917DC /* MockProfile.swift */; };
 		2829D3A01C2F0AD400DCF931 /* Sharing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2829D39F1C2F0AD400DCF931 /* Sharing.swift */; };
@@ -314,7 +314,7 @@
 		2B65705224AB68A7005DE5D3 /* MailtoLinkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744ED5601DBFEB8D00A2B5BE /* MailtoLinkHandler.swift */; };
 		2B65705324AB68A7005DE5D3 /* DownloadToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04D1B852097859B0074B35F /* DownloadToast.swift */; };
 		2B65705424AB68A7005DE5D3 /* ChevronView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B844E3C1BBDDB9D00E733A2 /* ChevronView.swift */; };
-		2B65705524AB68A7005DE5D3 /* BuildFile in Sources */ = {isa = PBXBuildFile; };
+		2B65705524AB68A7005DE5D3 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		2B65705624AB68A7005DE5D3 /* UIColor+Blending.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC6EC5223290974000F5499 /* UIColor+Blending.swift */; };
 		2B65705724AB68A7005DE5D3 /* BrowserViewController+DownloadsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B516D3B238BACE4006D6B57 /* BrowserViewController+DownloadsDelegate.swift */; };
 		2B65705824AB68A7005DE5D3 /* UIDeviceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E7DC1A234485B9000125D7 /* UIDeviceExtensions.swift */; };
@@ -659,7 +659,7 @@
 		2BAD2A9224E6755B0098F3D1 /* MailtoLinkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744ED5601DBFEB8D00A2B5BE /* MailtoLinkHandler.swift */; };
 		2BAD2A9324E6755B0098F3D1 /* DownloadToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04D1B852097859B0074B35F /* DownloadToast.swift */; };
 		2BAD2A9424E6755B0098F3D1 /* ChevronView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B844E3C1BBDDB9D00E733A2 /* ChevronView.swift */; };
-		2BAD2A9524E6755B0098F3D1 /* BuildFile in Sources */ = {isa = PBXBuildFile; };
+		2BAD2A9524E6755B0098F3D1 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		2BAD2A9624E6755B0098F3D1 /* UIColor+Blending.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC6EC5223290974000F5499 /* UIColor+Blending.swift */; };
 		2BAD2A9724E6755B0098F3D1 /* BrowserViewController+DownloadsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B516D3B238BACE4006D6B57 /* BrowserViewController+DownloadsDelegate.swift */; };
 		2BAD2A9824E6755B0098F3D1 /* UIDeviceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E7DC1A234485B9000125D7 /* UIDeviceExtensions.swift */; };
@@ -1005,7 +1005,7 @@
 		2BB3DF0D24ED34570050370A /* MailtoLinkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744ED5601DBFEB8D00A2B5BE /* MailtoLinkHandler.swift */; };
 		2BB3DF0E24ED34570050370A /* DownloadToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04D1B852097859B0074B35F /* DownloadToast.swift */; };
 		2BB3DF0F24ED34570050370A /* ChevronView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B844E3C1BBDDB9D00E733A2 /* ChevronView.swift */; };
-		2BB3DF1024ED34570050370A /* BuildFile in Sources */ = {isa = PBXBuildFile; };
+		2BB3DF1024ED34570050370A /* (null) in Sources */ = {isa = PBXBuildFile; };
 		2BB3DF1124ED34570050370A /* UIColor+Blending.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC6EC5223290974000F5499 /* UIColor+Blending.swift */; };
 		2BB3DF1224ED34570050370A /* BrowserViewController+DownloadsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B516D3B238BACE4006D6B57 /* BrowserViewController+DownloadsDelegate.swift */; };
 		2BB3DF1324ED34570050370A /* UIDeviceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E7DC1A234485B9000125D7 /* UIDeviceExtensions.swift */; };
@@ -1350,7 +1350,7 @@
 		EB9407492081353100702E05 /* UXConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB940747208134AF00702E05 /* UXConstants.swift */; };
 		EBA1CC1E214AB8FD009E6B06 /* StorageTestUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289A4C121C4EB90600A460E3 /* StorageTestUtils.swift */; };
 		EBE7635920ADCB7600E27F2D /* SendTo.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBE7634F20ADCB7500E27F2D /* SendTo.xcassets */; };
-		F053AEC6767F02C2EA074139 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
+		F053AEC6767F02C2EA074139 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		F84B21DA1A090F8100AAB793 /* ClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84B21D91A090F8100AAB793 /* ClientTests.swift */; };
 		F8708D2E1A0970B70051AB07 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8708D251A0970990051AB07 /* Images.xcassets */; };
 		F8708D321A0970B70051AB07 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8708D291A0970990051AB07 /* ShareViewController.swift */; };
@@ -1722,6 +1722,7 @@
 		2B4400F0242BA05B00DD26DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; name = Base; path = Base.lproj/Intents.intentdefinition; sourceTree = "<group>"; };
 		2B4400F2242BA06600DD26DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Intents.strings; sourceTree = "<group>"; };
 		2B46494D243EF1DF002913F5 /* ContextualOnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextualOnboardingViewController.swift; sourceTree = "<group>"; };
+		2B46DCB624ED433900969221 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Intents.strings; sourceTree = "<group>"; };
 		2B473CEC23952A2700442059 /* BloomFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloomFilter.swift; sourceTree = "<group>"; };
 		2B473CF0239637DE00442059 /* UseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCases.swift; sourceTree = "<group>"; };
 		2B47DAC82406758A00AD6D4C /* ShareTo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShareTo.entitlements; sourceTree = "<group>"; };
@@ -1876,7 +1877,6 @@
 		2BB3DDF224ED33850050370A /* SEALEGACY.blueShareToAdHoc.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SEALEGACY.blueShareToAdHoc.entitlements; sourceTree = "<group>"; };
 		2BB3DDF324ED33850050370A /* SEALEGACY.blueShareTo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SEALEGACY.blueShareTo.entitlements; sourceTree = "<group>"; };
 		2BB3DDF424ED33850050370A /* Features.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features.swift; sourceTree = "<group>"; };
-		2BB3DDF724ED33850050370A /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Intents.strings; sourceTree = "<group>"; };
 		2BB3DDF824ED33850050370A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Intents.strings; sourceTree = "<group>"; };
 		2BB3DDF924ED33850050370A /* BrandColors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = BrandColors.xcassets; sourceTree = "<group>"; };
 		2BB3DDFB24ED33850050370A /* OpenIn.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = OpenIn.xcassets; sourceTree = "<group>"; };
@@ -2538,7 +2538,7 @@
 				2B6570B024AB68A7005DE5D3 /* ImageIO.framework in Frameworks */,
 				2B6570B124AB68A7005DE5D3 /* ObjcExceptionBridging.framework in Frameworks */,
 				2B6570B224AB68A7005DE5D3 /* Widgets.framework in Frameworks */,
-				F053AEC6767F02C2EA074139 /* BuildFile in Frameworks */,
+				F053AEC6767F02C2EA074139 /* (null) in Frameworks */,
 				4514BBD5479B8F5568CB281C /* Pods_Gexsi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2556,7 +2556,7 @@
 				2BAD2AF324E6755B0098F3D1 /* ImageIO.framework in Frameworks */,
 				2BAD2AF424E6755B0098F3D1 /* ObjcExceptionBridging.framework in Frameworks */,
 				2BAD2AF524E6755B0098F3D1 /* Widgets.framework in Frameworks */,
-				20F04D3FD916F48F70DBBE47 /* BuildFile in Frameworks */,
+				20F04D3FD916F48F70DBBE47 /* (null) in Frameworks */,
 				37D3EAAD845871608B0CCB7D /* Pods_Panda.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -6598,7 +6598,7 @@
 				2B65705224AB68A7005DE5D3 /* MailtoLinkHandler.swift in Sources */,
 				2B65705324AB68A7005DE5D3 /* DownloadToast.swift in Sources */,
 				2B65705424AB68A7005DE5D3 /* ChevronView.swift in Sources */,
-				2B65705524AB68A7005DE5D3 /* BuildFile in Sources */,
+				2B65705524AB68A7005DE5D3 /* (null) in Sources */,
 				2B65705624AB68A7005DE5D3 /* UIColor+Blending.swift in Sources */,
 				2B65705724AB68A7005DE5D3 /* BrowserViewController+DownloadsDelegate.swift in Sources */,
 				2B65705824AB68A7005DE5D3 /* UIDeviceExtensions.swift in Sources */,
@@ -6889,7 +6889,7 @@
 				2BAD2A9224E6755B0098F3D1 /* MailtoLinkHandler.swift in Sources */,
 				2BAD2A9324E6755B0098F3D1 /* DownloadToast.swift in Sources */,
 				2BAD2A9424E6755B0098F3D1 /* ChevronView.swift in Sources */,
-				2BAD2A9524E6755B0098F3D1 /* BuildFile in Sources */,
+				2BAD2A9524E6755B0098F3D1 /* (null) in Sources */,
 				2BAD2A9624E6755B0098F3D1 /* UIColor+Blending.swift in Sources */,
 				2BAD2A9724E6755B0098F3D1 /* BrowserViewController+DownloadsDelegate.swift in Sources */,
 				2BAD2A9824E6755B0098F3D1 /* UIDeviceExtensions.swift in Sources */,
@@ -7180,7 +7180,7 @@
 				2BB3DF0D24ED34570050370A /* MailtoLinkHandler.swift in Sources */,
 				2BB3DF0E24ED34570050370A /* DownloadToast.swift in Sources */,
 				2BB3DF0F24ED34570050370A /* ChevronView.swift in Sources */,
-				2BB3DF1024ED34570050370A /* BuildFile in Sources */,
+				2BB3DF1024ED34570050370A /* (null) in Sources */,
 				2BB3DF1124ED34570050370A /* UIColor+Blending.swift in Sources */,
 				2BB3DF1224ED34570050370A /* BrowserViewController+DownloadsDelegate.swift in Sources */,
 				2BB3DF1324ED34570050370A /* UIDeviceExtensions.swift in Sources */,
@@ -7749,8 +7749,8 @@
 		2BB3DDF624ED33850050370A /* Intents.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2BB3DDF724ED33850050370A /* de */,
 				2BB3DDF824ED33850050370A /* en */,
+				2B46DCB624ED433900969221 /* de */,
 			);
 			name = Intents.strings;
 			sourceTree = "<group>";

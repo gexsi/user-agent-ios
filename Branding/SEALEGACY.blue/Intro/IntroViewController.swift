@@ -417,7 +417,7 @@ struct IntroCard {
     }
 
     static func defaultCards() -> [IntroCard] {
-        let search = IntroCard(title: Strings.Intro.Slides.Search.Title, text: Strings.Intro.Slides.Search.Description, imageName: "tour-Panda", imageContentMode: .scaleAspectFill, imageBackgroundColor: UIColor.Brand)
+        let search = IntroCard(title: Strings.Intro.Slides.Search.Title, text: Strings.Intro.Slides.Search.Description, imageName: "tour-SeaLegacy", imageContentMode: .scaleAspectFill, imageBackgroundColor: UIColor.Brand)
         let antiTracking = IntroCard(title: Strings.Intro.Slides.AntiTracking.Title, text: Strings.Intro.Slides.AntiTracking.Description, imageName: "tour-antiTracking", imageContentMode: .scaleAspectFill, imageBackgroundColor: UIColor.Brand)
         let welcome = IntroCard(title: Strings.Intro.Slides.Welcome.Title, text: Strings.Intro.Slides.Welcome.Description, imageName: "tour-LogoFull", imageContentMode: .scaleAspectFill, imageBackgroundColor: UIColor.Brand, buttonText: Strings.Intro.Slides.Welcome.ButtonTitle, buttonSelector: #selector(IntroViewController.startBrowsing).description)
         return [search, antiTracking, welcome]

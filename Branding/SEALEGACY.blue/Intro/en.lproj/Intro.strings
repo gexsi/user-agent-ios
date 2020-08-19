@@ -6,19 +6,19 @@
 "Intro.Slides.AntiTracking.Title" = "Highest level of data protection";
 
 /* Description for the 'Search' panel in the First Run tour. */
-"Intro.Slides.Search.Description" = "Panda is a purpose-driven search engine that positively changes the world. Your search queries generate revenues. With these you support WWF projects and campaigns.";
+"Intro.Slides.Search.Description" = "Our ocean can be rebuilt to abundance in one lifetime. And we’re on a mission to bring this closer to you every day. By using our search engine, being a part of this important conversation is now at your fingertips.";
 
 /* Title for the 'Search' panel in the First Run tour. */
-"Intro.Slides.Search.Title" = "Search to make the world a better place";
+"Intro.Slides.Search.Title" = "The search engine for ocean restoration";
 
 /* Button title for skipping tour. */
 "Intro.Slides.Skip.Title" = "Skip";
 
 /* Button title for starting browsing. */
-"Intro.Slides.Welcome.Button.Title" = "Search and change the world";
+"Intro.Slides.Welcome.Button.Title" = "Search and do good";
 
 /* Title for the 'Welcome' panel in the First Run tour. */
-"Intro.Slides.Welcome.Title" = "Shaping the future together";
+"Intro.Slides.Welcome.Title" = "Together, we are #TurningTheTide";
 
 /* Description for the 'Welcome' panel in the First Run tour. */
-"Intro.Slides.Welcome.Description" = "Set a sign and make Panda your search engine!";
+"Intro.Slides.Welcome.Description" = "Through the simple act of searching, we can create healthy and abundant ocean together.";

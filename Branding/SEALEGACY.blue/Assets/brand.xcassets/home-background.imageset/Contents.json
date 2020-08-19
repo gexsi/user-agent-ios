@@ -1,11 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "wwf_bg_tablet_gradiant.png",
+      "filename" : "gexsi_bg_tablet_negative.png",
       "idiom" : "universal"
     },
     {
-      "filename" : "wwf_bg_mobile_gradiant.png",
+      "filename" : "gexsi_bg_mobile_negative.png",
       "idiom" : "universal",
       "width-class" : "compact"
     }
