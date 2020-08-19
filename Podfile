@@ -201,6 +201,11 @@ target 'Gexsi' do
   facebook
 end
 
+target 'Panda' do
+  main_app
+  firebase
+end
+
 target 'Storage' do
   snapkit
   sdwebimage
