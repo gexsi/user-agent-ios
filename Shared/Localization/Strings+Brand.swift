@@ -18,5 +18,11 @@ extension Strings {
     public static let Contact = NSLocalizedString("contact", tableName: "brand", comment: "brand feedback url")
     public static let LicensesHeader = NSLocalizedString("licensesHeader", tableName: "brand", comment: "brand licenses header")
     public static let About = NSLocalizedString("about", tableName: "brand", comment: "about url")
+    public static let FAQ = NSLocalizedString("faq", tableName: "brand", comment: "faq url")
     public static let TermsOfUse = NSLocalizedString("termsOfUse", tableName: "brand", comment: "terms of use url")
+
+    public struct UrlBar {
+        public static let Placeholder = NSLocalizedString("UrlBar.Placeholder", tableName: "brand", comment: "The text shown in the URL bar on about:home")
+    }
+    public static let WhatsNewTitleString = NSLocalizedString("Menu.OpenWhatsNewAction.Title", tableName: "brand", comment: "Label for the button, displayed in the menu, used to open the What's new page.")
 }

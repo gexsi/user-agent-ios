@@ -207,7 +207,7 @@ private extension HomeViewController {
 
     func setupSegmentedControl() {
         self.switchToDefaultSegment()
-        segmentedControl.tintColor = UIColor.BrightBlue
+        segmentedControl.tintColor = UIColor.Brand
     }
 
     func setupConstraints() {

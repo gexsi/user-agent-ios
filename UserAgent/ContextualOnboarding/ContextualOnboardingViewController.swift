@@ -155,7 +155,7 @@ class ContextualOnboardingViewController: UIViewController {
         self.backgroundView.clipsToBounds = true
         self.backgroundView.layer.maskedCorners = maskedCorners
         self.backgroundView.layer.cornerRadius = 15
-        self.backgroundView.backgroundColor = .BrightBlue
+        self.backgroundView.backgroundColor = .Brand
         self.backgroundView.drawOptions = .centerTopCenterBottom
         self.backgroundView.colors = self.detail?.backgroundGradientColors ?? [.COLightBlue, .CODarkBlue]
         self.view.addSubview(self.backgroundView)

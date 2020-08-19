@@ -245,7 +245,7 @@ class BrowserViewController: UIViewController {
         self.updateWhatsNewBadge()
         let viewController = SettingsContentViewController()
         viewController.url = url
-        viewController.title = Strings.Menu.WhatsNewTitleString
+        viewController.title = Strings.WhatsNewTitleString
         let navigationController = UINavigationController(rootViewController: viewController)
         viewController.navigationItem.rightBarButtonItem = UIBarButtonItem(title: Strings.General.CloseString, style: .done, closure: { (_) in
             self.setPhoneWindowBackground(color: Theme.browser.background, animationDuration: 1.0)

@@ -1,0 +1,24 @@
+/* 
+  brand.strings
+  UserAgent
+
+  Created by Krzysztof Modras on 10.10.19.
+  Copyright © 2019 Cliqz. All rights reserved.
+*/
+
+"website" = "https://panda-search.org/";
+"whatsNewWebsite" = "https://panda-search.org/#mehr";
+"humanWebInfoWebsite" = "https://0x65.dev/blog/2019-12-03/human-web-collecting-data-in-a-socially-responsible-manner.html";
+"repositoryWebsite" = "https://github.com/cliqz/user-agent-ios";
+"privacyPolicyWebsite" = "https://panda-search.org/datenschutz.php";
+"contact" = "https://panda-search.org/kontakt.php";
+"about" = "https://panda-search.org/#mehr";
+"faq" = "https://panda-search.org/#faq";
+"termsOfUse" = "https://panda-search.org/nutzungsbedingungen.php";
+"licensesHeader" = "Panda";
+
+/* The text shown in the URL bar on about:home */
+"UrlBar.Placeholder" = "Suchen und Gutes tun…";
+
+/* Label for the button, displayed in the menu, used to open the What's new page. */
+"Menu.OpenWhatsNewAction.Title" = "Über Panda Search";

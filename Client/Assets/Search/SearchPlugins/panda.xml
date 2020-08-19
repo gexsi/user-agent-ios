@@ -4,13 +4,17 @@
 
 <SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/">
 <ShortName>Panda</ShortName>
-<Image width="16" height="16">data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAAApVBMVEUA//8ArvAArvAAr/EAr/EAsPIAtfQArvD///8GsPCP2/j6/f5/1vcsvPLs+P3L7vwXtfFQx/Q8wfMctvHv+v7g9f3a8/zU8fxCw/To+P296vuc3/mJ2fhby/VHxPQzvvMMsvB20/chuPLl9/2z5/qh4fl61fdpz/YluvLz+/656fpt0fZVyfU4wPMUtPHP8Pyt5fpz0vbD7PuT3fj1+/6n4/lizfWkNf+GAAAAB3RSTlMB9uPDuWQY4yYUZQAAAx1JREFUaN7tmul2qjAQgHFpZxBRAa1YBcG9dalb+/6PdvWWtiRBEjrknnPP8fur8hEyzkxCjAsP9WoFSqdSrT8YVx5roI3a40VQA43ULs8HtPJg1EErdaMKWqkaFdBKxQDN3AV3wb8VdLa+Ezj+1gMeuqCzGba7+MVLex54JQo6hzcU6S+8cgTbmYU3ePbpAvcZ82iHNEFnjjL2HkEQdFHOef1bgTlENfbRrwTeG6rytPqFYNVDdQbjwgK7hUV4cQsKJlMsRtcuJNg9YVGmXhHBKxanbaoLFtmx0lhv3NV2sx71MYuGsmBsZVx9YadDLDP9haqCthiGS2H8gRjGPVNNsESeUQQiZiwMtKkkiFp8jDuQjc9/89xREcT8wG24xaTPD1VBYA6QoTWB2+x63GB3csEHMlgu5GG/IEMsF3AVbAn5OFyhlgo8ruqCjHdkGMsEa/77MiYWG6kywR7TvIOcBqY5ygRsFbZBTocNiihfYLMJCFQ4Yho/X7AR/jdyDrlhZ+QlahdUWLFJO1/ANlomyBDnbZYvmDFZAtToM4UtX/DM/i2lyH9k5NSaV5AiPtceUTAeidk1TNfPKfUR9XDmAM92fmZ+RJnk+HqXTU+oDIenZJKpYbqz8IK1D8UKur9+NCP/0d6/8shhJ6SlRQ8b5FTh/iS2uXgHTkhPdv10HCwj4KCn6zVb54dcUaIXnOjMt70fzDDoJXMorg4azFipRX+MGRwDExLobUsbsxiMJiqCQKHx+sAbvDrltI5RF7NpDe1ymt9T9tVDs6z23ZZcnb4AObJRyl+dvoQKcvtF+iIQzFaOgbSM/YqpEeYYKAtxy+O6rSlroG8lNLl78BucgboZMjWZpc0AgDXQt3OcZJo/b+EEjIGwISV0S82kW+cN9C21VfK59fmEeAN9U3CU6qFOIBjo25qtZJrD5AnxBvrGbPDdRQ74tWBcytby8Tuxn4A1xCVtjtvJ+CwXGENc0vb+z9QCg1/aC4qBmcQZlPyKZXx9xRJuO3Dlf3xJdBf85S4Q0P7KXfuhAe3HHrQf3NB99ET/4Rntx3/+AF9CJMC3aT2PAAAAAElFTkSuQmCC</Image>
-
-<Url type="text/html" method="GET" template="https://search.gexsi.com/search">
+<Image width="16" height="16">data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEMAAABDCAMAAADwFEhBAAAAhFBMVEUAAABCQkJ2dnYUFBQFBQVJSUkdHR3////6+vr19fUkJCSurq44ODgNDQ3b29vu7u7Dw8Pi4uJnZ2crKyuHh4enp6dZWVnn5+fU1NSgoKBfX18ZGRm7u7v9/f1ubm6UlJTx8fGXl5fJycm2traNjY2zs7NTU1PNzc29vb0uLi4wMDB7e3tihylYAAACeUlEQVRYCe2U25aqMAyGo1aLgAd0RBSr1fEwju//fvOnwCgQ0bVmr31FLiypzdfkb1rSfzf6O0K3jLKIrR6tHmUFyt5/6A8ztuU9Ja85j6BHoy8prDTXyNgQLPXyAG9xHJdiC6eRETODTtlaL1SkFkXc49jIODNCXbL1e+csH4Pz72cMp+WXIuoX+W+ZQVIiMsMcN9hjuA6/97/72hkzDr/+/UNkeDFrYMPU3hfia0e0LU3kjshYd/Gv16FVJeIzl7cyLTGCdIhVe+qZyuInrsDwBi6NlGZPYqrTAiMgFvSUnYEJFi+zERhrWoKBo5xClD7RkfeN9hMeuMiaCYw5cXd3HANHQXN4dkA9bpSPGgATAmPk8riSwrGARH2OxbjGGFsBUmcYl4Ceu6CzIp+LOIBxxegnbzG0Is4YDBXp5Pvqet0goVDrC2tUs3oeOiUfRzHgKoprr/VUqQClqTcZ2BI3C9eNVCfCpptT4mkToaQdvcvo4t2xugcGKP1kgoxYVuPhDypu8WNBQi04AxUOQ8cg8ofedheZz9Us5Rn7GJx/ywxA0FyZ9W+zYOnuPfyBgJD6Y19E5+NhvHEpsMtF1UzI41Jh0CDThqdvNQAmBIbxq5B1xCfNNn2ToVl/pF3E8WHkeow86RILeegl9wZd+Y44G+kcS7GUhlSLzndNRjnDdy8BO/yw1E3KQ9srByxu/AvrZfcXvXLv/UeSyNC2O/fDZFkkMjHZyeAxkExm5Cv5BWIL8B7AOpKgWNrIMGcXS2d+i9RWfAhfMfQwdhDl2VVgpTLcXGMeWLGJfd8XX9E78hXjvvL5V8soa9Pq0epRVqDstf3x7/X4ATvmf726Ul6DAAAAAElFTkSuQmCC</Image>
+<Url type="application/x-suggestions+json" template="https://m.instantsearch.net/suggest">
+    <Param name="q" value="{searchTerms}"/>
+    <Param name="rtag" value="panda"/>
+    <Param name="fmt" value="rch2"/>
+</Url>
+<Url type="text/html" method="GET" template="https://panda-search.org/search/">
     <Param name="q" value="{searchTerms}"/>
     <Param name="gx1" value="ge"/>
     <Param name="gx2" value="ap"/>
     <Param name="gx3" value="io"/>
 </Url>
-<SearchForm>https://search.gexsi.com</SearchForm>
+<SearchForm>https://panda-search.org/search/</SearchForm>
 </SearchPlugin>

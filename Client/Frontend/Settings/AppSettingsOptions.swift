@@ -228,6 +228,20 @@ class AboutSetting: Setting {
     }
 }
 
+class FAQSetting: Setting {
+    override var title: NSAttributedString? {
+        return NSAttributedString(string: Strings.Settings.Support.FAQ, attributes: [NSAttributedString.Key.foregroundColor: Theme.tableView.rowText])
+    }
+
+    override var url: URL? {
+        return URL(string: Strings.FAQ)
+    }
+
+    override func onClick(_ navigationController: UINavigationController?) {
+        setUpAndPushSettingsContentViewController(navigationController)
+    }
+}
+
 class ContactSetting: Setting {
     override var title: NSAttributedString? {
         return NSAttributedString(string: Strings.Settings.Support.Contact, attributes: [NSAttributedString.Key.foregroundColor: Theme.tableView.rowText])

@@ -22,15 +22,6 @@
 	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
-    <key>CFBundleURLTypes</key>
-    <array>
-      <dict>
-      <key>CFBundleURLSchemes</key>
-      <array>
-        <string>fb2605499146428611</string>
-      </array>
-      </dict>
-    </array>
     <key>FacebookAppID</key>
     <string>2605499146428611</string>
     <key>FacebookDisplayName</key>
@@ -43,6 +34,7 @@
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>$(USER_AGENT_URL_SCHEME)</string>
+                <string>fb2605499146428611</string>
 			</array>
 		</dict>
 	</array>

@@ -78,7 +78,7 @@ class TableViewColor {
     var headerTextLight: UIColor { return UIColor.DarkBlue }
     // Used for table headers in home panel tables
     var headerTextDark: UIColor { return UIColor.Grey90 }
-    var rowActionAccessory: UIColor { return UIColor.Blue }
+    var rowActionAccessory: UIColor { return UIColor.Brand }
     var controlTint: UIColor { return rowActionAccessory }
     var syncText: UIColor { return Theme.defaultTextAndTint }
     var errorText: UIColor { return UIColor.BrightRed }
@@ -106,13 +106,13 @@ class ActionMenuColor {
     }
     var iPhoneBackground: UIColor { return Theme.browser.background.withAlphaComponent(0.7) }
     var closeButtonBackground: UIColor { return UIColor.defaultBackground }
-    var closeButtonTitleColor: UIColor { return UIColor.BrightBlue }
+    var closeButtonTitleColor: UIColor { return UIColor.Brand }
 }
 
 class URLBarColor {
     var border: UIColor { return UIColor.Grey90.with(alpha: .tenPercent) }
     func activeBorder(_ isPrivate: Bool) -> UIColor {
-        return !isPrivate ? UIColor.Blue.with(alpha: .eightyPercent) : UIColor.ForgetMode
+        return !isPrivate ? UIColor.Brand.with(alpha: .eightyPercent) : UIColor.ForgetMode
     }
     var tint: UIColor { return UIColor.Blue40.with(alpha: .thirtyPercent) }
     var background: UIColor {
@@ -150,13 +150,13 @@ class BrowserColor {
 
 // The back/forward/refresh/menu button (bottom toolbar)
 class ToolbarButtonColor {
-    var selectedTint: UIColor { return UIColor.Blue }
+    var selectedTint: UIColor { return UIColor.Brand }
     var disabledTint: UIColor { return UIColor.Grey30 }
 }
 
 class LoadingBarColor {
     func start(_ isPrivate: Bool) -> UIColor {
-        return !isPrivate ? UIColor.Blue : UIColor.Grey40
+        return !isPrivate ? UIColor.Brand : UIColor.Grey40
     }
 
     func end(_ isPrivate: Bool) -> UIColor {
@@ -330,7 +330,7 @@ class GeneralColor {
     var highlightBlue: UIColor { return UIColor.Blue40 }
     var destructiveRed: UIColor { return UIColor.BrightRed }
     var separator: UIColor { return Theme.defaultSeparator }
-    var controlTint: UIColor { return UIColor.BrightBlue }
+    var controlTint: UIColor { return UIColor.Brand }
 
     var settingsTextPlaceholder: UIColor {
         if #available(iOS 13.0, *) {

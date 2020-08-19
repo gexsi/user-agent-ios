@@ -132,6 +132,7 @@ extension Strings {
             public static let SectionTitle = NSLocalizedString("Settings.Support.SectionTitle", tableName: "Settings", comment: "Support section title")
             public static let HumanWebTitle = NSLocalizedString("Settings.Support.HumanWebTitle", tableName: "Settings", comment: "The title for the human web setting")
             public static let About = NSLocalizedString("Settings.Support.About", tableName: "Settings", comment: "Menu item in settings used to open about page")
+            public static let FAQ = NSLocalizedString("Settings.Support.FAQ", tableName: "Settings", comment: "Menu item in settings used to open https://cliqz.com/support")
             public static let Contact = NSLocalizedString("Settings.Support.Contact", tableName: "Settings", comment: "Menu item in settings used to open https://cliqz.com/support")
             public static let ShowTour = NSLocalizedString("Settings.Support.ShowTour", tableName: "Settings", comment: "Show the on-boarding screen again from the settings")
             public static let PrivacyPolicy = NSLocalizedString("Settings.Support.PrivacyPolicy", tableName: "Settings", comment: "Show Firefox Browser Privacy Policy page from the Privacy section in the settings. See https://www.mozilla.org/privacy/firefox/")

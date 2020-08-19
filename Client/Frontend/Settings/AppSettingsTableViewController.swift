@@ -199,6 +199,9 @@ class AppSettingsTableViewController: SettingsTableViewController {
             supportSettigns.insert(ShowIntroductionSetting(settings: self), at: 0)
         }
         supportSettigns.append(AboutSetting())
+        if Features.FAQ.isEnabled {
+            supportSettigns.append(FAQSetting())
+        }
         supportSettigns.append(ContactSetting())
         supportSettigns.append(TermsOfUseSetting())
         supportSettigns.append(PrivacyPolicySetting())
