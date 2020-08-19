@@ -10,7 +10,7 @@
 	</array>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>$(AppIdentifierPrefix)com.gexsi.pandasearch.debug</string>
+		<string>$(AppIdentifierPrefix)com.gexsi.panda.search.debug</string>
 	</array>
 </dict>
 </plist>
