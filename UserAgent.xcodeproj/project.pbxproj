@@ -314,7 +314,7 @@
 		2B65705224AB68A7005DE5D3 /* MailtoLinkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744ED5601DBFEB8D00A2B5BE /* MailtoLinkHandler.swift */; };
 		2B65705324AB68A7005DE5D3 /* DownloadToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04D1B852097859B0074B35F /* DownloadToast.swift */; };
 		2B65705424AB68A7005DE5D3 /* ChevronView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B844E3C1BBDDB9D00E733A2 /* ChevronView.swift */; };
-		2B65705524AB68A7005DE5D3 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		2B65705524AB68A7005DE5D3 /* BuildFile in Sources */ = {isa = PBXBuildFile; };
 		2B65705624AB68A7005DE5D3 /* UIColor+Blending.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC6EC5223290974000F5499 /* UIColor+Blending.swift */; };
 		2B65705724AB68A7005DE5D3 /* BrowserViewController+DownloadsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B516D3B238BACE4006D6B57 /* BrowserViewController+DownloadsDelegate.swift */; };
 		2B65705824AB68A7005DE5D3 /* UIDeviceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E7DC1A234485B9000125D7 /* UIDeviceExtensions.swift */; };
@@ -659,7 +659,7 @@
 		2BAD2A9224E6755B0098F3D1 /* MailtoLinkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744ED5601DBFEB8D00A2B5BE /* MailtoLinkHandler.swift */; };
 		2BAD2A9324E6755B0098F3D1 /* DownloadToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04D1B852097859B0074B35F /* DownloadToast.swift */; };
 		2BAD2A9424E6755B0098F3D1 /* ChevronView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B844E3C1BBDDB9D00E733A2 /* ChevronView.swift */; };
-		2BAD2A9524E6755B0098F3D1 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		2BAD2A9524E6755B0098F3D1 /* BuildFile in Sources */ = {isa = PBXBuildFile; };
 		2BAD2A9624E6755B0098F3D1 /* UIColor+Blending.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC6EC5223290974000F5499 /* UIColor+Blending.swift */; };
 		2BAD2A9724E6755B0098F3D1 /* BrowserViewController+DownloadsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B516D3B238BACE4006D6B57 /* BrowserViewController+DownloadsDelegate.swift */; };
 		2BAD2A9824E6755B0098F3D1 /* UIDeviceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E7DC1A234485B9000125D7 /* UIDeviceExtensions.swift */; };
@@ -848,6 +848,7 @@
 		580B0C4221748CFE00448DF8 /* DataManagementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580B0C4121748CFE00448DF8 /* DataManagementTests.swift */; };
 		63306D452110BAF000F25400 /* TabManagerStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63306D442110BAF000F25400 /* TabManagerStoreTests.swift */; };
 		660335E0F23729FE05E618CD /* Pods_ShareTo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CF3DFE609D0D680B66408F /* Pods_ShareTo.framework */; };
+		6A6354F6AF0F1E3E1BF59A4B /* Pods_Gexsi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C9379C96D2268561035709F /* Pods_Gexsi.framework */; };
 		6AAEAD894737287DE69FE0CE /* Pods_StorageTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23F8D7E381A676F5A7F73446 /* Pods_StorageTests.framework */; };
 		7479B4EF1C5306A200DF000B /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7479B4ED1C5306A200DF000B /* Reachability.swift */; };
 		74B195441CF503FC007F36EF /* RecentlyClosedTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B195431CF503FC007F36EF /* RecentlyClosedTabs.swift */; };
@@ -990,7 +991,7 @@
 		EB9407492081353100702E05 /* UXConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB940747208134AF00702E05 /* UXConstants.swift */; };
 		EBA1CC1E214AB8FD009E6B06 /* StorageTestUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289A4C121C4EB90600A460E3 /* StorageTestUtils.swift */; };
 		EBE7635920ADCB7600E27F2D /* SendTo.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBE7634F20ADCB7500E27F2D /* SendTo.xcassets */; };
-		F053AEC6767F02C2EA074139 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		F053AEC6767F02C2EA074139 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
 		F84B21DA1A090F8100AAB793 /* ClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84B21D91A090F8100AAB793 /* ClientTests.swift */; };
 		F8708D2E1A0970B70051AB07 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8708D251A0970990051AB07 /* Images.xcassets */; };
 		F8708D321A0970B70051AB07 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8708D291A0970990051AB07 /* ShareViewController.swift */; };
@@ -1246,6 +1247,7 @@
 		0BF0DB931A8545800039F300 /* URLBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLBarView.swift; sourceTree = "<group>"; };
 		0BF1B7E21AC60DEA00A7B407 /* InsetButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsetButton.swift; sourceTree = "<group>"; };
 		0C382C71B5A388709DD6DCD4 /* Pods-Storage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Storage.release.xcconfig"; path = "Target Support Files/Pods-Storage/Pods-Storage.release.xcconfig"; sourceTree = "<group>"; };
+		1C9379C96D2268561035709F /* Pods_Gexsi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gexsi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E78F209B9DF15AA93A83449 /* Pods-OpenIn.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenIn.adhoc.xcconfig"; path = "Target Support Files/Pods-OpenIn/Pods-OpenIn.adhoc.xcconfig"; sourceTree = "<group>"; };
 		206D3535CE2C292003B52507 /* Pods-ShareTo.ci.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareTo.ci.xcconfig"; path = "Target Support Files/Pods-ShareTo/Pods-ShareTo.ci.xcconfig"; sourceTree = "<group>"; };
 		22D579CBD91B48866DE7B829 /* Pods_SharedTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SharedTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -2062,7 +2064,8 @@
 				2B6570B024AB68A7005DE5D3 /* ImageIO.framework in Frameworks */,
 				2B6570B124AB68A7005DE5D3 /* ObjcExceptionBridging.framework in Frameworks */,
 				2B6570B224AB68A7005DE5D3 /* Widgets.framework in Frameworks */,
-				F053AEC6767F02C2EA074139 /* (null) in Frameworks */,
+				F053AEC6767F02C2EA074139 /* BuildFile in Frameworks */,
+				6A6354F6AF0F1E3E1BF59A4B /* Pods_Gexsi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3169,6 +3172,7 @@
 				80AE66E0474080C26967C66B /* Pods_OpenIn.framework */,
 				D3CF3DFE609D0D680B66408F /* Pods_ShareTo.framework */,
 				815F8A9DDF64044447EB59A6 /* Pods_Panda.framework */,
+				1C9379C96D2268561035709F /* Pods_Gexsi.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -5679,7 +5683,7 @@
 				2B65705224AB68A7005DE5D3 /* MailtoLinkHandler.swift in Sources */,
 				2B65705324AB68A7005DE5D3 /* DownloadToast.swift in Sources */,
 				2B65705424AB68A7005DE5D3 /* ChevronView.swift in Sources */,
-				2B65705524AB68A7005DE5D3 /* (null) in Sources */,
+				2B65705524AB68A7005DE5D3 /* BuildFile in Sources */,
 				2B65705624AB68A7005DE5D3 /* UIColor+Blending.swift in Sources */,
 				2B65705724AB68A7005DE5D3 /* BrowserViewController+DownloadsDelegate.swift in Sources */,
 				2B65705824AB68A7005DE5D3 /* UIDeviceExtensions.swift in Sources */,
@@ -5970,7 +5974,7 @@
 				2BAD2A9224E6755B0098F3D1 /* MailtoLinkHandler.swift in Sources */,
 				2BAD2A9324E6755B0098F3D1 /* DownloadToast.swift in Sources */,
 				2BAD2A9424E6755B0098F3D1 /* ChevronView.swift in Sources */,
-				2BAD2A9524E6755B0098F3D1 /* (null) in Sources */,
+				2BAD2A9524E6755B0098F3D1 /* BuildFile in Sources */,
 				2BAD2A9624E6755B0098F3D1 /* UIColor+Blending.swift in Sources */,
 				2BAD2A9724E6755B0098F3D1 /* BrowserViewController+DownloadsDelegate.swift in Sources */,
 				2BAD2A9824E6755B0098F3D1 /* UIDeviceExtensions.swift in Sources */,
