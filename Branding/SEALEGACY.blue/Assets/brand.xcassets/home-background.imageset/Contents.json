@@ -1,0 +1,17 @@
+{
+  "images" : [
+    {
+      "filename" : "wwf_bg_tablet_gradiant.png",
+      "idiom" : "universal"
+    },
+    {
+      "filename" : "wwf_bg_mobile_gradiant.png",
+      "idiom" : "universal",
+      "width-class" : "compact"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

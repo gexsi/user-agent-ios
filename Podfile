@@ -201,6 +201,18 @@ target 'Gexsi' do
   facebook
 end
 
+target 'Panda' do
+  main_app
+  firebase
+  facebook
+end
+
+target 'SEALEGACY.blue' do
+  main_app
+  firebase
+  facebook
+end
+
 target 'Storage' do
   snapkit
   sdwebimage
