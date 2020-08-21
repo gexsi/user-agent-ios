@@ -1,0 +1,23 @@
+/* Description for the 'AntiTracking' panel in the First Run tour. */
+"Intro.Slides.AntiTracking.Description" = "Our intelligent anti-tracking prevents data collectors from following you across the net. Our ad blocker keeps intrusive ads away from you.";
+
+/* Title for the 'AntiTracking' panel in the First Run tour. */
+"Intro.Slides.AntiTracking.Title" = "Highest level of data protection";
+
+/* Description for the 'Search' panel in the First Run tour. */
+"Intro.Slides.Search.Description" = "Our ocean can be rebuilt to abundance in one lifetime. And we’re on a mission to bring this closer to you every day. By using our search engine, being a part of this important conversation is now at your fingertips.";
+
+/* Title for the 'Search' panel in the First Run tour. */
+"Intro.Slides.Search.Title" = "The search engine for ocean restoration";
+
+/* Button title for skipping tour. */
+"Intro.Slides.Skip.Title" = "Skip";
+
+/* Button title for starting browsing. */
+"Intro.Slides.Welcome.Button.Title" = "Search and do good";
+
+/* Title for the 'Welcome' panel in the First Run tour. */
+"Intro.Slides.Welcome.Title" = "Together, we are #TurningTheTide";
+
+/* Description for the 'Welcome' panel in the First Run tour. */
+"Intro.Slides.Welcome.Description" = "Through the simple act of searching, we can create healthy and abundant ocean together.";

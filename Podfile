@@ -206,6 +206,11 @@ target 'Panda' do
   firebase
 end
 
+target 'SEALEGACY.blue' do
+  main_app
+  firebase
+end
+
 target 'Storage' do
   snapkit
   sdwebimage

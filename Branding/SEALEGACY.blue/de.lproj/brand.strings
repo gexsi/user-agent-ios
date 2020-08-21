@@ -1,0 +1,24 @@
+/* 
+  brand.strings
+  UserAgent
+
+  Created by Krzysztof Modras on 10.10.19.
+  Copyright © 2019 Cliqz. All rights reserved.
+*/
+
+"website" = "https://sealegacy.blue-search.org";
+"whatsNewWebsite" = "https://sealegacy.blue-search.org/#mehr";
+"humanWebInfoWebsite" = "https://0x65.dev/blog/2019-12-03/human-web-collecting-data-in-a-socially-responsible-manner.html";
+"repositoryWebsite" = "https://github.com/cliqz/user-agent-ios";
+"privacyPolicyWebsite" = "https://sealegacy.blue-search.org/privacy-policy.php";
+"contact" = "https://sealegacy.blue-search.org/contact.php";
+"about" = "https://sealegacy.blue-search.org/#mehr";
+"faq" = "https://sealegacy.blue-search.org/#faq";
+"termsOfUse" = "https://sealegacy.blue-search.org/terms-of-use.php";
+"licensesHeader" = "SEALEGACY.blue";
+
+/* The text shown in the URL bar on about:home */
+"UrlBar.Placeholder" = "Search and do good… ";
+
+/* Label for the button, displayed in the menu, used to open the What's new page. */
+"Menu.OpenWhatsNewAction.Title" = "About SEALEGACY.blue";
