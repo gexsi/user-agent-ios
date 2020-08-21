@@ -37,9 +37,9 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="UUC-A1-LLN" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="0OM-Nx-Wqe"/>
-                            <constraint firstItem="UUC-A1-LLN" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" id="A9v-U2-TJ2"/>
+                            <constraint firstItem="UUC-A1-LLN" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="A9v-U2-TJ2"/>
                             <constraint firstItem="UUC-A1-LLN" firstAttribute="bottom" secondItem="Ze5-6b-2t3" secondAttribute="bottom" id="aFx-9J-0hc"/>
-                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="UUC-A1-LLN" secondAttribute="trailing" id="mJm-i5-i86"/>
+                            <constraint firstAttribute="trailing" secondItem="UUC-A1-LLN" secondAttribute="trailing" id="mJm-i5-i86"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
                     </view>
@@ -52,7 +52,7 @@
     <resources>
         <image name="banner" width="303" height="430"/>
         <namedColor name="Brand">
-            <color red="0.0" green="0.75300002098083496" blue="0.74500000476837158" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.22352941176470589" green="0.45882352941176469" blue="0.71764705882352942" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
