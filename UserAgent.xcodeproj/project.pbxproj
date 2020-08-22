@@ -1204,6 +1204,7 @@
 		46BBFA6023575AEC00283594 /* Strings+PrivateBrowsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BBFA5F23575AEC00283594 /* Strings+PrivateBrowsing.swift */; };
 		46BBFA6223575B0000283594 /* Strings+Brand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BBFA6123575B0000283594 /* Strings+Brand.swift */; };
 		4A59B58AD11B5EE1F80BBDEB /* TestHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A59BF410BBD9B3BE71F4C7C /* TestHistory.swift */; };
+		57DAC96F3F70F54A1BCB1CC3 /* Pods_SEALEGACYBlue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA69CA2DF6CE548631AAD0B1 /* Pods_SEALEGACYBlue.framework */; };
 		580B0C4221748CFE00448DF8 /* DataManagementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580B0C4121748CFE00448DF8 /* DataManagementTests.swift */; };
 		63306D452110BAF000F25400 /* TabManagerStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63306D442110BAF000F25400 /* TabManagerStoreTests.swift */; };
 		660335E0F23729FE05E618CD /* Pods_ShareTo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CF3DFE609D0D680B66408F /* Pods_ShareTo.framework */; };
@@ -1217,7 +1218,6 @@
 		7B9BF91C1E43472E00CB24F4 /* JSONExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9BF91B1E43472E00CB24F4 /* JSONExtensions.swift */; };
 		7BBFEE741BB405D900A305AA /* TabManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBFEE731BB405D900A305AA /* TabManagerTests.swift */; };
 		7BF5A1EA1B41640500EA9DD8 /* SyncQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF5A1E91B41640500EA9DD8 /* SyncQueue.swift */; };
-		A74B8C7CFB56DC6569F24E53 /* Pods_SEALEGACY_blue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0826A7118537C07EDCC83BC1 /* Pods_SEALEGACY_blue.framework */; };
 		A83E5B1A1C1DA8BF0026D912 /* image.gif in Resources */ = {isa = PBXBuildFile; fileRef = A83E5B181C1DA8BF0026D912 /* image.gif */; };
 		A83E5B1B1C1DA8BF0026D912 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = A83E5B191C1DA8BF0026D912 /* image.png */; };
 		A83E5B1D1C1DA8D80026D912 /* UIPasteboardExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83E5B1C1C1DA8D80026D912 /* UIPasteboardExtensionsTests.swift */; };
@@ -1662,7 +1662,6 @@
 		049DBB0023E45B8600D2D38D /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		049DBB0123E45B8600D2D38D /* Indicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Indicator.swift; sourceTree = "<group>"; };
 		049DBB0623E45BCD00D2D38D /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
-		0826A7118537C07EDCC83BC1 /* Pods_SEALEGACY_blue.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SEALEGACY_blue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B62EFD11AD63CD100ACB9CD /* Clearables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Clearables.swift; sourceTree = "<group>"; };
 		0B8E0FF31A932BD500161DC3 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		0B9D40781E8D5AC80059E664 /* XCUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XCUITests-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -1846,9 +1845,9 @@
 		2BB3DDC524ED33850050370A /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2BB3DDC724ED33850050370A /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/ForgetMode.strings; sourceTree = "<group>"; };
 		2BB3DDC924ED33850050370A /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/brand.strings; sourceTree = "<group>"; };
-		2BB3DDCB24ED33850050370A /* SEALEGACY.blueAdHoc.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SEALEGACY.blueAdHoc.xcconfig; sourceTree = "<group>"; };
-		2BB3DDCC24ED33850050370A /* SEALEGACY.blueDebug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SEALEGACY.blueDebug.xcconfig; sourceTree = "<group>"; };
-		2BB3DDCD24ED33850050370A /* SEALEGACY.blueRelease.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SEALEGACY.blueRelease.xcconfig; sourceTree = "<group>"; };
+		2BB3DDCB24ED33850050370A /* SEALEGACYBlueAdHoc.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SEALEGACYBlueAdHoc.xcconfig; sourceTree = "<group>"; };
+		2BB3DDCC24ED33850050370A /* SEALEGACYBlueDebug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SEALEGACYBlueDebug.xcconfig; sourceTree = "<group>"; };
+		2BB3DDCD24ED33850050370A /* SEALEGACYBlueRelease.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SEALEGACYBlueRelease.xcconfig; sourceTree = "<group>"; };
 		2BB3DDCE24ED33850050370A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2BB3DDCF24ED33850050370A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ForgetMode.strings; sourceTree = "<group>"; };
 		2BB3DDD024ED33850050370A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/brand.strings; sourceTree = "<group>"; };
@@ -1864,18 +1863,18 @@
 		2BB3DDDF24ED33850050370A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2BB3DDE224ED33850050370A /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2BB3DDE324ED33850050370A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2BB3DDE524ED33850050370A /* SEALEGACY.blueAdHoc.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SEALEGACY.blueAdHoc.entitlements; sourceTree = "<group>"; };
-		2BB3DDE724ED33850050370A /* SEALEGACY.blueOpenIn.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SEALEGACY.blueOpenIn.entitlements; sourceTree = "<group>"; };
-		2BB3DDE824ED33850050370A /* SEALEGACY.blueOpenInAdHoc.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SEALEGACY.blueOpenInAdHoc.entitlements; sourceTree = "<group>"; };
-		2BB3DDE924ED33850050370A /* SEALEGACY.blueOpenInDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SEALEGACY.blueOpenInDebug.entitlements; sourceTree = "<group>"; };
-		2BB3DDEA24ED33850050370A /* SEALEGACY.blueDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SEALEGACY.blueDebug.entitlements; sourceTree = "<group>"; };
-		2BB3DDEB24ED33850050370A /* SEALEGACY.blue.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SEALEGACY.blue.entitlements; sourceTree = "<group>"; };
-		2BB3DDED24ED33850050370A /* SEALEGACY.blueToday.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SEALEGACY.blueToday.entitlements; sourceTree = "<group>"; };
-		2BB3DDEE24ED33850050370A /* SEALEGACY.blueTodayAdhoc.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SEALEGACY.blueTodayAdhoc.entitlements; sourceTree = "<group>"; };
-		2BB3DDEF24ED33850050370A /* SEALEGACY.blueTodayDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SEALEGACY.blueTodayDebug.entitlements; sourceTree = "<group>"; };
-		2BB3DDF124ED33850050370A /* SEALEGACY.blueShareToDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SEALEGACY.blueShareToDebug.entitlements; sourceTree = "<group>"; };
-		2BB3DDF224ED33850050370A /* SEALEGACY.blueShareToAdHoc.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SEALEGACY.blueShareToAdHoc.entitlements; sourceTree = "<group>"; };
-		2BB3DDF324ED33850050370A /* SEALEGACY.blueShareTo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SEALEGACY.blueShareTo.entitlements; sourceTree = "<group>"; };
+		2BB3DDE524ED33850050370A /* SEALEGACYBlueAdHoc.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SEALEGACYBlueAdHoc.entitlements; sourceTree = "<group>"; };
+		2BB3DDE724ED33850050370A /* SEALEGACYBlueOpenIn.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SEALEGACYBlueOpenIn.entitlements; sourceTree = "<group>"; };
+		2BB3DDE824ED33850050370A /* SEALEGACYBlueOpenInAdHoc.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SEALEGACYBlueOpenInAdHoc.entitlements; sourceTree = "<group>"; };
+		2BB3DDE924ED33850050370A /* SEALEGACYBlueOpenInDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SEALEGACYBlueOpenInDebug.entitlements; sourceTree = "<group>"; };
+		2BB3DDEA24ED33850050370A /* SEALEGACYBlueDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SEALEGACYBlueDebug.entitlements; sourceTree = "<group>"; };
+		2BB3DDEB24ED33850050370A /* SEALEGACYBlue.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SEALEGACYBlue.entitlements; sourceTree = "<group>"; };
+		2BB3DDED24ED33850050370A /* SEALEGACYBlueToday.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SEALEGACYBlueToday.entitlements; sourceTree = "<group>"; };
+		2BB3DDEE24ED33850050370A /* SEALEGACYBlueTodayAdhoc.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SEALEGACYBlueTodayAdhoc.entitlements; sourceTree = "<group>"; };
+		2BB3DDEF24ED33850050370A /* SEALEGACYBlueTodayDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SEALEGACYBlueTodayDebug.entitlements; sourceTree = "<group>"; };
+		2BB3DDF124ED33850050370A /* SEALEGACYBlueShareToDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SEALEGACYBlueShareToDebug.entitlements; sourceTree = "<group>"; };
+		2BB3DDF224ED33850050370A /* SEALEGACYBlueShareToAdHoc.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SEALEGACYBlueShareToAdHoc.entitlements; sourceTree = "<group>"; };
+		2BB3DDF324ED33850050370A /* SEALEGACYBlueShareTo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SEALEGACYBlueShareTo.entitlements; sourceTree = "<group>"; };
 		2BB3DDF424ED33850050370A /* Features.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features.swift; sourceTree = "<group>"; };
 		2BB3DDF824ED33850050370A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Intents.strings; sourceTree = "<group>"; };
 		2BB3DDF924ED33850050370A /* BrandColors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = BrandColors.xcassets; sourceTree = "<group>"; };
@@ -1883,7 +1882,7 @@
 		2BB3DDFC24ED33850050370A /* brand.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = brand.xcassets; sourceTree = "<group>"; };
 		2BB3DDFD24ED33850050370A /* ShareTo.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ShareTo.xcassets; sourceTree = "<group>"; };
 		2BB3DDFE24ED33850050370A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2BB3DF8224ED34570050370A /* SEALEGACY.blue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SEALEGACY.blue.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BB3DF8224ED34570050370A /* SEALEGACYBlue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SEALEGACYBlue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BBAA44C242124E0006D8246 /* TodayWidgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayWidgetViewController.swift; sourceTree = "<group>"; };
 		2BC00EFB234F212700BED6D7 /* ProfileTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTest.swift; sourceTree = "<group>"; };
 		2BC457FD23F135B200057204 /* PhotonActionSheetCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotonActionSheetCollectionCell.swift; sourceTree = "<group>"; };
@@ -1958,6 +1957,7 @@
 		2C97EC701E72C80E0092EC18 /* TopTabsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopTabsTest.swift; sourceTree = "<group>"; };
 		2CB1A6591FDEA8B60084E96D /* NewTabSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTabSettings.swift; sourceTree = "<group>"; };
 		2CB56E3E1E926BFB00AF7586 /* ToolbarTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolbarTest.swift; sourceTree = "<group>"; };
+		2CB67D297D79F3FE6CA52C94 /* Pods-SEALEGACYBlue.ci.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SEALEGACYBlue.ci.xcconfig"; path = "Target Support Files/Pods-SEALEGACYBlue/Pods-SEALEGACYBlue.ci.xcconfig"; sourceTree = "<group>"; };
 		2CCF17522105E4FD00705AE5 /* DisplaySettingsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplaySettingsTests.swift; sourceTree = "<group>"; };
 		2CEA6F781E93E3A600D4100E /* SearchSettingsUITest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchSettingsUITest.swift; sourceTree = "<group>"; };
 		2CF449A41E7BFE2C00FD7595 /* NavigationTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationTest.swift; sourceTree = "<group>"; };
@@ -2109,6 +2109,7 @@
 		46FA068623BB7B2400B22F71 /* BrowserTabs.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BrowserTabs.m; sourceTree = "<group>"; };
 		46FA068923BB7B5F00B22F71 /* BrowserTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserTabs.swift; sourceTree = "<group>"; };
 		4A59BF410BBD9B3BE71F4C7C /* TestHistory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHistory.swift; sourceTree = "<group>"; };
+		4E320FA05A853D9BF1C16FAC /* Pods-SEALEGACYBlue.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SEALEGACYBlue.debug.xcconfig"; path = "Target Support Files/Pods-SEALEGACYBlue/Pods-SEALEGACYBlue.debug.xcconfig"; sourceTree = "<group>"; };
 		5102DBFA705BE932A279B38C /* Pods-SEALEGACY.blue.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SEALEGACY.blue.release.xcconfig"; path = "Target Support Files/Pods-SEALEGACY.blue/Pods-SEALEGACY.blue.release.xcconfig"; sourceTree = "<group>"; };
 		51D33A3B9E033DDF32D75231 /* Pods-Gexsi.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gexsi.adhoc.xcconfig"; path = "Target Support Files/Pods-Gexsi/Pods-Gexsi.adhoc.xcconfig"; sourceTree = "<group>"; };
 		526508281A8FDBAAA5D03184 /* Pods-SharedTests.ci.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharedTests.ci.xcconfig"; path = "Target Support Files/Pods-SharedTests/Pods-SharedTests.ci.xcconfig"; sourceTree = "<group>"; };
@@ -2153,6 +2154,7 @@
 		84ABA3E805A19707DE49E5EB /* Pods-ShareTo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareTo.debug.xcconfig"; path = "Target Support Files/Pods-ShareTo/Pods-ShareTo.debug.xcconfig"; sourceTree = "<group>"; };
 		8F0FBF3F8CAF6A93489C7A9D /* Pods-Gexsi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gexsi.release.xcconfig"; path = "Target Support Files/Pods-Gexsi/Pods-Gexsi.release.xcconfig"; sourceTree = "<group>"; };
 		8F87D0B7200D772460EF6953 /* Pods-Shared.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared.debug.xcconfig"; path = "Target Support Files/Pods-Shared/Pods-Shared.debug.xcconfig"; sourceTree = "<group>"; };
+		9609159700E67571B480739E /* Pods-SEALEGACYBlue.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SEALEGACYBlue.adhoc.xcconfig"; path = "Target Support Files/Pods-SEALEGACYBlue/Pods-SEALEGACYBlue.adhoc.xcconfig"; sourceTree = "<group>"; };
 		978E0EE660BD55DCCF1A57A4 /* Pods-SharedTests.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharedTests.adhoc.xcconfig"; path = "Target Support Files/Pods-SharedTests/Pods-SharedTests.adhoc.xcconfig"; sourceTree = "<group>"; };
 		97BB0715FB189A20E7006631 /* Pods-Panda.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Panda.release.xcconfig"; path = "Target Support Files/Pods-Panda/Pods-Panda.release.xcconfig"; sourceTree = "<group>"; };
 		9904147345ED9D11B5E3967D /* Pods_Storage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Storage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -2230,6 +2232,7 @@
 		C5E94B56233112CD00D3F31F /* Trees.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trees.swift; sourceTree = "<group>"; };
 		C5F986B023A384CB006E006A /* ContextMenuUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextMenuUseCase.swift; sourceTree = "<group>"; };
 		C62CE646A71600AB2E55CF4C /* Pods-StoragePerfTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoragePerfTests.debug.xcconfig"; path = "Target Support Files/Pods-StoragePerfTests/Pods-StoragePerfTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C6907F36CE09292C764F0E3A /* Pods-SEALEGACYBlue.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SEALEGACYBlue.release.xcconfig"; path = "Target Support Files/Pods-SEALEGACYBlue/Pods-SEALEGACYBlue.release.xcconfig"; sourceTree = "<group>"; };
 		C7A9436A55DCEF66F6049B28 /* Pods-OpenIn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenIn.debug.xcconfig"; path = "Target Support Files/Pods-OpenIn/Pods-OpenIn.debug.xcconfig"; sourceTree = "<group>"; };
 		C817B34C1FC609500086018E /* UIScrollViewSwizzled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollViewSwizzled.swift; sourceTree = "<group>"; };
 		C82CDD45233E8996002E2743 /* Tab+ChangeUserAgent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Tab+ChangeUserAgent.swift"; sourceTree = "<group>"; };
@@ -2335,6 +2338,7 @@
 		D8FDEB54220CFE970069A582 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+ImageEffects.h"; path = "ThirdParty/Apple/UIImage+ImageEffects.h"; sourceTree = "<group>"; };
 		D8FDEB55220CFE970069A582 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ImageEffects.m"; path = "ThirdParty/Apple/UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		DA2D43439C47A47CAD2D442B /* Pods-SharedTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharedTests.release.xcconfig"; path = "Target Support Files/Pods-SharedTests/Pods-SharedTests.release.xcconfig"; sourceTree = "<group>"; };
+		DA69CA2DF6CE548631AAD0B1 /* Pods_SEALEGACYBlue.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SEALEGACYBlue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DABDA4AC20DA0FB800FBB0BD /* ObjcExceptionBridging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjcExceptionBridging.framework; path = Carthage/Build/iOS/ObjcExceptionBridging.framework; sourceTree = "<group>"; };
 		DACDE995225E537900C8F37F /* VersionSettingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionSettingTests.swift; sourceTree = "<group>"; };
 		DD31E0FA1B382B520077078A /* TabPrintPageRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabPrintPageRenderer.swift; sourceTree = "<group>"; };
@@ -2574,7 +2578,7 @@
 				2BB3DF6E24ED34570050370A /* ImageIO.framework in Frameworks */,
 				2BB3DF6F24ED34570050370A /* ObjcExceptionBridging.framework in Frameworks */,
 				2BB3DF7024ED34570050370A /* Widgets.framework in Frameworks */,
-				A74B8C7CFB56DC6569F24E53 /* Pods_SEALEGACY_blue.framework in Frameworks */,
+				57DAC96F3F70F54A1BCB1CC3 /* Pods_SEALEGACYBlue.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2744,6 +2748,10 @@
 				A49590A0A839A28C9801B780 /* Pods-SEALEGACY.blue.adhoc.xcconfig */,
 				5102DBFA705BE932A279B38C /* Pods-SEALEGACY.blue.release.xcconfig */,
 				81109CC3AABD90D4D742B577 /* Pods-SEALEGACY.blue.ci.xcconfig */,
+				4E320FA05A853D9BF1C16FAC /* Pods-SEALEGACYBlue.debug.xcconfig */,
+				9609159700E67571B480739E /* Pods-SEALEGACYBlue.adhoc.xcconfig */,
+				C6907F36CE09292C764F0E3A /* Pods-SEALEGACYBlue.release.xcconfig */,
+				2CB67D297D79F3FE6CA52C94 /* Pods-SEALEGACYBlue.ci.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -3169,7 +3177,7 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
-		2BB3DDC324ED33850050370A /* SEALEGACY.blue */ = {
+		2BB3DDC324ED33850050370A /* SEALEGACYBlue */ = {
 			isa = PBXGroup;
 			children = (
 				2BB3DDF524ED33850050370A /* Siri */,
@@ -3187,15 +3195,15 @@
 				2BB3DDD124ED33850050370A /* LaunchScreen.storyboard */,
 				2BB3DDF924ED33850050370A /* BrandColors.xcassets */,
 			);
-			path = SEALEGACY.blue;
+			path = SEALEGACYBlue;
 			sourceTree = "<group>";
 		};
 		2BB3DDCA24ED33850050370A /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
-				2BB3DDCB24ED33850050370A /* SEALEGACY.blueAdHoc.xcconfig */,
-				2BB3DDCC24ED33850050370A /* SEALEGACY.blueDebug.xcconfig */,
-				2BB3DDCD24ED33850050370A /* SEALEGACY.blueRelease.xcconfig */,
+				2BB3DDCB24ED33850050370A /* SEALEGACYBlueAdHoc.xcconfig */,
+				2BB3DDCC24ED33850050370A /* SEALEGACYBlueDebug.xcconfig */,
+				2BB3DDCD24ED33850050370A /* SEALEGACYBlueRelease.xcconfig */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -3243,9 +3251,9 @@
 				2BB3DDE624ED33850050370A /* OpenIn */,
 				2BB3DDEC24ED33850050370A /* Today */,
 				2BB3DDF024ED33850050370A /* ShareTo */,
-				2BB3DDE524ED33850050370A /* SEALEGACY.blueAdHoc.entitlements */,
-				2BB3DDEA24ED33850050370A /* SEALEGACY.blueDebug.entitlements */,
-				2BB3DDEB24ED33850050370A /* SEALEGACY.blue.entitlements */,
+				2BB3DDE524ED33850050370A /* SEALEGACYBlueAdHoc.entitlements */,
+				2BB3DDEA24ED33850050370A /* SEALEGACYBlueDebug.entitlements */,
+				2BB3DDEB24ED33850050370A /* SEALEGACYBlue.entitlements */,
 			);
 			path = Entitlements;
 			sourceTree = "<group>";
@@ -3253,9 +3261,9 @@
 		2BB3DDE624ED33850050370A /* OpenIn */ = {
 			isa = PBXGroup;
 			children = (
-				2BB3DDE724ED33850050370A /* SEALEGACY.blueOpenIn.entitlements */,
-				2BB3DDE824ED33850050370A /* SEALEGACY.blueOpenInAdHoc.entitlements */,
-				2BB3DDE924ED33850050370A /* SEALEGACY.blueOpenInDebug.entitlements */,
+				2BB3DDE724ED33850050370A /* SEALEGACYBlueOpenIn.entitlements */,
+				2BB3DDE824ED33850050370A /* SEALEGACYBlueOpenInAdHoc.entitlements */,
+				2BB3DDE924ED33850050370A /* SEALEGACYBlueOpenInDebug.entitlements */,
 			);
 			path = OpenIn;
 			sourceTree = "<group>";
@@ -3263,9 +3271,9 @@
 		2BB3DDEC24ED33850050370A /* Today */ = {
 			isa = PBXGroup;
 			children = (
-				2BB3DDED24ED33850050370A /* SEALEGACY.blueToday.entitlements */,
-				2BB3DDEE24ED33850050370A /* SEALEGACY.blueTodayAdhoc.entitlements */,
-				2BB3DDEF24ED33850050370A /* SEALEGACY.blueTodayDebug.entitlements */,
+				2BB3DDED24ED33850050370A /* SEALEGACYBlueToday.entitlements */,
+				2BB3DDEE24ED33850050370A /* SEALEGACYBlueTodayAdhoc.entitlements */,
+				2BB3DDEF24ED33850050370A /* SEALEGACYBlueTodayDebug.entitlements */,
 			);
 			path = Today;
 			sourceTree = "<group>";
@@ -3273,9 +3281,9 @@
 		2BB3DDF024ED33850050370A /* ShareTo */ = {
 			isa = PBXGroup;
 			children = (
-				2BB3DDF124ED33850050370A /* SEALEGACY.blueShareToDebug.entitlements */,
-				2BB3DDF224ED33850050370A /* SEALEGACY.blueShareToAdHoc.entitlements */,
-				2BB3DDF324ED33850050370A /* SEALEGACY.blueShareTo.entitlements */,
+				2BB3DDF124ED33850050370A /* SEALEGACYBlueShareToDebug.entitlements */,
+				2BB3DDF224ED33850050370A /* SEALEGACYBlueShareToAdHoc.entitlements */,
+				2BB3DDF324ED33850050370A /* SEALEGACYBlueShareTo.entitlements */,
 			);
 			path = ShareTo;
 			sourceTree = "<group>";
@@ -3797,8 +3805,8 @@
 				80AE66E0474080C26967C66B /* Pods_OpenIn.framework */,
 				D3CF3DFE609D0D680B66408F /* Pods_ShareTo.framework */,
 				7B094B8D0DBC8B1CFEDB6733 /* Pods_Gexsi.framework */,
-				0826A7118537C07EDCC83BC1 /* Pods_SEALEGACY_blue.framework */,
 				B9BA0EFD4EBA8FB7BF34917B /* Pods_Panda.framework */,
+				DA69CA2DF6CE548631AAD0B1 /* Pods_SEALEGACYBlue.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -3879,7 +3887,7 @@
 				46796FF624810C1100E64738 /* Features+toDict.swift */,
 				2B65717624AB693E005DE5D3 /* Gexsi */,
 				2BAD2B0924E676060098F3D1 /* Panda */,
-				2BB3DDC324ED33850050370A /* SEALEGACY.blue */,
+				2BB3DDC324ED33850050370A /* SEALEGACYBlue */,
 			);
 			path = Branding;
 			sourceTree = "<group>";
@@ -4432,7 +4440,7 @@
 				2B308ABD242B2B4A009AF3D1 /* Siri.appex */,
 				2B6570C424AB68A7005DE5D3 /* Gexsi.app */,
 				2BAD2B0724E6755B0098F3D1 /* Panda.app */,
-				2BB3DF8224ED34570050370A /* SEALEGACY.blue.app */,
+				2BB3DF8224ED34570050370A /* SEALEGACYBlue.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -4763,9 +4771,9 @@
 			productReference = 2BAD2B0724E6755B0098F3D1 /* Panda.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2BB3DDFF24ED34570050370A /* SEALEGACY.blue */ = {
+		2BB3DDFF24ED34570050370A /* SEALEGACYBlue */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2BB3DF7D24ED34570050370A /* Build configuration list for PBXNativeTarget "SEALEGACY.blue" */;
+			buildConfigurationList = 2BB3DF7D24ED34570050370A /* Build configuration list for PBXNativeTarget "SEALEGACYBlue" */;
 			buildPhases = (
 				2BB3DE0C24ED34570050370A /* [CP] Check Pods Manifest.lock */,
 				2BB3DE0D24ED34570050370A /* Start React Native Server */,
@@ -4789,9 +4797,9 @@
 				2BB3DE0824ED34570050370A /* PBXTargetDependency */,
 				2BB3DE0A24ED34570050370A /* PBXTargetDependency */,
 			);
-			name = SEALEGACY.blue;
+			name = SEALEGACYBlue;
 			productName = Client;
-			productReference = 2BB3DF8224ED34570050370A /* SEALEGACY.blue.app */;
+			productReference = 2BB3DF8224ED34570050370A /* SEALEGACYBlue.app */;
 			productType = "com.apple.product-type.application";
 		};
 		2BE258D223BA2B4A0022ED28 /* OpenIn */ = {
@@ -5081,7 +5089,7 @@
 			targets = (
 				2B656F4C24AB68A7005DE5D3 /* Gexsi */,
 				2BAD298424E6755B0098F3D1 /* Panda */,
-				2BB3DDFF24ED34570050370A /* SEALEGACY.blue */,
+				2BB3DDFF24ED34570050370A /* SEALEGACYBlue */,
 				F84B22481A0920C600AAB793 /* ShareTo */,
 				2BE258D223BA2B4A0022ED28 /* OpenIn */,
 				2B0E93672407A92300ED7703 /* Today */,
@@ -5865,7 +5873,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SEALEGACY.blue-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-SEALEGACYBlue-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -5946,7 +5954,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SEALEGACY.blue/Pods-SEALEGACY.blue-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-SEALEGACYBlue/Pods-SEALEGACYBlue-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/DoubleConversion/DoubleConversion.framework",
 				"${BUILT_PRODUCTS_DIR}/FBReactNativeSpec/FBReactNativeSpec.framework",
 				"${BUILT_PRODUCTS_DIR}/Folly/folly.framework",
@@ -6033,7 +6041,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SEALEGACY.blue/Pods-SEALEGACY.blue-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SEALEGACYBlue/Pods-SEALEGACYBlue-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		46504079241672C30086CFAF /* Bundle React Native code and images */ = {
@@ -8911,12 +8919,12 @@
 		};
 		2BB3DF7E24ED34570050370A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 81DEDC6EDDBD65309AB976EF /* Pods-SEALEGACY.blue.debug.xcconfig */;
+			baseConfigurationReference = 4E320FA05A853D9BF1C16FAC /* Pods-SEALEGACYBlue.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_Developer;
 				BUNDLE_DISPLAY_NAME = "${BUNDLE_DISPLAY_NAME}";
-				CODE_SIGN_ENTITLEMENTS = "$(inherit)Branding/SEALEGACY.blue/Entitlements/SEALEGACY.blueDebug.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "$(inherit)Branding/SEALEGACYBlue/Entitlements/SEALEGACYBlueDebug.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = "${APP_BUILD_VERSION}";
@@ -8931,7 +8939,7 @@
 					"$(BUILD_DIR)/Release$(EFFECTIVE_PLATFORM_NAME)/include/**",
 				);
 				INCLUDE_SETTINGS_BUNDLE = YES;
-				INFOPLIST_FILE = Branding/SEALEGACY.blue/Info.plist;
+				INFOPLIST_FILE = Branding/SEALEGACYBlue/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = "${APP_MARKETING_VERSION}";
@@ -8969,12 +8977,12 @@
 		};
 		2BB3DF7F24ED34570050370A /* Adhoc */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A49590A0A839A28C9801B780 /* Pods-SEALEGACY.blue.adhoc.xcconfig */;
+			baseConfigurationReference = 9609159700E67571B480739E /* Pods-SEALEGACYBlue.adhoc.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_Adhoc;
 				BUNDLE_DISPLAY_NAME = "${BUNDLE_DISPLAY_NAME}";
-				CODE_SIGN_ENTITLEMENTS = "$(inherit)Branding/SEALEGACY.blue/Entitlements/SEALEGACY.blueAdHoc.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "$(inherit)Branding/SEALEGACYBlue/Entitlements/SEALEGACYBlueAdHoc.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = "${APP_BUILD_VERSION}";
@@ -8989,7 +8997,7 @@
 					"$(BUILD_DIR)/Release$(EFFECTIVE_PLATFORM_NAME)/include/**",
 				);
 				INCLUDE_SETTINGS_BUNDLE = NO;
-				INFOPLIST_FILE = Branding/SEALEGACY.blue/Info.plist;
+				INFOPLIST_FILE = Branding/SEALEGACYBlue/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = "${APP_MARKETING_VERSION}";
@@ -9027,12 +9035,12 @@
 		};
 		2BB3DF8024ED34570050370A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5102DBFA705BE932A279B38C /* Pods-SEALEGACY.blue.release.xcconfig */;
+			baseConfigurationReference = C6907F36CE09292C764F0E3A /* Pods-SEALEGACYBlue.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUNDLE_DISPLAY_NAME = "${BUNDLE_DISPLAY_NAME}";
-				CODE_SIGN_ENTITLEMENTS = "$(inherit)Branding/SEALEGACY.blue/Entitlements/SEALEGACY.blue.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "$(inherit)Branding/SEALEGACYBlue/Entitlements/SEALEGACYBlue.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = "${APP_BUILD_VERSION}";
@@ -9048,7 +9056,7 @@
 					"$(BUILD_DIR)/Release$(EFFECTIVE_PLATFORM_NAME)/include/**",
 				);
 				INCLUDE_SETTINGS_BUNDLE = NO;
-				INFOPLIST_FILE = Branding/SEALEGACY.blue/Info.plist;
+				INFOPLIST_FILE = Branding/SEALEGACYBlue/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = "${APP_MARKETING_VERSION}";
@@ -9070,12 +9078,12 @@
 		};
 		2BB3DF8124ED34570050370A /* CI */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 81109CC3AABD90D4D742B577 /* Pods-SEALEGACY.blue.ci.xcconfig */;
+			baseConfigurationReference = 2CB67D297D79F3FE6CA52C94 /* Pods-SEALEGACYBlue.ci.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUNDLE_DISPLAY_NAME = "${BUNDLE_DISPLAY_NAME}";
-				CODE_SIGN_ENTITLEMENTS = "$(inherit)Branding/SEALEGACY.blue/Entitlements/SEALEGACY.blue.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "$(inherit)Branding/SEALEGACYBlue/Entitlements/SEALEGACYBlue.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = "${APP_BUILD_VERSION}";
@@ -9091,7 +9099,7 @@
 					"$(BUILD_DIR)/Release$(EFFECTIVE_PLATFORM_NAME)/include/**",
 				);
 				INCLUDE_SETTINGS_BUNDLE = NO;
-				INFOPLIST_FILE = Branding/SEALEGACY.blue/Info.plist;
+				INFOPLIST_FILE = Branding/SEALEGACYBlue/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = "${APP_MARKETING_VERSION}";
@@ -10631,7 +10639,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2BB3DF7D24ED34570050370A /* Build configuration list for PBXNativeTarget "SEALEGACY.blue" */ = {
+		2BB3DF7D24ED34570050370A /* Build configuration list for PBXNativeTarget "SEALEGACYBlue" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2BB3DF7E24ED34570050370A /* Debug */,

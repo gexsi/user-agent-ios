@@ -10,7 +10,7 @@
             ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
             <ActionContent
                title = "Run Script"
-               scriptText = "# Type a script or drag a script file from your workspace to insert its path.&#10;sh ${PROJECT_DIR}/Branding/setup.sh SEALEGACY.blue ${PROJECT_DIR}&#10;">
+               scriptText = "# Type a script or drag a script file from your workspace to insert its path.&#10;sh ${PROJECT_DIR}/Branding/setup.sh SEALEGACYBlue ${PROJECT_DIR}&#10;">
                <EnvironmentBuildable>
                   <BuildableReference
                      BuildableIdentifier = "primary"
@@ -33,8 +33,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2BB3DDFF24ED34570050370A"
-               BuildableName = "SEALEGACY.blue.app"
-               BlueprintName = "SEALEGACY.blue"
+               BuildableName = "SEALEGACYBlue.app"
+               BlueprintName = "SEALEGACYBlue"
                ReferencedContainer = "container:UserAgent.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -133,8 +133,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2BB3DDFF24ED34570050370A"
-            BuildableName = "SEALEGACY.blue.app"
-            BlueprintName = "SEALEGACY.blue"
+            BuildableName = "SEALEGACYBlue.app"
+            BlueprintName = "SEALEGACYBlue"
             ReferencedContainer = "container:UserAgent.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -149,8 +149,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2BB3DDFF24ED34570050370A"
-            BuildableName = "SEALEGACY.blue.app"
-            BlueprintName = "SEALEGACY.blue"
+            BuildableName = "SEALEGACYBlue.app"
+            BlueprintName = "SEALEGACYBlue"
             ReferencedContainer = "container:UserAgent.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
