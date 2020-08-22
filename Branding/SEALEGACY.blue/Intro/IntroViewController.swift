@@ -64,11 +64,11 @@ class IntroViewController: UIViewController {
     }()
 
     var horizontalPadding: Int {
-        return self.view.frame.width <= 320 ? 20 : 50
+        return self.view.frame.width <= 375 ? 20 : 50
     }
 
     var verticalPadding: CGFloat {
-        return self.view.frame.width <= 320 ? 20 : 40
+        return self.view.frame.width <= 375 ? 30 : 40
     }
 
     lazy fileprivate var imageViewContainer: UIStackView = {
@@ -175,8 +175,7 @@ class IntroViewController: UIViewController {
             make.width.equalTo(self.view.snp.width)
         }
 
-        let cardView = CardView(verticleSpacing: verticalPadding)
-        cardView.configureWith(card: card)
+        let cardView = CardView(verticleSpacing: verticalPadding, card: card)
         if let selectorString = card.buttonSelector, self.responds(to: NSSelectorFromString(selectorString)) {
             cardView.button.addTarget(self, action: NSSelectorFromString(selectorString), for: .touchUpInside)
             cardView.button.snp.makeConstraints { make in
@@ -320,8 +319,6 @@ class CardView: UIView {
         let titleLabel = UILabel()
         titleLabel.textColor = IntroUX.TitleColor
         titleLabel.numberOfLines = 2
-        titleLabel.adjustsFontSizeToFitWidth = true
-        titleLabel.minimumScaleFactor = IntroUX.MinimumFontScale
         titleLabel.textAlignment = .center
         titleLabel.setContentHuggingPriority(UILayoutPriority(rawValue: 1000), for: .vertical)
         return titleLabel
@@ -330,9 +327,7 @@ class CardView: UIView {
     lazy var textLabel: UILabel = {
         let textLabel = UILabel()
         textLabel.textColor = IntroUX.TextColor
-        textLabel.numberOfLines = 5
-        textLabel.adjustsFontSizeToFitWidth = true
-        textLabel.minimumScaleFactor = IntroUX.MinimumFontScale
+        textLabel.numberOfLines = 0
         textLabel.textAlignment = .center
         textLabel.lineBreakMode = .byTruncatingTail
         textLabel.setContentHuggingPriority(UILayoutPriority(rawValue: 1000), for: .vertical)
@@ -356,20 +351,12 @@ class CardView: UIView {
         super.init(frame: frame)
     }
 
-    init(verticleSpacing: CGFloat) {
+    init(verticleSpacing: CGFloat, card: IntroCard) {
         super.init(frame: .zero)
         stackView.spacing = verticleSpacing
         stackView.addArrangedSubview(titleLabel)
         stackView.addArrangedSubview(textLabel)
         addSubview(stackView)
-        stackView.snp.makeConstraints { make in
-            make.leading.trailing.top.equalTo(self)
-            make.bottom.lessThanOrEqualTo(self).offset(-IntroUX.PageControlHeight)
-        }
-        alpha = 0
-    }
-
-    func configureWith(card: IntroCard) {
         titleLabel.text = card.title
         textLabel.text = card.text
         if let buttonText = card.buttonText, card.buttonSelector != nil {
@@ -379,9 +366,19 @@ class CardView: UIView {
                 make.bottom.equalTo(self).offset(IntroUX.StartBrowsingBottomOffset)
                 make.centerX.equalTo(self)
             }
+            stackView.snp.makeConstraints { make in
+                make.leading.trailing.top.equalTo(self)
+                make.bottom.lessThanOrEqualTo(self).offset(-IntroUX.PageControlHeight)
+            }
             // When there is a button reduce the spacing to make more room for text
             stackView.spacing = stackView.spacing / 2
+        } else {
+            stackView.snp.makeConstraints { make in
+                make.leading.trailing.top.equalTo(self)
+                make.bottom.lessThanOrEqualTo(self)
+            }
         }
+        alpha = 0
     }
 
     // Allows the scrollView to scroll while the CardView is in front

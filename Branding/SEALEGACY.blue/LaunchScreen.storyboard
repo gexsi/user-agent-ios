@@ -20,8 +20,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UUC-A1-LLN">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner" translatesAutoresizingMaskIntoConstraints="NO" id="bGw-KW-hzh">
-                                        <rect key="frame" x="55.5" y="333" width="303" height="230"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="bGw-KW-hzh">
+                                        <rect key="frame" x="-1793" y="333" width="4000" height="230"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="230" id="Hbx-nr-v6U"/>
                                         </constraints>
@@ -50,9 +50,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="banner" width="303" height="430"/>
+        <image name="splash" width="4000" height="2668"/>
         <namedColor name="Brand">
-            <color red="0.22352941176470589" green="0.45882352941176469" blue="0.71764705882352942" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.75300002098083496" blue="0.74500000476837158" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
