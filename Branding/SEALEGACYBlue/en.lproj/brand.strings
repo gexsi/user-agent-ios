@@ -18,7 +18,7 @@
 "licensesHeader" = "SEALEGACY.blue";
 
 /* The text shown in the URL bar on about:home */
-"UrlBar.Placeholder" = "Search and do good… ";
+"UrlBar.Placeholder" = "Search for our ocean…";
 
 /* Label for the button, displayed in the menu, used to open the What's new page. */
 "Menu.OpenWhatsNewAction.Title" = "About SEALEGACY.blue";
