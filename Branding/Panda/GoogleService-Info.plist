@@ -3,23 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>138693552074-t2h6mls2dk5crofre3i4hud6d2e3k9om.apps.googleusercontent.com</string>
+	<string>15466585243-vd6tvcmm43tk4hh8qndmkpu2dmk2uci3.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.138693552074-t2h6mls2dk5crofre3i4hud6d2e3k9om</string>
-	<key>ANDROID_CLIENT_ID</key>
-	<string>138693552074-hemcirh7v9pormeefbf1fjov6cc13uhq.apps.googleusercontent.com</string>
+	<string>com.googleusercontent.apps.15466585243-vd6tvcmm43tk4hh8qndmkpu2dmk2uci3</string>
 	<key>API_KEY</key>
-	<string>AIzaSyBwfKXJXGWs4R-nyygtHx4v3fCJflEFGmQ</string>
+	<string>AIzaSyBpdmdauBofhG-xZCwC9kcZKzSxTDRibRs</string>
 	<key>GCM_SENDER_ID</key>
-	<string>138693552074</string>
+	<string>15466585243</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.gexsi.panda.search</string>
 	<key>PROJECT_ID</key>
-	<string>gexsi-c211d</string>
+	<string>wwf-panda-search-aa1d0</string>
 	<key>STORAGE_BUCKET</key>
-	<string>gexsi-c211d.appspot.com</string>
+	<string>wwf-panda-search-aa1d0.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -31,8 +29,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:138693552074:ios:ca51b51ca69078d63ed133</string>
+	<string>1:15466585243:ios:f75f408c7f14e34c053a3e</string>
 	<key>DATABASE_URL</key>
-	<string>https://gexsi-c211d.firebaseio.com</string>
+	<string>https://wwf-panda-search-aa1d0.firebaseio.com</string>
 </dict>
 </plist>
