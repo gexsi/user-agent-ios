@@ -53,6 +53,18 @@ extension Features.Home.DynamicBackgrounds {
     }
 }
 
+extension Features.Home.TopSites {
+    public static var isEnabled: Bool {
+        return false
+    }
+}
+
+extension Features.Home.BackgroundSetting {
+    public static var isEnabled: Bool {
+        return true
+    }
+}
+
 extension Features.HumanWeb {
     public static var isEnabled: Bool {
         return false

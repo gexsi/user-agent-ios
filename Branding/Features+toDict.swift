@@ -35,6 +35,9 @@ extension Features {
                 "DynamicBackgrounds": [
                     "isEnabled": Features.Home.DynamicBackgrounds.isEnabled,
                 ],
+                "TopSites": [
+                    "isEnabled": Features.Home.TopSites.isEnabled,
+                ],
             ],
             "Icons": [
                 "type": Features.Icons.type.rawValue,

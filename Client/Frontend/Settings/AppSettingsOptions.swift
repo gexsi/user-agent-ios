@@ -543,6 +543,45 @@ class OpenLinkSetting: Setting {
     }
 }
 
+@available(iOS 14.0, *)
+class DefaultBrowserSetting: Setting {
+    let profile: Profile
+
+    override var accessibilityIdentifier: String? { return "DefaultBrowserSettings" }
+
+    init(settings: SettingsTableViewController) {
+        self.profile = settings.profile
+
+        super.init(title: NSAttributedString(string: Strings.Settings.General.DefaultBrowserMenuItem, attributes: [NSAttributedString.Key.foregroundColor: Theme.tableView.rowText]))
+    }
+
+    override func onClick(_ navigationController: UINavigationController?) {
+        UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!, options: [:])
+    }
+}
+
+class HomeBackgroundSetting: Setting {
+    let profile: Profile
+
+    override var accessoryType: UITableViewCell.AccessoryType { return .disclosureIndicator }
+
+    override var accessibilityIdentifier: String? { return "HomeBackground.Setting" }
+
+    override var style: UITableViewCell.CellStyle { return .value1 }
+
+    init(settings: SettingsTableViewController) {
+        self.profile = settings.profile
+
+        super.init(title: NSAttributedString(string: Strings.Settings.General.HomeBackground.SectionName, attributes: [NSAttributedString.Key.foregroundColor: Theme.tableView.rowText]))
+    }
+
+    override func onClick(_ navigationController: UINavigationController?) {
+        let viewController = HomeBackgroundViewController()
+        viewController.profile = self.profile
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+}
+
 class OnBrowserStartShowSetting: Setting {
     let profile: Profile
 

@@ -134,8 +134,21 @@ class AppSettingsTableViewController: SettingsTableViewController {
 
     private func generalSettingSection() -> SettingSection {
         let prefs = self.profile.prefs
-        var generalSettings: [Setting] = [
-            OpenWithSetting(settings: self),
+        var generalSettings: [Setting] = [OpenWithSetting(settings: self)]
+        if #available(iOS 12.0, *) {
+            generalSettings.append(SiriPageSetting(settings: self))
+        }
+        if Features.Home.BackgroundSetting.isEnabled {
+            generalSettings.append(HomeBackgroundSetting(settings: self))
+        }
+        if #available(iOS 14.0, *) {
+            generalSettings.append(DefaultBrowserSetting(settings: self))
+        }
+
+        // There is nothing to show in the Customize section if we don't include the compact tab layout
+        // setting on iPad. When more options are added that work on both device types, this logic can
+        // be changed.
+        generalSettings += [
             NewTabPageDefaultViewSetting(settings: self),
             OpenLinkSetting(settings: self),
             OnBrowserStartShowSetting(settings: self),
@@ -143,16 +156,6 @@ class AppSettingsTableViewController: SettingsTableViewController {
                         titleText: Strings.Settings.General.RefreshControl),
             BoolSetting(prefs: prefs, prefKey: PrefsKeys.KeyBlockPopups, defaultValue: true,
                         titleText: Strings.Settings.General.BlockPopUpWindows),
-        ]
-
-        if #available(iOS 12.0, *) {
-            generalSettings.insert(SiriPageSetting(settings: self), at: 1)
-        }
-
-        // There is nothing to show in the Customize section if we don't include the compact tab layout
-        // setting on iPad. When more options are added that work on both device types, this logic can
-        // be changed.
-        generalSettings += [
             BoolSetting(prefs: prefs, prefKey: "showClipboardBar", defaultValue: false,
                         titleText: Strings.Settings.General.OfferClipboardBarTitle,
                         statusText: Strings.Settings.General.OfferClipboardBarStatus),

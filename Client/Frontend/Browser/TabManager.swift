@@ -510,7 +510,7 @@ class TabManager: NSObject {
             privateConfiguration = TabManager.makeWebViewConfig(isPrivate: true, prefs: profile.prefs)
         }
 
-        tab.closeAndRemovePrivateBrowsingData()
+        tab.close()
 
         if notify {
             delegates.forEach { $0.get()?.tabManager(self, didRemoveTab: tab, isRestoring: store.isRestoringTabs) }
@@ -543,7 +543,7 @@ class TabManager: NSObject {
         if selectedTab?.isPrivate ?? false {
             _selectedIndex = -1
         }
-        privateTabs.forEach { $0.closeAndRemovePrivateBrowsingData() }
+        privateTabs.forEach { $0.close() }
         tabs = normalTabs
 
         privateConfiguration = TabManager.makeWebViewConfig(isPrivate: true, prefs: profile.prefs)
@@ -626,6 +626,7 @@ class TabManager: NSObject {
         DispatchQueue.main.async {
             let allowPopups = !(self.profile.prefs.boolForKey(PrefsKeys.KeyBlockPopups) ?? true)
             let allowPullToRefresh = self.profile.prefs.boolForKey(PrefsKeys.RefreshControlEnabled) ?? true
+
             // Each tab may have its own configuration, so we should tell each of them in turn.
             for tab in self.tabs {
                 tab.webView?.configuration.preferences.javaScriptCanOpenWindowsAutomatically = allowPopups
@@ -704,7 +705,7 @@ extension TabManager: WKNavigationDelegate {
         guard let tab = self[webView] else { return }
 
         if let tpHelper = tab.contentBlocker, !tpHelper.isAdBlockingEnabled, !tpHelper.isAntiTrackingEnabled {
-            webView.evaluateJavaScript("window.__firefox__.TrackingProtectionStats.setEnabled(false, \(UserScriptManager.securityToken))")
+            webView.evaluateJavascriptInDefaultContentWorld("window.__firefox__.TrackingProtectionStats.setEnabled(false, \(UserScriptManager.appIdToken))")
         }
     }
 

@@ -1,6 +1,6 @@
 import React, { useMemo, useState, useEffect } from 'react';
 import { View, StyleSheet, Platform, Image, Settings } from 'react-native';
-import FastImage from 'react-native-fast-image';
+// import FastImage from 'react-native-fast-image';
 
 const DAY_OF_MONTH = new Date().getDate();
 const BACKGROUND_URL = `https://cdn.cliqz.com/serp/configs/config_${DAY_OF_MONTH}.json`;
@@ -12,7 +12,7 @@ const styles = {
     },
   ],
 };
-const fallbackImageSource = { uri: 'home-background' };
+
 const maskSource = { uri: 'mask' };
 
 const useBackgroundImage = hasDynamicBackground => {
@@ -49,7 +49,7 @@ const useBackgroundImage = hasDynamicBackground => {
   return url;
 };
 
-export default ({ height, children, Features }) => {
+export default ({ height, children, backgroundImageUri, Features }) => {
   const hasDynamicBackground = Features.Home.DynamicBackgrounds.isEnabled;
   const backgroundUrl = useBackgroundImage(hasDynamicBackground);
   const style = useMemo(
@@ -63,7 +63,7 @@ export default ({ height, children, Features }) => {
   const backgroundSource = useMemo(
     () => ({
       uri: backgroundUrl,
-      priority: FastImage.priority.normal,
+      // priority: FastImage.priority.normal,
     }),
     [backgroundUrl],
   );
@@ -71,9 +71,9 @@ export default ({ height, children, Features }) => {
   return (
     <View style={style} accessibilityIgnoresInvertColors>
       {hasError || !hasDynamicBackground ? (
-        <Image style={StyleSheet.absoluteFill} source={fallbackImageSource} />
+        <Image style={StyleSheet.absoluteFill} source={{ uri: backgroundImageUri }} />
       ) : (
-        <FastImage
+        <Image
           style={StyleSheet.absoluteFill}
           source={backgroundSource}
           onError={setError}

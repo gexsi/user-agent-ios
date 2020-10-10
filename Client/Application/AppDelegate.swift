@@ -13,7 +13,8 @@ import CoreSpotlight
 import UserNotifications
 import StoreKit
 import Firebase
-#if DEBUG
+
+#if FB_SONARKIT_ENABLED
 import FlipperKit
 #endif
 
@@ -187,7 +188,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UIViewControllerRestorati
         return p
     }
 
-    #if DEBUG
+    #if FB_SONARKIT_ENABLED
     private func setupFlipper(_ application: UIApplication) {
         let client = FlipperClient.shared()
         let layoutDescriptorMapper = SKDescriptorMapper(defaults: ())
@@ -200,7 +201,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UIViewControllerRestorati
     #endif
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        #if DEBUG
+        #if FB_SONARKIT_ENABLED
         self.setupFlipper(application)
         #endif
 

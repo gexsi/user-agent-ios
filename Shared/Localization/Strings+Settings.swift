@@ -107,6 +107,9 @@ extension Strings {
                 public static let InNewTab = NSLocalizedString("Settings.General.OpenLinks.InNewTab", tableName: "Settings", comment: "The option in settings to configure open links in new tab")
                 public static let InBackground = NSLocalizedString("Settings.General.OpenLinks.InBackground", tableName: "Settings", comment: "The option in settings to configure open links in background")
             }
+            public struct HomeBackground {
+                public static let SectionName = NSLocalizedString("Settings.General.HomeBackground.SectionName", tableName: "Settings", comment: "The option in settings to configure home background image")
+            }
             public struct OnBrowserStartTab {
                 public static let SectionName = NSLocalizedString("Settings.General.OnBrowserStartTab.SectionName", tableName: "Settings", comment: "The option in settings to configure first launch tab")
                 public static let LastOpenedTab = NSLocalizedString("Settings.General.OnBrowserStartTab.LastOpenedTab", tableName: "Settings", comment: "The option in settings to configure first launch to open last opened tab")
@@ -118,6 +121,7 @@ extension Strings {
             public static let OfferClipboardBarStatus = String(format: NSLocalizedString("Settings.General.OfferClipboardBarStatus", tableName: "Settings", comment: "Description displayed under the ”Offer to Open Copied Link” option. See https://bug1223660.bmoattachments.org/attachment.cgi?id=8898349"), AppInfo.displayName)
             public static let ShowLinkPreviewsTitle = NSLocalizedString("Settings.General.ShowLinkPreivewsTitle", tableName: "Settings", comment: "Title of setting to enable link previews when long-pressing links.")
             public static let ShowLinkPreviewsStatus = NSLocalizedString("Settings.General.ShowLinkPreviewsStatus", tableName: "Settings", comment: "Description displayed under the ”Show Link Previews” option")
+            public static let DefaultBrowserMenuItem = NSLocalizedString("Settings.General.DefaultBrowserMenuItem", tableName: "Settings", value: "Set as Default Browser", comment: "Menu option for setting User Agent as default browser.")
         }
         public struct News {
             public static let SectionTitle = NSLocalizedString("Settings.News.SectionName", tableName: "Settings", comment: "News settings section title")

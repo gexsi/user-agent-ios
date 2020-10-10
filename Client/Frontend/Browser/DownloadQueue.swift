@@ -68,14 +68,25 @@ class HTTPDownload: Download {
 
     private var resumeData: Data?
 
-    init(preflightResponse: URLResponse, request: URLRequest) {
+    // Used to avoid name spoofing using Unicode RTL char to change file extension
+    public static func stripUnicode(fromFilename string: String) -> String {
+        let allowed = CharacterSet.alphanumerics.union(CharacterSet.punctuationCharacters)
+        return string.components(separatedBy: allowed.inverted).joined()
+     }
+
+    init?(preflightResponse: URLResponse, request: URLRequest) {
         self.preflightResponse = preflightResponse
         self.request = request
+
+        // Verify scheme is a secure http or https scheme before moving forward with HTTPDownload initialization
+        guard let scheme = request.url?.scheme, (scheme == "http" || scheme == "https") else {
+            return nil
+        }
 
         super.init()
 
         if let filename = preflightResponse.suggestedFilename {
-            self.filename = filename
+            self.filename = HTTPDownload.stripUnicode(fromFilename: filename)
         }
 
         if let mimeType = preflightResponse.mimeType {

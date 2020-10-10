@@ -248,7 +248,6 @@
 		2B65700F24AB68A7005DE5D3 /* ErrorPageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC4869A2195F58200CDA48D /* ErrorPageHelper.swift */; };
 		2B65701024AB68A7005DE5D3 /* TabsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E660BDD81BB06521009AC090 /* TabsButton.swift */; };
 		2B65701124AB68A7005DE5D3 /* SavedTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63306D3821103EAE00F25400 /* SavedTab.swift */; };
-		2B65701224AB68A7005DE5D3 /* HistoryStateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02816C11ECA5E2A00240CAA /* HistoryStateHelper.swift */; };
 		2B65701324AB68A7005DE5D3 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04D1B91209790B60074B35F /* Toast.swift */; };
 		2B65701424AB68A7005DE5D3 /* LibraryContextMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B516D2B238BAC8B006D6B57 /* LibraryContextMenu.swift */; };
 		2B65701524AB68A7005DE5D3 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34DC84D1A16C40C00D49B7B /* Profile.swift */; };
@@ -407,6 +406,9 @@
 		2B9D2EEC24AF1AB600C2A9CB /* Intro.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B9D2EE724AF1AB600C2A9CB /* Intro.xcassets */; };
 		2B9FADD424E2A96E00EBFF59 /* SearchEnginesModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B9FADD224E2A96E00EBFF59 /* SearchEnginesModule.m */; };
 		2B9FADD524E2A96E00EBFF59 /* SearchEnginesModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9FADD324E2A96E00EBFF59 /* SearchEnginesModule.swift */; };
+		2BA3DB2B252F1ADD00AAE8B5 /* HomeBackgroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA3DB2A252F1ADD00AAE8B5 /* HomeBackgroundViewController.swift */; };
+		2BA3DB2C252F1ADD00AAE8B5 /* HomeBackgroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA3DB2A252F1ADD00AAE8B5 /* HomeBackgroundViewController.swift */; };
+		2BA3DB2D252F1ADD00AAE8B5 /* HomeBackgroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA3DB2A252F1ADD00AAE8B5 /* HomeBackgroundViewController.swift */; };
 		2BAD299524E6755B0098F3D1 /* SiriShortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04CD747216CF86A004FF5B0 /* SiriShortcuts.swift */; };
 		2BAD299624E6755B0098F3D1 /* ThemedWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9A179E20E6C1A200B12184 /* ThemedWidgets.swift */; };
 		2BAD299724E6755B0098F3D1 /* AppSettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68E39BD1C46F42000B85F42 /* AppSettingsTableViewController.swift */; };
@@ -592,7 +594,6 @@
 		2BAD2A4C24E6755B0098F3D1 /* ErrorPageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC4869A2195F58200CDA48D /* ErrorPageHelper.swift */; };
 		2BAD2A4D24E6755B0098F3D1 /* TabsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E660BDD81BB06521009AC090 /* TabsButton.swift */; };
 		2BAD2A4F24E6755B0098F3D1 /* SavedTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63306D3821103EAE00F25400 /* SavedTab.swift */; };
-		2BAD2A5124E6755B0098F3D1 /* HistoryStateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02816C11ECA5E2A00240CAA /* HistoryStateHelper.swift */; };
 		2BAD2A5224E6755B0098F3D1 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04D1B91209790B60074B35F /* Toast.swift */; };
 		2BAD2A5324E6755B0098F3D1 /* LibraryContextMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B516D2B238BAC8B006D6B57 /* LibraryContextMenu.swift */; };
 		2BAD2A5424E6755B0098F3D1 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34DC84D1A16C40C00D49B7B /* Profile.swift */; };
@@ -938,7 +939,6 @@
 		2BB3DEC824ED34570050370A /* ErrorPageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC4869A2195F58200CDA48D /* ErrorPageHelper.swift */; };
 		2BB3DEC924ED34570050370A /* TabsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E660BDD81BB06521009AC090 /* TabsButton.swift */; };
 		2BB3DECA24ED34570050370A /* SavedTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63306D3821103EAE00F25400 /* SavedTab.swift */; };
-		2BB3DECB24ED34570050370A /* HistoryStateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02816C11ECA5E2A00240CAA /* HistoryStateHelper.swift */; };
 		2BB3DECC24ED34570050370A /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04D1B91209790B60074B35F /* Toast.swift */; };
 		2BB3DECD24ED34570050370A /* LibraryContextMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B516D2B238BAC8B006D6B57 /* LibraryContextMenu.swift */; };
 		2BB3DECE24ED34570050370A /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34DC84D1A16C40C00D49B7B /* Profile.swift */; };
@@ -1200,6 +1200,7 @@
 		4667B092242123EC001A4197 /* Bridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4667B091242123EC001A4197 /* Bridge.swift */; };
 		4667B0952421266B001A4197 /* Today.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4667B0972421266B001A4197 /* Today.strings */; };
 		466B372A246301A200747C50 /* Features.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466B3729246301A200747C50 /* Features.swift */; };
+		466BF3C82521F9610070F922 /* WKWebViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466BF3C72521F9610070F922 /* WKWebViewExtensions.swift */; };
 		467C107024572E66003F7101 /* Strings+Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467C106F24572E66003F7101 /* Strings+Search.swift */; };
 		46BBFA6023575AEC00283594 /* Strings+PrivateBrowsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BBFA5F23575AEC00283594 /* Strings+PrivateBrowsing.swift */; };
 		46BBFA6223575B0000283594 /* Strings+Brand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BBFA6123575B0000283594 /* Strings+Brand.swift */; };
@@ -1815,6 +1816,7 @@
 		2B9D2EE724AF1AB600C2A9CB /* Intro.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Intro.xcassets; sourceTree = "<group>"; };
 		2B9FADD224E2A96E00EBFF59 /* SearchEnginesModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchEnginesModule.m; sourceTree = "<group>"; };
 		2B9FADD324E2A96E00EBFF59 /* SearchEnginesModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchEnginesModule.swift; sourceTree = "<group>"; };
+		2BA3DB2A252F1ADD00AAE8B5 /* HomeBackgroundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeBackgroundViewController.swift; sourceTree = "<group>"; };
 		2BAD2B0724E6755B0098F3D1 /* Panda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Panda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BAD2B0B24E676060098F3D1 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2BAD2B0D24E676060098F3D1 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/ForgetMode.strings; sourceTree = "<group>"; };
@@ -2067,6 +2069,7 @@
 		4667B0962421266B001A4197 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Today.strings; sourceTree = "<group>"; };
 		4667B0982421266E001A4197 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Today.strings; sourceTree = "<group>"; };
 		466B3729246301A200747C50 /* Features.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features.swift; sourceTree = "<group>"; };
+		466BF3C72521F9610070F922 /* WKWebViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKWebViewExtensions.swift; sourceTree = "<group>"; };
 		467805F323154A160031E226 /* libSentry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSentry.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		46796FF624810C1100E64738 /* Features+toDict.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Features+toDict.swift"; sourceTree = "<group>"; };
 		467C106F24572E66003F7101 /* Strings+Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Strings+Search.swift"; sourceTree = "<group>"; };
@@ -2247,7 +2250,6 @@
 		D010187E21AF1B26009CBB5A /* TrackingProtectionStats.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = TrackingProtectionStats.js; sourceTree = "<group>"; };
 		D0152244229855A8009DE753 /* OneLineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneLineCell.swift; sourceTree = "<group>"; };
 		D018F93D1F44A7190098F8CA /* Schema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schema.swift; sourceTree = "<group>"; };
-		D02816C11ECA5E2A00240CAA /* HistoryStateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryStateHelper.swift; sourceTree = "<group>"; };
 		D02818601EF056C800240CAA /* SentryIntegration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SentryIntegration.swift; sourceTree = "<group>"; };
 		D029A04820A62DB0001DB72F /* TemporaryDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporaryDocument.swift; sourceTree = "<group>"; };
 		D03DCD94211B63D000151ACA /* DateGroupedTableData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateGroupedTableData.swift; sourceTree = "<group>"; };
@@ -2267,7 +2269,6 @@
 		D0C95DF1200EAD3000E4E51C /* FindInPage.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = FindInPage.js; sourceTree = "<group>"; };
 		D0C95DF5200EADD500E4E51C /* LoginsHelper.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = LoginsHelper.js; sourceTree = "<group>"; };
 		D0C95E03200FCA8800E4E51C /* ReaderMode.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ReaderMode.js; sourceTree = "<group>"; };
-		D0C95E05200FCB5600E4E51C /* HistoryStateHelper.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = HistoryStateHelper.js; sourceTree = "<group>"; };
 		D0C95E0D200FD3B200E4E51C /* PrintHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintHelper.swift; sourceTree = "<group>"; };
 		D0C95E33200FDB3200E4E51C /* MetadataHelper.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = MetadataHelper.js; sourceTree = "<group>"; };
 		D0C95E35200FDC5400E4E51C /* MetadataParserHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetadataParserHelper.swift; sourceTree = "<group>"; };
@@ -3407,6 +3408,7 @@
 				2B427C7123D6E76200BF1308 /* NewTabDefaulViewSettingsViewController.swift */,
 				2BE9C93023E169450074E55E /* OnBrowserStartShowSettingsViewController.swift */,
 				2BBAA44C242124E0006D8246 /* TodayWidgetViewController.swift */,
+				2BA3DB2A252F1ADD00AAE8B5 /* HomeBackgroundViewController.swift */,
 				2B31321624A4A3FE006A2B51 /* OpenLinksSettingsViewController.swift */,
 			);
 			path = Settings;
@@ -4041,7 +4043,6 @@
 		D0FCF7EC1FE44DBD004A7995 /* AtDocumentStart */ = {
 			isa = PBXGroup;
 			children = (
-				D0C95E05200FCB5600E4E51C /* HistoryStateHelper.js */,
 				D0C95E03200FCA8800E4E51C /* ReaderMode.js */,
 				D010187E21AF1B26009CBB5A /* TrackingProtectionStats.js */,
 			);
@@ -4134,7 +4135,6 @@
 				EBB8950B2193994A00EB91A0 /* FirefoxTabContentBlocker.swift */,
 				39F4C1092045DB2E00746155 /* FocusHelper.swift */,
 				D0E55C4E1FB4FD23006DC274 /* FormPostHelper.swift */,
-				D02816C11ECA5E2A00240CAA /* HistoryStateHelper.swift */,
 				D3C3696D1CC6B78800348A61 /* LocalRequestHelper.swift */,
 				7482205B1DBAB56300EEEA72 /* MailProviders.swift */,
 				744ED5601DBFEB8D00A2B5BE /* MailtoLinkHandler.swift */,
@@ -4268,6 +4268,7 @@
 				E693F0D81E9D64BD0086DC17 /* OptionalExtensions.swift */,
 				D0543529226687A400FDE4EF /* UIBarButtonItemExtensions.swift */,
 				ACC6EC5223290974000F5499 /* UIColor+Blending.swift */,
+				466BF3C72521F9610070F922 /* WKWebViewExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -4996,16 +4997,13 @@
 						ProvisioningStyle = Automatic;
 					};
 					2B656F4C24AB68A7005DE5D3 = {
-						DevelopmentTeam = ZX98ZK2A75;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					2BAD298424E6755B0098F3D1 = {
-						DevelopmentTeam = ZX98ZK2A75;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					2BB3DDFF24ED34570050370A = {
-						DevelopmentTeam = ZX98ZK2A75;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					2BE258D223BA2B4A0022ED28 = {
 						CreatedOnToolsVersion = 11.3;
@@ -5592,7 +5590,6 @@
 				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
 				"${BUILT_PRODUCTS_DIR}/RCTTypeSafety/RCTTypeSafety.framework",
 				"${BUILT_PRODUCTS_DIR}/RNFS/RNFS.framework",
-				"${BUILT_PRODUCTS_DIR}/RNFastImage/RNFastImage.framework",
 				"${BUILT_PRODUCTS_DIR}/RNSVG/RNSVG.framework",
 				"${BUILT_PRODUCTS_DIR}/RNSqlite2/RNSqlite2.framework",
 				"${BUILT_PRODUCTS_DIR}/React-Core/React.framework",
@@ -5611,13 +5608,11 @@
 				"${BUILT_PRODUCTS_DIR}/React-jsinspector/jsinspector.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactCommon/ReactCommon.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
-				"${BUILT_PRODUCTS_DIR}/SDWebImageWebPCoder/SDWebImageWebPCoder.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/XCGLogger/XCGLogger.framework",
 				"${BUILT_PRODUCTS_DIR}/Yoga/yoga.framework",
 				"${BUILT_PRODUCTS_DIR}/glog/glog.framework",
-				"${BUILT_PRODUCTS_DIR}/libwebp/libwebp.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 				"${BUILT_PRODUCTS_DIR}/react-native-netinfo/react_native_netinfo.framework",
 				"${BUILT_PRODUCTS_DIR}/SQLCipher/SQLCipher.framework",
@@ -5636,7 +5631,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTTypeSafety.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNFS.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNFastImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNSVG.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNSqlite2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/React.framework",
@@ -5655,13 +5649,11 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/jsinspector.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactCommon.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImageWebPCoder.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCGLogger.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/yoga.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/glog.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libwebp.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/react_native_netinfo.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLCipher.framework",
@@ -5779,7 +5771,6 @@
 				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
 				"${BUILT_PRODUCTS_DIR}/RCTTypeSafety/RCTTypeSafety.framework",
 				"${BUILT_PRODUCTS_DIR}/RNFS/RNFS.framework",
-				"${BUILT_PRODUCTS_DIR}/RNFastImage/RNFastImage.framework",
 				"${BUILT_PRODUCTS_DIR}/RNSVG/RNSVG.framework",
 				"${BUILT_PRODUCTS_DIR}/RNSqlite2/RNSqlite2.framework",
 				"${BUILT_PRODUCTS_DIR}/React-Core/React.framework",
@@ -5798,13 +5789,11 @@
 				"${BUILT_PRODUCTS_DIR}/React-jsinspector/jsinspector.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactCommon/ReactCommon.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
-				"${BUILT_PRODUCTS_DIR}/SDWebImageWebPCoder/SDWebImageWebPCoder.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/XCGLogger/XCGLogger.framework",
 				"${BUILT_PRODUCTS_DIR}/Yoga/yoga.framework",
 				"${BUILT_PRODUCTS_DIR}/glog/glog.framework",
-				"${BUILT_PRODUCTS_DIR}/libwebp/libwebp.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 				"${BUILT_PRODUCTS_DIR}/react-native-netinfo/react_native_netinfo.framework",
 				"${BUILT_PRODUCTS_DIR}/SQLCipher/SQLCipher.framework",
@@ -5822,7 +5811,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTTypeSafety.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNFS.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNFastImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNSVG.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNSqlite2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/React.framework",
@@ -5841,13 +5829,11 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/jsinspector.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactCommon.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImageWebPCoder.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCGLogger.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/yoga.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/glog.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libwebp.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/react_native_netinfo.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLCipher.framework",
@@ -5965,7 +5951,6 @@
 				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
 				"${BUILT_PRODUCTS_DIR}/RCTTypeSafety/RCTTypeSafety.framework",
 				"${BUILT_PRODUCTS_DIR}/RNFS/RNFS.framework",
-				"${BUILT_PRODUCTS_DIR}/RNFastImage/RNFastImage.framework",
 				"${BUILT_PRODUCTS_DIR}/RNSVG/RNSVG.framework",
 				"${BUILT_PRODUCTS_DIR}/RNSqlite2/RNSqlite2.framework",
 				"${BUILT_PRODUCTS_DIR}/React-Core/React.framework",
@@ -5984,13 +5969,11 @@
 				"${BUILT_PRODUCTS_DIR}/React-jsinspector/jsinspector.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactCommon/ReactCommon.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
-				"${BUILT_PRODUCTS_DIR}/SDWebImageWebPCoder/SDWebImageWebPCoder.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/XCGLogger/XCGLogger.framework",
 				"${BUILT_PRODUCTS_DIR}/Yoga/yoga.framework",
 				"${BUILT_PRODUCTS_DIR}/glog/glog.framework",
-				"${BUILT_PRODUCTS_DIR}/libwebp/libwebp.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 				"${BUILT_PRODUCTS_DIR}/react-native-netinfo/react_native_netinfo.framework",
 				"${BUILT_PRODUCTS_DIR}/SQLCipher/SQLCipher.framework",
@@ -6008,7 +5991,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTTypeSafety.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNFS.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNFastImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNSVG.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNSqlite2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/React.framework",
@@ -6027,13 +6009,11 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/jsinspector.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactCommon.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImageWebPCoder.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCGLogger.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/yoga.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/glog.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libwebp.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/react_native_netinfo.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLCipher.framework",
@@ -6313,6 +6293,7 @@
 				46BBFA6223575B0000283594 /* Strings+Brand.swift in Sources */,
 				E65075B71E37F7AB006961AC /* Logger.swift in Sources */,
 				E65075961E37F7AB006961AC /* AsyncReducer.swift in Sources */,
+				466BF3C82521F9610070F922 /* WKWebViewExtensions.swift in Sources */,
 				7B9BF91C1E43472E00CB24F4 /* JSONExtensions.swift in Sources */,
 				2B7C286C2498D1A800D43685 /* Colors.swift in Sources */,
 				2BE3BD82246ECDFB0066D0BD /* Strings+ReaderMode.swift in Sources */,
@@ -6538,7 +6519,6 @@
 				2B6571AA24AB69A6005DE5D3 /* Features.swift in Sources */,
 				2B65701124AB68A7005DE5D3 /* SavedTab.swift in Sources */,
 				2B9D2EEA24AF1AB600C2A9CB /* Onboarding+Cliqz.swift in Sources */,
-				2B65701224AB68A7005DE5D3 /* HistoryStateHelper.swift in Sources */,
 				2B65701324AB68A7005DE5D3 /* Toast.swift in Sources */,
 				2B65701424AB68A7005DE5D3 /* LibraryContextMenu.swift in Sources */,
 				2B65701524AB68A7005DE5D3 /* Profile.swift in Sources */,
@@ -6572,6 +6552,7 @@
 				2B9D2EE924AF1AB600C2A9CB /* IntroViewController.swift in Sources */,
 				2B65703224AB68A7005DE5D3 /* NativeFaviconFetcher.swift in Sources */,
 				2B65703324AB68A7005DE5D3 /* AutoCompletion.m in Sources */,
+				2BA3DB2B252F1ADD00AAE8B5 /* HomeBackgroundViewController.swift in Sources */,
 				2B65703424AB68A7005DE5D3 /* DocumentServicesHelper.swift in Sources */,
 				2B65703524AB68A7005DE5D3 /* TabManager.swift in Sources */,
 				2B65703624AB68A7005DE5D3 /* TopTabsLayout.swift in Sources */,
@@ -6828,7 +6809,6 @@
 				2BAD2A4C24E6755B0098F3D1 /* ErrorPageHelper.swift in Sources */,
 				2BAD2A4D24E6755B0098F3D1 /* TabsButton.swift in Sources */,
 				2BAD2A4F24E6755B0098F3D1 /* SavedTab.swift in Sources */,
-				2BAD2A5124E6755B0098F3D1 /* HistoryStateHelper.swift in Sources */,
 				2BAD2A5224E6755B0098F3D1 /* Toast.swift in Sources */,
 				2BAD2A5324E6755B0098F3D1 /* LibraryContextMenu.swift in Sources */,
 				2BAD2A5424E6755B0098F3D1 /* Profile.swift in Sources */,
@@ -6863,6 +6843,7 @@
 				2BAD2A7224E6755B0098F3D1 /* AutoCompletion.m in Sources */,
 				2BAD2A7324E6755B0098F3D1 /* DocumentServicesHelper.swift in Sources */,
 				2BAD2A7424E6755B0098F3D1 /* TabManager.swift in Sources */,
+				2BA3DB2C252F1ADD00AAE8B5 /* HomeBackgroundViewController.swift in Sources */,
 				2BAD2A7524E6755B0098F3D1 /* TopTabsLayout.swift in Sources */,
 				2BAD2A7624E6755B0098F3D1 /* SpeechSynthesizer.swift in Sources */,
 				2B571CB524E6786C00F17C1A /* Strings+Intro.swift in Sources */,
@@ -7121,7 +7102,6 @@
 				2BB3DEC824ED34570050370A /* ErrorPageHelper.swift in Sources */,
 				2BB3DEC924ED34570050370A /* TabsButton.swift in Sources */,
 				2BB3DECA24ED34570050370A /* SavedTab.swift in Sources */,
-				2BB3DECB24ED34570050370A /* HistoryStateHelper.swift in Sources */,
 				2BB3DECC24ED34570050370A /* Toast.swift in Sources */,
 				2BB3DECD24ED34570050370A /* LibraryContextMenu.swift in Sources */,
 				2BB3DECE24ED34570050370A /* Profile.swift in Sources */,
@@ -7154,6 +7134,7 @@
 				2BB3DEE924ED34570050370A /* Constants.m in Sources */,
 				2BB3DEEA24ED34570050370A /* NativeFaviconFetcher.swift in Sources */,
 				2BB3DEEB24ED34570050370A /* AutoCompletion.m in Sources */,
+				2BA3DB2D252F1ADD00AAE8B5 /* HomeBackgroundViewController.swift in Sources */,
 				2BB3DEEC24ED34570050370A /* DocumentServicesHelper.swift in Sources */,
 				2BB3DEED24ED34570050370A /* TabManager.swift in Sources */,
 				2BB3DEEE24ED34570050370A /* TopTabsLayout.swift in Sources */,
@@ -8522,9 +8503,9 @@
 				BUNDLE_DISPLAY_NAME = "${BUNDLE_DISPLAY_NAME}";
 				CODE_SIGN_ENTITLEMENTS = "$(inherit)Branding/Gexsi/Entitlements/GexsiDebug.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = "${APP_BUILD_VERSION}";
-				DEVELOPMENT_TEAM = "${APP_DEVELOPMENT_TEAM}";
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -8580,9 +8561,9 @@
 				BUNDLE_DISPLAY_NAME = "${BUNDLE_DISPLAY_NAME}";
 				CODE_SIGN_ENTITLEMENTS = "$(inherit)Branding/Gexsi/Entitlements/GexsiAdHoc.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = "${APP_BUILD_VERSION}";
-				DEVELOPMENT_TEAM = "${APP_DEVELOPMENT_TEAM}";
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -8638,9 +8619,9 @@
 				BUNDLE_DISPLAY_NAME = "${BUNDLE_DISPLAY_NAME}";
 				CODE_SIGN_ENTITLEMENTS = "$(inherit)Branding/Gexsi/Entitlements/Gexsi.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = "${APP_BUILD_VERSION}";
-				DEVELOPMENT_TEAM = "${APP_DEVELOPMENT_TEAM}";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = (
@@ -8681,9 +8662,9 @@
 				BUNDLE_DISPLAY_NAME = "${BUNDLE_DISPLAY_NAME}";
 				CODE_SIGN_ENTITLEMENTS = "$(inherit)Branding/Gexsi/Entitlements/Gexsi.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = "${APP_BUILD_VERSION}";
-				DEVELOPMENT_TEAM = "${APP_DEVELOPMENT_TEAM}";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = (
@@ -8724,9 +8705,9 @@
 				BUNDLE_DISPLAY_NAME = "${BUNDLE_DISPLAY_NAME}";
 				CODE_SIGN_ENTITLEMENTS = "$(inherit)Branding/Panda/Entitlements/PandaDebug.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = "${APP_BUILD_VERSION}";
-				DEVELOPMENT_TEAM = "${APP_DEVELOPMENT_TEAM}";
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -8782,9 +8763,9 @@
 				BUNDLE_DISPLAY_NAME = "${BUNDLE_DISPLAY_NAME}";
 				CODE_SIGN_ENTITLEMENTS = "$(inherit)Branding/Panda/Entitlements/PandaAdHoc.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = "${APP_BUILD_VERSION}";
-				DEVELOPMENT_TEAM = "${APP_DEVELOPMENT_TEAM}";
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -8840,9 +8821,9 @@
 				BUNDLE_DISPLAY_NAME = "${BUNDLE_DISPLAY_NAME}";
 				CODE_SIGN_ENTITLEMENTS = "$(inherit)Branding/Panda/Entitlements/Panda.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = "${APP_BUILD_VERSION}";
-				DEVELOPMENT_TEAM = "${APP_DEVELOPMENT_TEAM}";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = (
@@ -8883,9 +8864,9 @@
 				BUNDLE_DISPLAY_NAME = "${BUNDLE_DISPLAY_NAME}";
 				CODE_SIGN_ENTITLEMENTS = "$(inherit)Branding/Panda/Entitlements/Panda.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = "${APP_BUILD_VERSION}";
-				DEVELOPMENT_TEAM = "${APP_DEVELOPMENT_TEAM}";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = (
@@ -8926,9 +8907,9 @@
 				BUNDLE_DISPLAY_NAME = "${BUNDLE_DISPLAY_NAME}";
 				CODE_SIGN_ENTITLEMENTS = "$(inherit)Branding/SEALEGACYBlue/Entitlements/SEALEGACYBlueDebug.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = "${APP_BUILD_VERSION}";
-				DEVELOPMENT_TEAM = "${APP_DEVELOPMENT_TEAM}";
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -8984,9 +8965,9 @@
 				BUNDLE_DISPLAY_NAME = "${BUNDLE_DISPLAY_NAME}";
 				CODE_SIGN_ENTITLEMENTS = "$(inherit)Branding/SEALEGACYBlue/Entitlements/SEALEGACYBlueAdHoc.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = "${APP_BUILD_VERSION}";
-				DEVELOPMENT_TEAM = "${APP_DEVELOPMENT_TEAM}";
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -9041,10 +9022,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUNDLE_DISPLAY_NAME = "${BUNDLE_DISPLAY_NAME}";
 				CODE_SIGN_ENTITLEMENTS = "$(inherit)Branding/SEALEGACYBlue/Entitlements/SEALEGACYBlue.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = "${APP_BUILD_VERSION}";
-				DEVELOPMENT_TEAM = "${APP_DEVELOPMENT_TEAM}";
+				DEVELOPMENT_TEAM = ZX98ZK2A75;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = (
@@ -9084,10 +9065,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUNDLE_DISPLAY_NAME = "${BUNDLE_DISPLAY_NAME}";
 				CODE_SIGN_ENTITLEMENTS = "$(inherit)Branding/SEALEGACYBlue/Entitlements/SEALEGACYBlue.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = "${APP_BUILD_VERSION}";
-				DEVELOPMENT_TEAM = "${APP_DEVELOPMENT_TEAM}";
+				DEVELOPMENT_TEAM = ZX98ZK2A75;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = (

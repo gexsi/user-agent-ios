@@ -15,6 +15,9 @@ extension Notification.Name {
     // Fired when the user has changed news settings
     public static let NewsSettingsDidChange = Notification.Name("NewsSettingsDidChange")
 
+    // Fired when the user has changed home wallpaper settings
+    public static let HomeBackgroundSettingsDidChange = Notification.Name("HomeBackgroundSettingsDidChange")
+
     // Fired when the user has changed new tab page default segment settings
     public static let NewTabPageDefaultViewSettingsDidChange = Notification.Name("NewTabPageDefaultViewSettingsDidChange")
 

@@ -30,6 +30,9 @@ public struct PrefsKeys {
     public static let Adblocker = "Adblocker"
     public static let PopupBlocker = "PopupBlocker"
 
+    // Home
+    public static let HomeBackgroundImage = "HomeBackgroundImage"
+
     //News
     public static let NewTabNewsEnabled = "NewTabNewsEnabled"
     public static let NewTabNewsImagesEnabled = "NewTabNewsImagesEnabled"
@@ -45,7 +48,6 @@ public struct PrefsKeys {
 
     public static let AppExtensionTelemetryOpenUrl = "AppExtensionTelemetryOpenUrl"
     public static let AppExtensionTelemetryEventArray = "AppExtensionTelemetryEvents"
-
     public static let KeyBlockPopups = "blockPopups"
 }
 

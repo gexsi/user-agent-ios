@@ -5,7 +5,7 @@
 import Foundation
 import WebKit
 import Shared
-import Photos
+import UIKit
 
 private let log = Logger.browserLogger
 
@@ -150,8 +150,13 @@ extension BrowserViewController: WKUIDelegate {
             })
 
             actions.append(UIAction(title: Strings.ContextMenu.DownloadLink, image: UIImage.templateImageNamed("menu-panel-Downloads"), identifier: UIAction.Identifier("linkContextMenu.download")) {_ in
-                self.pendingDownloadWebView = currentTab.webView
-                DownloadContentScript.requestDownload(url: url, tab: currentTab)
+                // This checks if download is a blob, if yes, begin blob download process
+                if !DownloadContentScript.requestBlobDownload(url: url, tab: currentTab) {
+                    //if not a blob, set pendingDownloadWebView and load the request in the webview, which will trigger the WKWebView navigationResponse delegate function and eventually downloadHelper.open()
+                    self.pendingDownloadWebView = currentTab.webView
+                    let request = URLRequest(url: url)
+                    currentTab.webView?.load(request)
+                }
             })
 
             actions.append(UIAction(title: Strings.ContextMenu.CopyLink, image: UIImage.templateImageNamed("menu-Copy-Link"), identifier: UIAction.Identifier("linkContextMenu.copyLink")) { _ in
@@ -166,44 +171,10 @@ extension BrowserViewController: WKUIDelegate {
             })
 
             if let url = elements.image {
-                let photoAuthorizeStatus = PHPhotoLibrary.authorizationStatus()
                 actions.append(UIAction(title: Strings.ContextMenu.SaveImage, identifier: UIAction.Identifier("linkContextMenu.saveImage")) { _ in
-                    let handlePhotoLibraryAuthorized = {
-                        DispatchQueue.main.async {
-                            getImageData(url) { data in
-                                PHPhotoLibrary.shared().performChanges({
-                                    PHAssetCreationRequest.forAsset().addResource(with: .photo, data: data, options: nil)
-                                })
-                            }
-                        }
-                    }
-
-                    let handlePhotoLibraryDenied = {
-                        DispatchQueue.main.async {
-                            let accessDenied = UIAlertController(title: Strings.PhotoLibrary.AppWouldLikeAccessTitle, message: Strings.PhotoLibrary.AppWouldLikeAccessMessage, preferredStyle: .alert)
-                            let dismissAction = UIAlertAction(title: Strings.General.CancelString, style: .default, handler: nil)
-                            accessDenied.addAction(dismissAction)
-                            let settingsAction = UIAlertAction(title: Strings.General.OpenSettingsString, style: .default ) { _ in
-                                UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!, options: [:])
-                            }
-                            accessDenied.addAction(settingsAction)
-                            self.present(accessDenied, animated: true, completion: nil)
-                        }
-                    }
-
-                    if photoAuthorizeStatus == .notDetermined {
-                        PHPhotoLibrary.requestAuthorization({ status in
-                            guard status == .authorized else {
-                                handlePhotoLibraryDenied()
-                                return
-                            }
-
-                            handlePhotoLibraryAuthorized()
-                        })
-                    } else if photoAuthorizeStatus == .authorized {
-                        handlePhotoLibraryAuthorized()
-                    } else {
-                        handlePhotoLibraryDenied()
+                    getImageData(url) { data in
+                        guard let image = UIImage(data: data) else { return }
+                        self.writeToPhotoAlbum(image: image)
                     }
                 })
 
@@ -243,6 +214,24 @@ extension BrowserViewController: WKUIDelegate {
 
             return UIMenu(title: url.absoluteString, children: actions)
         }))
+    }
+
+    func writeToPhotoAlbum(image: UIImage) {
+        UIImageWriteToSavedPhotosAlbum(image, self, #selector(saveError), nil)
+    }
+
+    @objc func saveError(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
+        guard error != nil else { return }
+        DispatchQueue.main.async {
+            let accessDenied = UIAlertController(title: Strings.PhotoLibrary.AppWouldLikeAccessTitle, message: Strings.PhotoLibrary.AppWouldLikeAccessMessage, preferredStyle: .alert)
+            let dismissAction = UIAlertAction(title: Strings.General.CancelString, style: .default, handler: nil)
+            accessDenied.addAction(dismissAction)
+            let settingsAction = UIAlertAction(title: Strings.General.OpenSettingsString, style: .default ) { _ in
+                UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!, options: [:])
+            }
+            accessDenied.addAction(settingsAction)
+            self.present(accessDenied, animated: true, completion: nil)
+        }
     }
 }
 
@@ -556,6 +545,13 @@ extension BrowserViewController: WKNavigationDelegate {
             tab.mimeType = response.mimeType
         }
 
+        if isCmdClickForNewTab {
+            guard let url = webView.url, let isPrivate = self.tabManager.selectedTab?.isPrivate else { return }
+            homePanelDidRequestToOpenInNewTab(url, isPrivate: isPrivate)
+            self.isCmdClickForNewTab = false
+            decisionHandler(.cancel)
+        }
+
         // If none of our helpers are responsible for handling this response,
         // just let the webview handle it as normal.
         decisionHandler(.allow)
@@ -654,7 +650,7 @@ extension BrowserViewController: WKNavigationDelegate {
 
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         if let tab = tabManager[webView] {
-            navigateInTab(tab: tab, to: navigation)
+            navigateInTab(tab: tab, to: navigation, webViewStatus: .finishedNavigation)
 
             // If this tab had previously crashed, wait 5 seconds before resetting
             // the consecutive crash counter. This allows a successful webpage load

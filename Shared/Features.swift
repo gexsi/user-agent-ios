@@ -114,6 +114,19 @@ public struct Features {
                 return true
             }
         }
+        public struct TopSites {
+            public static var isEnabled: Bool {
+                return true
+            }
+        }
+        public struct BackgroundSetting {
+            public static var defaultImageName: String {
+                return "home-background"
+            }
+            public static var isEnabled: Bool {
+                return false
+            }
+        }
     }
 
     public struct TodayWidget {

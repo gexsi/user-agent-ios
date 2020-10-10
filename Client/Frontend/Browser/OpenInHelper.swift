@@ -23,7 +23,8 @@ struct MIMEType {
     static let PNG = "image/png"
     static let WebP = "image/webp"
     static let Calendar = "text/calendar"
-    static let USDZ = "model/usd"
+    static let USDZ = "model/vnd.usdz+zip"
+    static let Reality = "model/vnd.reality"
 
     private static let webViewViewableTypes: [String] = [MIMEType.Bitmap, MIMEType.GIF, MIMEType.JPEG, MIMEType.HTML, MIMEType.PDF, MIMEType.PlainText, MIMEType.PNG, MIMEType.WebP]
 
@@ -59,7 +60,7 @@ class DownloadHelper: NSObject, OpenInHelper {
 
     static func requestDownload(url: URL, tab: Tab) {
         let safeUrl = url.absoluteString.replacingOccurrences(of: "'", with: "%27")
-        tab.webView?.evaluateJavaScript("window.__firefox__.download('\(safeUrl)', '\(UserScriptManager.securityToken)')")
+        tab.webView?.evaluateJavascriptInDefaultContentWorld("window.__firefox__.download('\(safeUrl)', '\(UserScriptManager.appIdToken)')")
     }
 
     required init?(request: URLRequest?, response: URLResponse, canShowInWebView: Bool, forceDownload: Bool, browserViewController: BrowserViewController) {
@@ -90,7 +91,9 @@ class DownloadHelper: NSObject, OpenInHelper {
             return
         }
 
-        let download = HTTPDownload(preflightResponse: preflightResponse, request: request)
+        guard let download = HTTPDownload(preflightResponse: preflightResponse, request: request) else {
+            return
+        }
 
         let expectedSize = download.totalBytesExpected != nil ? ByteCountFormatter.string(fromByteCount: download.totalBytesExpected!, countStyle: .file) : nil
 
@@ -166,7 +169,11 @@ class OpenQLPreviewHelper: NSObject, OpenInHelper, QLPreviewControllerDataSource
     fileprivate let previewController: QLPreviewController
 
     required init?(request: URLRequest?, response: URLResponse, canShowInWebView: Bool, forceDownload: Bool, browserViewController: BrowserViewController) {
-        guard let mimeType = response.mimeType, mimeType == MIMEType.USDZ, let responseURL = response.url as NSURL?, QLPreviewController.canPreview(responseURL), !forceDownload, !canShowInWebView else { return nil }
+        guard let mimeType = response.mimeType,
+                 (mimeType == MIMEType.USDZ || mimeType == MIMEType.Reality),
+                 let responseURL = response.url as NSURL?,
+                 !forceDownload,
+                 !canShowInWebView else { return nil }
         self.url = responseURL
         self.browserViewController = browserViewController
         self.previewController = QLPreviewController()

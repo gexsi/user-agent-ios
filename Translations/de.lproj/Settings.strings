@@ -108,6 +108,9 @@
 "Settings.NewTab.Option.Home" = "%@ Home";
 
 /* The option in settings to configure first launch tab */
+"Settings.General.HomeBackground.SectionName" = "Hintergrundbild";
+
+/* The option in settings to configure first launch tab */
 "Settings.General.OnBrowserStartTab.SectionName" = "Beim Browserstart anzeigen";
 
 /* The option in settings to configure first launch to open last opened tab */
@@ -136,6 +139,9 @@
 
 /* Label used as an item in Settings. When touched it will open a dialog to configure the open with (mail links) behaviour. */
 "Settings.General.OpenWith.SectionName" = "Mail-App";
+
+/* Menu option for setting User Agent as default browser. */
+"Settings.General.DefaultBrowserMenuItem" = "Als Standardbrowser festlegen";
 
 /* Privacy Dashboard Title */
 "Settings.PrivacyDashboard.Title" = "Datenschutz-Dashboard";

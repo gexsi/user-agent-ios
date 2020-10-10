@@ -334,7 +334,7 @@ class Tab: NSObject {
         #endif
     }
 
-    func closeAndRemovePrivateBrowsingData() {
+    func close() {
         contentScriptManager.uninstall(tab: self)
 
         webView?.removeObserver(self, forKeyPath: KVOConstants.URL.rawValue)
@@ -344,21 +344,9 @@ class Tab: NSObject {
             tabDelegate?.tab?(self, willDeleteWebView: webView)
         }
 
-        if isPrivate {
-            removeAllBrowsingData()
-        }
-
         webView?.navigationDelegate = nil
         webView?.removeFromSuperview()
         webView = nil
-    }
-
-    func removeAllBrowsingData(completionHandler: @escaping () -> Void = {}) {
-        let dataTypes = WKWebsiteDataStore.allWebsiteDataTypes()
-
-        webView?.configuration.websiteDataStore.removeData(ofTypes: dataTypes,
-                                                     modifiedSince: Date.distantPast,
-                                                 completionHandler: completionHandler)
     }
 
     var loading: Bool {
@@ -722,7 +710,7 @@ class TabWebView: WKWebView, MenuHelperInterface {
     func applyTheme() {
         if url == nil {
             let backgroundColor = Theme.browser.background.hexString
-            evaluateJavaScript("document.documentElement.style.backgroundColor = '\(backgroundColor)';")
+            evaluateJavascriptInDefaultContentWorld("document.documentElement.style.backgroundColor = '\(backgroundColor)';")
         }
         window?.backgroundColor = Theme.browser.background
     }
@@ -732,14 +720,14 @@ class TabWebView: WKWebView, MenuHelperInterface {
     }
 
     @objc func menuHelperFindInPage() {
-        evaluateJavaScript("getSelection().toString()") { result, _ in
+        evaluateJavascriptInDefaultContentWorld("getSelection().toString()") { result, _ in
             let selection = result as? String ?? ""
             self.delegate?.tabWebView(self, didSelectFindInPageForSelection: selection)
         }
     }
 
     @objc func menuHelperSearchWithFirefox() {
-        evaluateJavaScript("getSelection().toString()") { result, _ in
+        evaluateJavascriptInDefaultContentWorld("getSelection().toString()") { result, _ in
             let selection = result as? String ?? ""
             self.delegate?.tabWebViewSearchWithFirefox(self, didSelectSearchWithFirefoxForSelection: selection)
         }
@@ -751,6 +739,14 @@ class TabWebView: WKWebView, MenuHelperInterface {
 
         return super.hitTest(point, with: event)
     }
+
+    /// Override evaluateJavascript - should not be called directly on TabWebViews any longer
+    // We should only be calling evaluateJavascriptInDefaultContentWorld in the future
+    @available(*, unavailable, message:"Do not call evaluateJavaScript directly on TabWebViews, should only be called on super class")
+    override func evaluateJavaScript(_ javaScriptString: String, completionHandler: ((Any?, Error?) -> Void)? = nil) {
+        super.evaluateJavaScript(javaScriptString, completionHandler: completionHandler)
+    }
+
 }
 
 ///
@@ -765,7 +761,7 @@ class TabWebView: WKWebView, MenuHelperInterface {
 class TabWebViewMenuHelper: UIView {
     @objc func swizzledMenuHelperFindInPage() {
         if let tabWebView = superview?.superview as? TabWebView {
-            tabWebView.evaluateJavaScript("getSelection().toString()") { result, _ in
+            tabWebView.evaluateJavascriptInDefaultContentWorld("getSelection().toString()") { result, _ in
                 let selection = result as? String ?? ""
                 tabWebView.delegate?.tabWebView(tabWebView, didSelectFindInPageForSelection: selection)
             }

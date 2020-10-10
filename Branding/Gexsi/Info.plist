@@ -35,6 +35,8 @@
 			<array>
 				<string>$(USER_AGENT_URL_SCHEME)</string>
                 <string>fb2605499146428611</string>
+				<string>http</string>
+				<string>https</string>
 			</array>
 		</dict>
 	</array>
@@ -75,8 +77,6 @@
 	<string>This lets you take and upload videos.</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>This lets you save photos.</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>This lets you save and upload photos.</string>
 	<key>NSUserActivityTypes</key>
 	<array>
 		<string>$(USER_ACTIVITY_TYPES)</string>

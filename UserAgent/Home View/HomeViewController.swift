@@ -151,6 +151,7 @@ class HomeViewController: UIViewController {
         self.toolbarHeight = toolbarHeight
         super.init(nibName: nil, bundle: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(notificationReceived), name: .NewsSettingsDidChange, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(notificationReceived), name: .HomeBackgroundSettingsDidChange, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(notificationReceived), name: .NewTabPageDefaultViewSettingsDidChange, object: nil)
     }
 
@@ -177,7 +178,7 @@ class HomeViewController: UIViewController {
     @objc private func notificationReceived(_ notification: Notification) {
         DispatchQueue.main.async {
             switch notification.name {
-            case .NewsSettingsDidChange:
+            case .NewsSettingsDidChange, .HomeBackgroundSettingsDidChange:
                 self.refreshTopSites()
             case .NewTabPageDefaultViewSettingsDidChange:
                 self.switchToDefaultSegment()

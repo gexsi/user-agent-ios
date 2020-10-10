@@ -142,6 +142,7 @@ class BrowserViewController: UIViewController {
     weak var pendingDownloadWebView: WKWebView?
 
     let downloadQueue = DownloadQueue()
+    var isCmdClickForNewTab = false
 
     init(profile: Profile, tabManager: TabManager) {
         self.profile = profile
@@ -470,6 +471,7 @@ class BrowserViewController: UIViewController {
             return
         }
 
+        view.bringSubviewToFront(webViewContainerBackdrop)
         webViewContainerBackdrop.alpha = 1
         webViewContainer.alpha = 0
         urlBar.locationContainer.alpha = 0
@@ -490,6 +492,7 @@ class BrowserViewController: UIViewController {
             self.view.backgroundColor = UIColor.clear
         }, completion: { _ in
             self.webViewContainerBackdrop.alpha = 0
+            self.view.sendSubviewToBack(self.webViewContainerBackdrop)
         })
 
         // Re-show toolbar which might have been hidden during scrolling (prior to app moving into the background)
@@ -599,7 +602,7 @@ class BrowserViewController: UIViewController {
         }
 
         webViewContainerBackdrop.snp.makeConstraints { make in
-            make.edges.equalTo(webViewContainer)
+            make.edges.equalTo(self.view)
         }
 
         overlayBackground.snp.makeConstraints { make in
@@ -658,7 +661,6 @@ class BrowserViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-
         // On iPhone, if we are about to show the On-Boarding, blank out the tab so that it does
         // not flash before we present. This change of alpha also participates in the animation when
         // the intro view is dismissed.
@@ -1092,6 +1094,10 @@ class BrowserViewController: UIViewController {
                 if tab === tabManager.selectedTab && !tab.restoring {
                     updateUIForReaderHomeStateForTab(tab)
                 }
+
+                // Catch history pushState navigation, but ONLY for same origin navigation,
+                // for reasons above about URL spoofing risk.
+                navigateInTab(tab: tab, webViewStatus: .url)
             }
         case .title:
             // Ensure that the tab title *actually* changed to prevent repeated calls
@@ -1099,7 +1105,7 @@ class BrowserViewController: UIViewController {
             guard let title = tab.title else { break }
             if !title.isEmpty && title != tab.lastTitle {
                 tab.lastTitle = title
-                navigateInTab(tab: tab)
+                navigateInTab(tab: tab, webViewStatus: .title)
             }
         case .canGoBack:
             guard tab === tabManager.selectedTab, let canGoBack = change?[.newKey] as? Bool else {
@@ -1294,7 +1300,14 @@ class BrowserViewController: UIViewController {
         notificationCenter.post(name: .OnLocationChange, object: self, userInfo: info)
     }
 
-    func navigateInTab(tab: Tab, to navigation: WKNavigation? = nil) {
+    /// Enum to represent the WebView observation or delegate that triggered calling `navigateInTab`
+    enum WebViewUpdateStatus {
+        case title
+        case url
+        case finishedNavigation
+    }
+
+    func navigateInTab(tab: Tab, to navigation: WKNavigation? = nil, webViewStatus: WebViewUpdateStatus) {
         tabManager.expireSnackbars()
 
         guard let webView = tab.webView else {
@@ -1310,25 +1323,32 @@ class BrowserViewController: UIViewController {
             if (!InternalURL.isValid(url: url) || url.isReaderModeURL), !url.isFileURL {
                 postLocationChangeNotificationForTab(tab, navigation: navigation)
 
-                webView.evaluateJavaScript("\(ReaderModeNamespace).checkReadability()", completionHandler: nil)
+                webView.evaluateJavascriptInDefaultContentWorld("\(ReaderModeNamespace).checkReadability()")
             }
 
             TabEvent.post(.didChangeURL(url), for: tab)
         }
 
-        if tab !== tabManager.selectedTab, let webView = tab.webView {
-            // To Screenshot a tab that is hidden we must add the webView,
-            // then wait enough time for the webview to render.
-            view.insertSubview(webView, at: 0)
-            // This is kind of a hacky fix for Bug 1476637 to prevent webpages from focusing the
-            // touch-screen keyboard from the background even though they shouldn't be able to.
-            webView.resignFirstResponder()
+        // Represents WebView observation or delegate update that called this function
+        switch webViewStatus {
+        case .title, .url, .finishedNavigation:
+            if tab !== tabManager.selectedTab, let webView = tab.webView {
+                // To Screenshot a tab that is hidden we must add the webView,
+                // then wait enough time for the webview to render.
+                view.insertSubview(webView, at: 0)
+                // This is kind of a hacky fix for Bug 1476637 to prevent webpages from focusing the
+                // touch-screen keyboard from the background even though they shouldn't be able to.
+                webView.resignFirstResponder()
 
-            DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(500)) {
-                self.screenshotHelper.takeScreenshot(tab)
-                if webView.superview == self.view {
-                    webView.removeFromSuperview()
-                    tab.refreshControl?.removeFromSuperview()
+                // We need a better way of identifying when webviews are finished rendering
+                // There are cases in which the page will still show a loading animation or nothing when the screenshot is being taken,
+                // depending on internet connection
+                // Issue created: https://github.com/mozilla-mobile/firefox-ios/issues/7003
+                DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(1000)) {
+                    self.screenshotHelper.takeScreenshot(tab)
+                    if webView.superview == self.view {
+                        webView.removeFromSuperview()
+                    }
                 }
             }
         }
@@ -1643,10 +1663,6 @@ extension BrowserViewController: TabDelegate {
         // tab.addHelper(spotlightHelper, name: SpotlightHelper.name())
 
         tab.addContentScript(LocalRequestHelper(), name: LocalRequestHelper.name())
-
-        let historyStateHelper = HistoryStateHelper(tab: tab)
-        historyStateHelper.delegate = self
-        tab.addContentScript(historyStateHelper, name: HistoryStateHelper.name())
 
         let trampoline = TrampolineTabContentScript(tab: tab)
         trampoline.delegate = self
@@ -2046,8 +2062,13 @@ extension BrowserViewController: ContextMenuHelperDelegate {
             actionSheetController.addAction(bookmarkAction, accessibilityIdentifier: "linkContextMenu.bookmarkLink")
 
             let downloadAction = UIAlertAction(title: Strings.ContextMenu.DownloadLink, style: .default) { _ in
-                self.pendingDownloadWebView = currentTab.webView
-                DownloadContentScript.requestDownload(url: url, tab: currentTab)
+                // This checks if download is a blob, if yes, begin blob download process
+                if !DownloadContentScript.requestBlobDownload(url: url, tab: currentTab) {
+                    //if not a blob, set pendingDownloadWebView and load the request in the webview, which will trigger the WKWebView navigationResponse delegate function and eventually downloadHelper.open()
+                    self.pendingDownloadWebView = currentTab.webView
+                    let request = URLRequest(url: url)
+                    currentTab.webView?.load(request)
+                }
             }
             actionSheetController.addAction(downloadAction, accessibilityIdentifier: "linkContextMenu.download")
 
@@ -2067,46 +2088,13 @@ extension BrowserViewController: ContextMenuHelperDelegate {
                 dialogTitle = elements.title ?? url.absoluteString
             }
 
-            let photoAuthorizeStatus = PHPhotoLibrary.authorizationStatus()
             let saveImageAction = UIAlertAction(title: Strings.ContextMenu.SaveImage, style: .default) { _ in
-                let handlePhotoLibraryAuthorized = {
-                    DispatchQueue.main.async {
-                        self.getImageData(url) { data in
-                            PHPhotoLibrary.shared().performChanges({
-                                PHAssetCreationRequest.forAsset().addResource(with: .photo, data: data, options: nil)
-                            })
-                        }
-                    }
-                }
-
-                let handlePhotoLibraryDenied = {
-                    DispatchQueue.main.async {
-                        let accessDenied = UIAlertController(title: Strings.PhotoLibrary.AppWouldLikeAccessTitle, message: Strings.PhotoLibrary.AppWouldLikeAccessMessage, preferredStyle: .alert)
-                        let dismissAction = UIAlertAction(title: Strings.General.CancelString, style: .default, handler: nil)
-                        accessDenied.addAction(dismissAction)
-                        let settingsAction = UIAlertAction(title: Strings.General.OpenSettingsString, style: .default ) { _ in
-                            UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!, options: [:])
-                        }
-                        accessDenied.addAction(settingsAction)
-                        self.present(accessDenied, animated: true, completion: nil)
-                    }
-                }
-
-                if photoAuthorizeStatus == .notDetermined {
-                    PHPhotoLibrary.requestAuthorization({ status in
-                        guard status == .authorized else {
-                            handlePhotoLibraryDenied()
-                            return
-                        }
-
-                        handlePhotoLibraryAuthorized()
-                    })
-                } else if photoAuthorizeStatus == .authorized {
-                    handlePhotoLibraryAuthorized()
-                } else {
-                    handlePhotoLibraryDenied()
+                self.getImageData(url) { data in
+                    guard let image = UIImage(data: data) else { return }
+                    self.writeToPhotoAlbum(image: image)
                 }
             }
+
             actionSheetController.addAction(saveImageAction, accessibilityIdentifier: "linkContextMenu.saveImage")
 
             let copyAction = UIAlertAction(title: Strings.ContextMenu.CopyImage, style: .default) { _ in
@@ -2188,29 +2176,23 @@ extension BrowserViewController: ContextMenuHelperDelegate {
             self.displayedPopoverController = nil
         }
     }
+
+    //Support for CMD+ Click on link to open in a new tab
+     override func pressesBegan(_ presses: Set<UIPress>, with event: UIPressesEvent?) {
+         guard let key = presses.first?.key, (key.keyCode == .keyboardLeftGUI || key.keyCode == .keyboardRightGUI) else { return } //GUI buttons = CMD buttons on ipad/mac
+         self.isCmdClickForNewTab = true
+    }
+
+    override func pressesEnded(_ presses: Set<UIPress>, with event: UIPressesEvent?) {
+        guard let key = presses.first?.key, (key.keyCode == .keyboardLeftGUI || key.keyCode == .keyboardRightGUI) else { return }
+        self.isCmdClickForNewTab = false
+    }
 }
 
 extension BrowserViewController {
     @objc func image(_ image: UIImage, didFinishSavingWithError error: NSError?, contextInfo: UnsafeRawPointer) {
         if error == nil {
         }
-    }
-}
-
-extension BrowserViewController: HistoryStateHelperDelegate {
-
-    // This gets called when a website invokes the `history.pushState()` or
-    // `history.replaceState()` web API such as on single-page web apps. It
-    // also occurs during our session restore process, so we be sure to avoid
-    // re-saving the tab manager changes when this happens.
-    func historyStateHelper(_ historyStateHelper: HistoryStateHelper, didPushOrReplaceStateInTab tab: Tab) {
-        navigateInTab(tab: tab)
-
-        if let url = tab.url, let internalUrl = InternalURL(url), internalUrl.isSessionRestore {
-            return
-        }
-
-        tabManager.storeChanges()
     }
 }
 

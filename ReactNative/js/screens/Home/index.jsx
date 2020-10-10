@@ -95,8 +95,10 @@ export default function Home({
   pinnedSites,
   newsModule,
   telemetry,
+  isTopSitesEnabled,
   isNewsEnabled,
   isNewsImagesEnabled,
+  backgroundImageUri,
   height,
   toolbarHeight,
   Features,
@@ -146,7 +148,7 @@ export default function Home({
     );
     hideKeyboard();
   }, [telemetry]);
-  
+
   return (
     <ScrollView
       ref={scrollViewElement}
@@ -156,7 +158,7 @@ export default function Home({
       contentContainerStyle={styles.contentContainer}
       scrollEnabled={isNewsEnabled}
     >
-      <Background height={height - (isPhoneLandscape ? 0 : toolbarHeight)} Features={Features}>
+      <Background height={height - (isPhoneLandscape ? 0 : toolbarHeight)} backgroundImageUri={backgroundImageUri} Features={Features}>
         <View style={styles.wrapper}>
           <View style={styles.logoWrapper}>
             <Image
@@ -169,13 +171,16 @@ export default function Home({
           <View style={styles.urlBarWrapper}>
             <UrlBar />
           </View>
-
+          
           <View style={styles.speedDialsContainer}>
-            <SpeedDialRow dials={firstRow} />
-            {!isPhoneLandscape && (
+            {isTopSitesEnabled && (
+              <SpeedDialRow dials={firstRow} />
+            )}
+            {(!isPhoneLandscape && isTopSitesEnabled) && (
               <SpeedDialRow dials={secondRow} />
             )}
           </View>
+          
         </View>
 
         {isNewsEnabled && (

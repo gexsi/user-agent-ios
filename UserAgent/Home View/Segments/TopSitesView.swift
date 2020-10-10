@@ -12,8 +12,9 @@ import Storage
 
 /// Displays Top Sites and Pinned Sites in a React Native View
 class TopSitesView: BaseReactHomeView {
-    override func setup() {
-        profile.panelDataObservers.activityStream.refreshIfNeeded(forceTopSites: false, completion: nil)
+
+    private func getPinnedTopSites(completion: @escaping ([Site], [Site]) -> Void) {
+        self.profile.panelDataObservers.activityStream.refreshIfNeeded(forceTopSites: false, completion: nil)
         _ = profile.history.getTopSitesWithLimit(8).both(
             profile.history.getPinnedTopSites()
         ).bindQueue(.main) { (topSites, pinned) -> Success in
@@ -25,13 +26,21 @@ class TopSitesView: BaseReactHomeView {
                     else { return nil }
                 return Site(url: "\(scheme)://\(host)/", title: site.title)
             }.compactMap { $0 }
+            completion(speedDials, pinned.successValue?.asArray() ?? [])
+            return succeed()
+        }
+    }
 
+    override func setup() {
+        func configureHomeView(speedDials: [Site], pinned: [Site]) {
             let homeView = HomeView(
                 toolbarHeight: self.toolbarHeight,
                 speedDials: speedDials,
-                pinnedSites: pinned.successValue?.asArray() ?? [],
+                pinnedSites: pinned,
+                isTopSitesEnabled: Features.Home.TopSites.isEnabled,
                 isNewsEnabled: Features.News.isEnabled && (self.profile.prefs.boolForKey(PrefsKeys.NewTabNewsEnabled) ?? true),
-                isNewsImagesEnabled: Features.News.isEnabled && (self.profile.prefs.boolForKey(PrefsKeys.NewTabNewsImagesEnabled) ?? true)
+                isNewsImagesEnabled: Features.News.isEnabled && (self.profile.prefs.boolForKey(PrefsKeys.NewTabNewsImagesEnabled) ?? true),
+                backgroundImageUri: (self.profile.prefs.stringForKey(PrefsKeys.HomeBackgroundImage) ?? Features.Home.BackgroundSetting.defaultImageName)
             )
 
             self.addSubview(homeView)
@@ -41,8 +50,13 @@ class TopSitesView: BaseReactHomeView {
             }
 
             self.reactView = homeView
-
-            return succeed()
+        }
+        if Features.Home.TopSites.isEnabled {
+            self.getPinnedTopSites { (speedDials, pinnedSites) in
+                configureHomeView(speedDials: speedDials, pinned: pinnedSites)
+            }
+        } else {
+            configureHomeView(speedDials: [], pinned: [])
         }
     }
 }

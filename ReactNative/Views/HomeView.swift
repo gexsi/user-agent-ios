@@ -14,9 +14,11 @@ import Shared
 class HomeView: UIView {
     private var speedDials: [Site]?
     private var pinnedSites: [Site]?
+    private var isTopSitesEnabled = true
     private var isNewsEnabled = true
     private var isNewsImagesEnabled = true
     private var reactView: UIView?
+    private var backgroundImageUri: String?
     private var height: Int?
     private var toolbarHeight: CGFloat
 
@@ -29,15 +31,19 @@ class HomeView: UIView {
         toolbarHeight: CGFloat,
         speedDials: [Site],
         pinnedSites: [Site],
+        isTopSitesEnabled: Bool,
         isNewsEnabled: Bool,
-        isNewsImagesEnabled: Bool
+        isNewsImagesEnabled: Bool,
+        backgroundImageUri: String
     ) {
         self.init(frame: .zero)
         self.toolbarHeight = toolbarHeight
         self.pinnedSites = pinnedSites
         self.speedDials = speedDials
+        self.isTopSitesEnabled = isTopSitesEnabled
         self.isNewsEnabled = isNewsEnabled
         self.isNewsImagesEnabled = isNewsImagesEnabled
+        self.backgroundImageUri = backgroundImageUri
     }
 
     required init(coder aDecoder: NSCoder) {
@@ -64,8 +70,10 @@ class HomeView: UIView {
             initialProperties: [
                 "speedDials": self.speedDials!.map { $0.toDict() },
                 "pinnedSites": self.pinnedSites!.map { $0.toDict() },
+                "isTopSitesEnabled": self.isTopSitesEnabled,
                 "isNewsEnabled": self.isNewsEnabled,
                 "isNewsImagesEnabled": self.isNewsImagesEnabled,
+                "backgroundImageUri": self.backgroundImageUri ?? "",
                 "height": height,
                 "toolbarHeight": self.toolbarHeight,
                 "Features": Features.toDict(),
