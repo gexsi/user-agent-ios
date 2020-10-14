@@ -1288,6 +1288,30 @@ class BrowserViewController: UIViewController {
         return navigationController
     }
 
+    func presentHomeBackgroundSettingViewController() {
+        let viewController = HomeBackgroundViewController()
+        if #available(iOS 13.0, *) {
+            viewController.isModalInPresentation = AppConstants.IsRunningTest
+        }
+        viewController.profile = self.profile
+        let navigationController = ThemedNavigationController(rootViewController: viewController)
+        let completion = {
+            self.setPhoneWindowBackground(color: Theme.browser.background, animationDuration: 1.0)
+            navigationController.dismiss(animated: true)
+        }
+        viewController.navigationItem.rightBarButtonItem = UIBarButtonItem(title: Strings.General.DoneString, style: .done, closure: { (_) in
+            completion()
+        })
+        viewController.completion = completion
+        if #available(iOS 13.0, *) {
+            navigationController.modalPresentationStyle = UIDevice.current.isPhone ? .automatic : .formSheet
+            navigationController.presentationController?.delegate = self
+        } else {
+            navigationController.modalPresentationStyle = UIDevice.current.isPhone ? .fullScreen : .formSheet
+        }
+        self.present(navigationController, animated: true)
+    }
+
     fileprivate func postLocationChangeNotificationForTab(_ tab: Tab, navigation: WKNavigation?) {
         let notificationCenter = NotificationCenter.default
         var info = [AnyHashable: Any]()

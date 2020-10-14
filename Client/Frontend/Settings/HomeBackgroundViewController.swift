@@ -13,9 +13,9 @@ struct HomeBackgroundViewControllerUI {
     static let cellSpace: CGFloat = 20.0
 }
 
-class HomeBackgroundViewController: UIViewController {
+class HomeBackgroundHelper {
 
-    private class Item {
+    class Item {
         var identifier: String
         var image: UIImage
 
@@ -25,10 +25,37 @@ class HomeBackgroundViewController: UIViewController {
         }
     }
 
+    enum Option: Int32, CaseIterable {
+        case randomImage = 0
+        case staticImage
+    }
+
+    static func collectItems() -> [Item] {
+        let imageNamePrefix = Features.Home.BackgroundSetting.defaultImageName
+        var imageName = imageNamePrefix
+        var image = UIImage(named: imageName)
+        var i = 0
+        var items = [Item]()
+        while image != nil && i < 100 {
+            items.append(Item(identifier: imageName, image: image!))
+            i += 1
+            imageName = imageNamePrefix + "-\(i)"
+            image = UIImage(named: imageName)
+        }
+        return items
+    }
+
+}
+
+class HomeBackgroundViewController: UIViewController {
+
     var profile: Profile!
 
+    var completion: (() -> Void)?
+
     private var collectionView: UICollectionView!
-    private var items = [Item]()
+    private var tableView: UITableView!
+    private var items = [HomeBackgroundHelper.Item]()
 
     private var isStatusBarOrientationLandscape: Bool {
         return UIApplication.shared.statusBarOrientation == .landscapeLeft || UIApplication.shared.statusBarOrientation == .landscapeRight
@@ -39,6 +66,14 @@ class HomeBackgroundViewController: UIViewController {
         self.title = Strings.Settings.General.HomeBackground.SectionName
         self.view.backgroundColor = Theme.tableView.headerBackground
 
+        self.configureOptionsTableView()
+        self.configureItemsCollectionView()
+        self.items = HomeBackgroundHelper.collectItems()
+    }
+
+    // MARK: - Private methods
+
+    private func configureItemsCollectionView() {
         let layout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(equalInset: HomeBackgroundViewControllerUI.cellSpace)
         layout.scrollDirection = .vertical
@@ -52,31 +87,30 @@ class HomeBackgroundViewController: UIViewController {
         self.view.addSubview(self.collectionView)
 
         self.collectionView.snp.makeConstraints { make in
-            make.edges.equalTo(self.view.safeAreaLayoutGuide)
+            make.left.right.bottom.equalTo(self.view.safeAreaLayoutGuide)
+            make.top.equalTo(self.tableView.snp.bottom)
         }
-        self.collectImages()
     }
 
-    // MARK: - Private methods
+    private func configureOptionsTableView() {
+        let tableView = UITableView()
+        tableView.isScrollEnabled = false
+        tableView.dataSource = self
+        tableView.delegate = self
+        tableView.backgroundColor = Theme.tableView.headerBackground
+        tableView.separatorInset = UIEdgeInsets(top: 0, left: HomeBackgroundViewControllerUI.cellSpace, bottom: 0, right: HomeBackgroundViewControllerUI.cellSpace)
+        self.view.addSubview(tableView)
+        tableView.snp.makeConstraints { (make) in
+            make.top.left.right.equalTo(self.view.safeAreaLayoutGuide)
+            make.height.equalTo(88)
+        }
+        self.tableView = tableView
+    }
 
     private func cellSize() -> CGSize {
         let rowCellCount = (UIDevice.current.isPad || self.isStatusBarOrientationLandscape) ? 4 : 3
         let cellWidth = (self.collectionView.frame.width - CGFloat(rowCellCount + 1) * HomeBackgroundViewControllerUI.cellSpace) / CGFloat(rowCellCount)
         return CGSize(width: cellWidth, height: cellWidth)
-    }
-
-    private func collectImages() {
-        let imageNamePrefix = Features.Home.BackgroundSetting.defaultImageName
-        var imageName = imageNamePrefix
-        var image = UIImage(named: imageName)
-        var i = 0
-        self.items.removeAll()
-        while image != nil && i < 100 {
-            self.items.append(Item(identifier: imageName, image: image!))
-            i += 1
-            imageName = imageNamePrefix + "-\(i)"
-            image = UIImage(named: imageName)
-        }
     }
 
 }
@@ -106,7 +140,11 @@ extension HomeBackgroundViewController: UICollectionViewDelegate {
         let item = self.items[indexPath.row]
         self.profile.prefs.setString(item.identifier, forKey: PrefsKeys.HomeBackgroundImage)
         NotificationCenter.default.post(name: .HomeBackgroundSettingsDidChange, object: nil)
-        self.navigationController?.popViewController(animated: true)
+        if let completion = self.completion {
+            completion()
+        } else {
+            self.navigationController?.popViewController(animated: true)
+        }
     }
 
 }
@@ -117,6 +155,40 @@ extension HomeBackgroundViewController: UICollectionViewDelegateFlowLayout {
         return self.cellSize()
     }
 
+}
+
+extension HomeBackgroundViewController: UITableViewDataSource {
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return HomeBackgroundHelper.Option.allCases.count
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = ThemedTableViewCell()
+        cell.selectionStyle = .none
+        cell.backgroundColor = Theme.tableView.headerBackground
+        let option = HomeBackgroundHelper.Option(rawValue: Int32(indexPath.row))!
+        switch option {
+        case .randomImage:
+            cell.titleLabel.text = Strings.Settings.General.HomeBackground.RandomImageOption
+        case .staticImage:
+            cell.titleLabel.text = Strings.Settings.General.HomeBackground.StaticImageOption
+        }
+        let selectedOptionValue = self.profile.prefs.intForKey(PrefsKeys.HomeBackgroundOption) ?? 0
+        let selectedOption = HomeBackgroundHelper.Option(rawValue: selectedOptionValue)!
+        cell.accessoryType = selectedOption == option ? .checkmark : .none
+        return cell
+    }
+
+}
+
+extension HomeBackgroundViewController: UITableViewDelegate {
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let option = HomeBackgroundHelper.Option(rawValue: Int32(indexPath.row))!
+        self.profile.prefs.setInt(option.rawValue, forKey: PrefsKeys.HomeBackgroundOption)
+        self.tableView.reloadData()
+    }
 }
 
 class HomeBackgroundCell: UICollectionViewCell {

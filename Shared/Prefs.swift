@@ -32,6 +32,7 @@ public struct PrefsKeys {
 
     // Home
     public static let HomeBackgroundImage = "HomeBackgroundImage"
+    public static let HomeBackgroundOption = "HomeBackgroundOption"
 
     //News
     public static let NewTabNewsEnabled = "NewTabNewsEnabled"

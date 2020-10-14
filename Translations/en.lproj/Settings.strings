@@ -110,6 +110,12 @@
 /* The option in settings to configure first launch tab */
 "Settings.General.HomeBackground.SectionName" = "Wallpaper";
 
+/* The option in settings to configure home background image behavior */
+"Settings.General.HomeBackground.StaticImageOption" = "Static image";
+
+/* The option in settings to configure home background image behavior */
+"Settings.General.HomeBackground.RandomImageOption" = "Random image";
+
 /* The option in settings to configure first launch tab */
 "Settings.General.OnBrowserStartTab.SectionName" = "On Browser start show";
 

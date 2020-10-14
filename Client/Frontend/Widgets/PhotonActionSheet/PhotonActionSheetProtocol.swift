@@ -59,21 +59,28 @@ extension PhotonActionSheetProtocol {
                 self.openWhatsNewItem(vcDelegate: vcDelegate),
             ]
         }
-
-        return [
+        var actions = [
             [
                 privacyStats,
-            ], secondSection,
-            [
-                self.burnItem(vcDelegate: vcDelegate),
-            ], [
-                PhotonActionSheetItem(title: "", collectionItems: [
-                    openHomePage,
-                    self.openSettingsItem(vcDelegate: vcDelegate),
-                    self.openDownloadsItem(vcDelegate: vcDelegate),
-                ]),
             ],
         ]
+        if Features.Home.BackgroundSetting.isEnabled {
+            actions.append([
+                self.openHomeBackgroundSettingItem(vcDelegate: vcDelegate),
+            ])
+        }
+        actions.append(contentsOf: [secondSection,
+                                    [
+                                        self.burnItem(vcDelegate: vcDelegate),
+                                    ], [
+                                        PhotonActionSheetItem(title: "", collectionItems: [
+                                            openHomePage,
+                                            self.openSettingsItem(vcDelegate: vcDelegate),
+                                            self.openDownloadsItem(vcDelegate: vcDelegate),
+                                        ]),
+                                    ],
+        ])
+        return actions
     }
 
     /*
@@ -540,6 +547,13 @@ extension PhotonActionSheetProtocol {
     private func burnItem(vcDelegate: PageOptionsVC) -> PhotonActionSheetItem {
         let openSettings = PhotonActionSheetItem(title: Strings.Menu.BurnTitleString, iconString: "menu-burn") { action in
             (vcDelegate as? BrowserViewController)?.didPressBurnMenuItem()
+        }
+        return openSettings
+    }
+
+    private func openHomeBackgroundSettingItem(vcDelegate: PageOptionsVC) -> PhotonActionSheetItem {
+        let openSettings = PhotonActionSheetItem(title: Strings.Settings.General.HomeBackground.SectionName, iconString: "menu-homeBackground") { action in
+            (vcDelegate as? BrowserViewController)?.presentHomeBackgroundSettingViewController()
         }
         return openSettings
     }

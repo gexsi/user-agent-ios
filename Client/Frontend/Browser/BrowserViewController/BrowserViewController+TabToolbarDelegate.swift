@@ -48,6 +48,20 @@ extension BrowserViewController: TabToolbarDelegate, PhotonActionSheetProtocol {
         tab.loadRequest(PrivilegedRequest(url: homePanelURL) as URLRequest)
     }
 
+    private func changeHomeBackgroundIfNeeded() {
+        let optionValue = self.profile.prefs.intForKey(PrefsKeys.HomeBackgroundOption) ?? 0
+        let option = HomeBackgroundHelper.Option(rawValue: optionValue)!
+        switch option {
+        case .staticImage: break
+        case .randomImage:
+            let identifier = self.profile.prefs.stringForKey(PrefsKeys.HomeBackgroundImage) ?? Features.Home.BackgroundSetting.defaultImageName
+            let items = HomeBackgroundHelper.collectItems().filter({ $0.identifier != identifier })
+            let item = items[Int.random(in: 0..<items.count)]
+            self.profile.prefs.setString(item.identifier, forKey: PrefsKeys.HomeBackgroundImage)
+            NotificationCenter.default.post(name: .HomeBackgroundSettingsDidChange, object: nil)
+        }
+    }
+
     func tabToolbarDidPressSearch(_ tabToolbar: TabToolbarProtocol, button: UIButton) {
         guard let tab = self.tabManager.selectedTab else {
             return
@@ -57,6 +71,7 @@ extension BrowserViewController: TabToolbarDelegate, PhotonActionSheetProtocol {
                 self.focusLocationTextField(forTab: tab)
             }
         } else if let homePanelURL = NewTabPage.topSites.url {
+            self.changeHomeBackgroundIfNeeded()
             tab.loadRequest(PrivilegedRequest(url: homePanelURL) as URLRequest)
         }
     }

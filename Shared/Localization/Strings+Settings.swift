@@ -109,6 +109,8 @@ extension Strings {
             }
             public struct HomeBackground {
                 public static let SectionName = NSLocalizedString("Settings.General.HomeBackground.SectionName", tableName: "Settings", comment: "The option in settings to configure home background image")
+                public static let StaticImageOption = NSLocalizedString("Settings.General.HomeBackground.StaticImageOption", tableName: "Settings", comment: "The option in settings to configure home background image behavior")
+                public static let RandomImageOption = NSLocalizedString("Settings.General.HomeBackground.RandomImageOption", tableName: "Settings", comment: "The option in settings to configure home background image behavior")
             }
             public struct OnBrowserStartTab {
                 public static let SectionName = NSLocalizedString("Settings.General.OnBrowserStartTab.SectionName", tableName: "Settings", comment: "The option in settings to configure first launch tab")
