@@ -1,5 +1,5 @@
 // Display name
-BUNDLE_DISPLAY_NAME = SEALEGACY.blue
+BUNDLE_DISPLAY_NAME = sealegacy.blue
 
 // Bundle Identifier
 APP_BUNDLE_ID = com.gexsi.sealegacy.blue.debug
@@ -8,7 +8,7 @@ APP_BUNDLE_ID = com.gexsi.sealegacy.blue.debug
 APP_MARKETING_VERSION = 3.1.1
 
 // Build version
-APP_BUILD_VERSION = 2
+APP_BUILD_VERSION = 3
 
 // URL Scheme
 USER_AGENT_URL_SCHEME = SEALEGACYBlueDebug

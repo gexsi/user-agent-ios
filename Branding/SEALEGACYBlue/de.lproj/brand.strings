@@ -15,10 +15,10 @@
 "about" = "https://sealegacy.blue-search.org/#mehr";
 "faq" = "https://sealegacy.blue-search.org/#faq";
 "termsOfUse" = "https://sealegacy.blue-search.org/terms-of-use.php";
-"licensesHeader" = "SEALEGACY.blue";
+"licensesHeader" = "sealegacy.blue";
 
 /* The text shown in the URL bar on about:home */
 "UrlBar.Placeholder" = "Search for our ocean…";
 
 /* Label for the button, displayed in the menu, used to open the What's new page. */
-"Menu.OpenWhatsNewAction.Title" = "About SEALEGACY.blue";
+"Menu.OpenWhatsNewAction.Title" = "About sealegacy.blue";
