@@ -4,13 +4,15 @@
 
 <SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/">
 <ShortName>Blue</ShortName>
-<Image width="16" height="16">data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAAApVBMVEUA//8ArvAArvAAr/EAr/EAsPIAtfQArvD///8GsPCP2/j6/f5/1vcsvPLs+P3L7vwXtfFQx/Q8wfMctvHv+v7g9f3a8/zU8fxCw/To+P296vuc3/mJ2fhby/VHxPQzvvMMsvB20/chuPLl9/2z5/qh4fl61fdpz/YluvLz+/656fpt0fZVyfU4wPMUtPHP8Pyt5fpz0vbD7PuT3fj1+/6n4/lizfWkNf+GAAAAB3RSTlMB9uPDuWQY4yYUZQAAAx1JREFUaN7tmul2qjAQgHFpZxBRAa1YBcG9dalb+/6PdvWWtiRBEjrknnPP8fur8hEyzkxCjAsP9WoFSqdSrT8YVx5roI3a40VQA43ULs8HtPJg1EErdaMKWqkaFdBKxQDN3AV3wb8VdLa+Ezj+1gMeuqCzGba7+MVLex54JQo6hzcU6S+8cgTbmYU3ePbpAvcZ82iHNEFnjjL2HkEQdFHOef1bgTlENfbRrwTeG6rytPqFYNVDdQbjwgK7hUV4cQsKJlMsRtcuJNg9YVGmXhHBKxanbaoLFtmx0lhv3NV2sx71MYuGsmBsZVx9YadDLDP9haqCthiGS2H8gRjGPVNNsESeUQQiZiwMtKkkiFp8jDuQjc9/89xREcT8wG24xaTPD1VBYA6QoTWB2+x63GB3csEHMlgu5GG/IEMsF3AVbAn5OFyhlgo8ruqCjHdkGMsEa/77MiYWG6kywR7TvIOcBqY5ygRsFbZBTocNiihfYLMJCFQ4Yho/X7AR/jdyDrlhZ+QlahdUWLFJO1/ANlomyBDnbZYvmDFZAtToM4UtX/DM/i2lyH9k5NSaV5AiPtceUTAeidk1TNfPKfUR9XDmAM92fmZ+RJnk+HqXTU+oDIenZJKpYbqz8IK1D8UKur9+NCP/0d6/8shhJ6SlRQ8b5FTh/iS2uXgHTkhPdv10HCwj4KCn6zVb54dcUaIXnOjMt70fzDDoJXMorg4azFipRX+MGRwDExLobUsbsxiMJiqCQKHx+sAbvDrltI5RF7NpDe1ymt9T9tVDs6z23ZZcnb4AObJRyl+dvoQKcvtF+iIQzFaOgbSM/YqpEeYYKAtxy+O6rSlroG8lNLl78BucgboZMjWZpc0AgDXQt3OcZJo/b+EEjIGwISV0S82kW+cN9C21VfK59fmEeAN9U3CU6qFOIBjo25qtZJrD5AnxBvrGbPDdRQ74tWBcytby8Tuxn4A1xCVtjtvJ+CwXGENc0vb+z9QCg1/aC4qBmcQZlPyKZXx9xRJuO3Dlf3xJdBf85S4Q0P7KXfuhAe3HHrQf3NB99ET/4Rntx3/+AF9CJMC3aT2PAAAAAElFTkSuQmCC</Image>
-
-<Url type="text/html" method="GET" template="https://search.gexsi.com/search">
+<Image width="16" height="16">data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAFKADAAQAAAABAAAAFAAAAACy3fD9AAAEGklEQVQ4EaWVb2iVVRzHP+ec53nu9W53m7tOna6VTIfViFT2wjaalkRGQSW4KIiKIBiIVEqYJQUaSG+igoRCDCl9o/WiIaSCYaSVmTX/LKY4x+bMueu2u90/z7/TeZ79qb2szuWe57nnPL/P+f5+53ueK1ZvPaL5n02gzUfEFOu/sCKAJJwKFXhYBhchtbn7F20aVMJhQjuEOkRqn3liAqSFiz0JnKab6ZmVo/vpNq3GMwG50OYuPciTwVmqZYG6cJAlzm32B+s4YrVgRbB8aIRKmxQFE5CIOWnpmhniRMa0GQsDFupbtIZX2O4cprp0CZ1cTCAEo6KKHrEY26i1iiRYLbtxw5DTQSMPq3Mktcu34SocYepkQGvFBTZynBXyKin3GkNyKRfVCopeAsdWvOs9Q4+qo4ISVqA1nvl+rD7ipFyJFbqc13eQ8zSPO+dpC36k2e6nzrtMTs3llNWKMotrs6mOZfG530KXamC+yOOjEC1bO3UudGgQN7m79DubUifxizkKdjU1+jahUTjsCS6yDNsoTsqQWpFlRFTQLZfwiX4MW8m4NFGtrKj4Ub36qaHLXk+yCG87ByDXZSRkTMouKXsBA6HHGtXFr2EDWV3OWdHIl0GbKb1tMEHEilu8lRHUNoIXqnEOqnVsDHbwVdmz9DnLGEnUc9xvokWf4ZaqYZe/AV8maFOX8IVlkjTpT5k6Is74MBoMzHS1crkc1vOWfomqcIySH/KZswdp6rbNf44fZBOb1HHuVf04QWBinFnQv802qRhhOZRJY1ZVMHZI83LZz9wfnuU1+QanRBMLbJdv3PvIUhkbOarePxXOAga+z/UrXRSKE4TSgP1Rsr0XeEVv54RcQUYVUZbihlPHJashTtmaRTB2nhKGNrup/HEO7Hwexx+j56dOLG+ER3cf5GQ2SaH3DEXXY7T3HF3DAR3djeRv9HD96sVpRHyNgdL0I0MDjN+8SvOyDCc+fIHvv9hJxYIlrKwvY3P7Q+x+tR136A9Of9pBuqKSPTs7OPrBi+zatIHxoWszUGlODvncKE33LGd+w8p4Yv07x1ham+brN9cwMJznkVV1PLW6nqA0TiadoPO9p2ldnuHQqT7aW++kpraewvgowsBkRBw16vZtfoD9Wx40aQUc2rY2Bm/Ze4bFmRTvH55M67t9O+Lx1/f+El+faK7j2G+D3L7ZTzJVjjYnTkQv2Kh+pbEhQs+42hi4rDxNsVhkIp+nsmouubEx0uUpo0Diui75QoHUnCTVi5aS/bMPVZbBdubEi8Q+FFKRrFpIEPjm9aJxzdWqzJCZ5+C5BeZW1OIWCyZAYM+RzKtJ4Hkuw9kRE7coXiimmW7G2NGAUpM/LSs6ThFbY9vJaA2cpFEw9WcRmoHoGSttx3Pxw1PdX2imrf5Q1b/bAAAAAElFTkSuQmCC</Image>
+<Url type="application/x-suggestions+json" template="https://m.instantsearch.net/suggest">
     <Param name="q" value="{searchTerms}"/>
-    <Param name="gx1" value="ge"/>
-    <Param name="gx2" value="ap"/>
-    <Param name="gx3" value="io"/>
+    <Param name="rtag" value="blue"/>
+    <Param name="fmt" value="rch2"/>
 </Url>
-<SearchForm>https://search.gexsi.com</SearchForm>
+<Url type="text/html" method="GET" template="https://blue-search.org/search/">
+    <Param name="q" value="{searchTerms}"/>
+    <Param name="utm_source" value="bl"/>
+</Url>
+<SearchForm>https://blue-search.org/search/</SearchForm>
 </SearchPlugin>
