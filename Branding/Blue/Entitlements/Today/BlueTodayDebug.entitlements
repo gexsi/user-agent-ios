@@ -4,7 +4,7 @@
 <dict>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.com.gexsi.oceana.blue.debug</string>
+		<string>group.sst.gexsi.blue.debug</string>
 	</array>
 </dict>
 </plist>

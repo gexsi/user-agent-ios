@@ -12,7 +12,7 @@
 	</array>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>$(AppIdentifierPrefix)com.gexsi.oceana.blue.debug</string>
+		<string>$(AppIdentifierPrefix)sst.gexsi.blue.debug</string>
 	</array>
 </dict>
 </plist>

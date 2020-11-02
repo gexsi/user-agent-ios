@@ -8,7 +8,7 @@
 	</array>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>$(AppIdentifierPrefix)com.gexsi.oceana.blue.nightly.ShareTo</string>
+		<string>$(AppIdentifierPrefix)sst.gexsi.blue.nightly.ShareTo</string>
 	</array>
 </dict>
 </plist>

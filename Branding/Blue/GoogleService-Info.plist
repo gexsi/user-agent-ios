@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>264376387490-ugvgdf4gdbai9ods6igvb0livqt2a0a4.apps.googleusercontent.com</string>
+	<string>264376387490-o1gto97s66g84qrecjheg9d4p1rof0og.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.264376387490-ugvgdf4gdbai9ods6igvb0livqt2a0a4</string>
+	<string>com.googleusercontent.apps.264376387490-o1gto97s66g84qrecjheg9d4p1rof0og</string>
 	<key>API_KEY</key>
 	<string>AIzaSyC4v5rqvki7Fivtd5tOczz3JWRu42WnRk8</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,7 +13,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.gexsi.sealegacy.blue</string>
+	<string>sst.gexsi.blue</string>
 	<key>PROJECT_ID</key>
 	<string>blue-99ff7</string>
 	<key>STORAGE_BUCKET</key>
@@ -29,7 +29,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:264376387490:ios:f7f0288a2f39c27ef954fb</string>
+	<string>1:264376387490:ios:46dae3defebc87f6f954fb</string>
 	<key>DATABASE_URL</key>
 	<string>https://blue-99ff7.firebaseio.com</string>
 </dict>
