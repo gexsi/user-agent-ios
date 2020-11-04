@@ -93,6 +93,11 @@ target 'SEALEGACYBlue' do
   firebase
 end
 
+target 'Blue' do
+  main_app
+  firebase
+end
+
 target 'Storage' do
   snapkit
   sdwebimage

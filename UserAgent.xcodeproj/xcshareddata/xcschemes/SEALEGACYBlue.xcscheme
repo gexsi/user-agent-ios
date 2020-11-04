@@ -14,9 +14,9 @@
                <EnvironmentBuildable>
                   <BuildableReference
                      BuildableIdentifier = "primary"
-                     BlueprintIdentifier = "2BAD298424E6755B0098F3D1"
-                     BuildableName = "Panda.app"
-                     BlueprintName = "Panda"
+                     BlueprintIdentifier = "2BB3DDFF24ED34570050370A"
+                     BuildableName = "SEALEGACYBlue.app"
+                     BlueprintName = "SEALEGACYBlue"
                      ReferencedContainer = "container:UserAgent.xcodeproj">
                   </BuildableReference>
                </EnvironmentBuildable>

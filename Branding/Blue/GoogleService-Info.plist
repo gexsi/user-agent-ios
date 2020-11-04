@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>264376387490-o1gto97s66g84qrecjheg9d4p1rof0og.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.264376387490-o1gto97s66g84qrecjheg9d4p1rof0og</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC4v5rqvki7Fivtd5tOczz3JWRu42WnRk8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>264376387490</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>sst.gexsi.blue</string>
+	<key>PROJECT_ID</key>
+	<string>blue-99ff7</string>
+	<key>STORAGE_BUCKET</key>
+	<string>blue-99ff7.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:264376387490:ios:46dae3defebc87f6f954fb</string>
+	<key>DATABASE_URL</key>
+	<string>https://blue-99ff7.firebaseio.com</string>
+</dict>
+</plist>

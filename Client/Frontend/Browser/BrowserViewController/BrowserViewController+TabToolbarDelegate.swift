@@ -49,6 +49,9 @@ extension BrowserViewController: TabToolbarDelegate, PhotonActionSheetProtocol {
     }
 
     private func changeHomeBackgroundIfNeeded() {
+        guard Features.Home.BackgroundSetting.isEnabled else {
+            return
+        }
         let optionValue = self.profile.prefs.intForKey(PrefsKeys.HomeBackgroundOption) ?? 0
         let option = HomeBackgroundHelper.Option(rawValue: optionValue)!
         switch option {
