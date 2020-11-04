@@ -5,19 +5,19 @@
 "Intro.Slides.AntiTracking.Title" = "Highest level of data protection";
 
 /* Description for the 'Search' panel in the First Run tour. */
-"Intro.Slides.Search.Description" = "Our ocean can be rebuilt to abundance in one lifetime. And we’re on a mission to bring this closer to you every day. By using our search engine, being a part of this important conversation is now at your fingertips.";
+"Intro.Slides.Search.Description" = "Our ocean can be built to abundance in one generation. .blue has joined forces with the ocean community to put this mission right at your fingertips. By using our search engine you contribute every day.";
 
 /* Title for the 'Search' panel in the First Run tour. */
-"Intro.Slides.Search.Title" = "The search engine for ocean restoration";
+"Intro.Slides.Search.Title" = "With your searches, you support restoring our oceans";
 
 /* Button title for skipping tour. */
 "Intro.Slides.Skip.Title" = "Skip";
 
 /* Button title for starting browsing. */
-"Intro.Slides.Welcome.Button.Title" = "Search and do good";
+"Intro.Slides.Welcome.Button.Title" = "Search for our ocean";
 
 /* Title for the 'Welcome' panel in the First Run tour. */
-"Intro.Slides.Welcome.Title" = "Together, we are #TurningTheTide";
+"Intro.Slides.Welcome.Title" = "Make .blue your new search engine!";
 
 /* Description for the 'Welcome' panel in the First Run tour. */
-"Intro.Slides.Welcome.Description" = "Through the simple act of searching, we can create healthy and abundant ocean together.";
+"Intro.Slides.Welcome.Description" = "Through the simple act of searching, we can restore healthy and abundant oceans together.";

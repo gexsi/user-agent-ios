@@ -64,10 +64,12 @@ class IntroViewController: UIViewController {
     }()
 
     var horizontalPadding: Int {
-        return self.view.frame.width <= 375 ? 20 : 40
+        return (self.view.frame.width <= 375 || UIDevice.current.isPad) ? 20 : 40
     }
 
-    let verticalPadding: CGFloat = 30
+    var verticalPadding: CGFloat {
+        return (self.view.frame.width <= 375 || UIDevice.current.isPad) ? 20 : 30
+    }
 
     lazy fileprivate var imageViewContainer: UIStackView = {
         let sv = UIStackView()
