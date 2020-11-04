@@ -61,7 +61,7 @@ extension Features.Home.TopSites {
 
 extension Features.Home.BackgroundSetting {
     public static var isEnabled: Bool {
-        return false
+        return true
     }
 }
 
