@@ -5,7 +5,7 @@ BUNDLE_DISPLAY_NAME = Gexsi Nightly
 APP_BUNDLE_ID = com.gexsi.nightly
 
 // Marketing version
-APP_MARKETING_VERSION = 3.1.1
+APP_MARKETING_VERSION = 3.1.2
 
 // Build version
 APP_BUILD_VERSION = 1
