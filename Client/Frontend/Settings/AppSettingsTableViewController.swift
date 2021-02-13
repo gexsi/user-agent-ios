@@ -141,9 +141,9 @@ class AppSettingsTableViewController: SettingsTableViewController {
         if Features.Home.BackgroundSetting.isEnabled {
             generalSettings.append(HomeBackgroundSetting(settings: self))
         }
-//        if #available(iOS 14.0, *) {
-//            generalSettings.append(DefaultBrowserSetting(settings: self))
-//        }
+        if #available(iOS 14.0, *) {
+            generalSettings.append(DefaultBrowserSetting(settings: self))
+        }
 
         // There is nothing to show in the Customize section if we don't include the compact tab layout
         // setting on iPad. When more options are added that work on both device types, this logic can
